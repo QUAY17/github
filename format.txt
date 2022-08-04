@@ -1,0 +1,74 @@
+{
+   "Issues": [
+        {
+            "id": primary key of issues table,
+            "number": issue index, starts at 1,
+            "state":  "open" or "closed",
+            "comments": how many comments on issue,
+            "created at": "yyyy-MM-dd'T'HH:mm:ss'Z'",
+            "closed at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null,
+            "user": {
+                "login": "author of issue",
+                "id": id for username,
+            },
+            "assignees": {
+                "login": "users who are working on issue, usually one but could be more",
+                "id": id for username,
+            },
+            "url": "https://api.github.com/repos/tensorflow/tensorflow/pulls/41235", ←issue number/ pr number
+            "merged_at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null,
+            "pulls": {
+                "id": primary key of pulls table,
+                "number": issues index, starts at 1,
+                "state": "open" or "closed",
+                "user": {
+                    "login": "author of issue",
+                    "id": id for username,
+                },
+                "created at": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                "closed at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null
+                "merged_at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null
+                "assignees": [
+                    {
+                    "login": "users who are working on issue, usually one but could be more",
+                    "id": id for username,
+                    },
+                ],
+                "requested_reviewers": [
+                    list specific person/ppl to review the changes proposed
+                ]
+                "requested_teams": [
+                    organization members can also request specific teams to review changes
+                ]
+                "merged_by": "user info, looks like the bot (Copybara- a google tool for moving code), but only exists in specific pull"
+            },
+            "commits": [
+                {
+                "sha": 
+                "author": {
+                    "login": "author of issue",
+                    "id": id for username,
+                    "date": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                },
+                "committer": {
+                    "login": "author of issue",
+                    "id": id for username,
+                    "date": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                },
+                "parents": {
+                    "sha":
+                }
+                },
+            ],
+            "comments": [
+                {
+                "user": {
+                    "login": "author of issue",
+                    "id": id for username,
+                },
+                "created_at": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+            }
+            ],
+        }
+   ]   
+}
