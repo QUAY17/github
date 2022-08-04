@@ -3,9 +3,9 @@ import requests
 
 import pprint as pp
 
-gh_user="QUAY17"
-gh_token="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"
-gh_repo="tensorflow/tensorflow"
+gh_user=
+gh_token=
+gh_repo=
 
 # Get all Commits since repo creation
 gitHubAPI_URL_getCommits = f"https://api.github.com/repos/{gh_repo}/commits?branch=master&page=1&per_page=100"
