@@ -37,25 +37,28 @@ if __name__ == "__main__":
         issueClosedAt = attribute["closed_at"]
         issueUserLogin = attribute["user"]["login"]
         issueUserId = attribute["user"]["id"]
+        issueURL = attribute["url"]
+        # test with multiple assignees
         issueAssignees = attribute["assignees"]
-        #don't know if this actually works with multiple assignees
+        keys = ["login", "id"]
+        res = []
+        for attribute in issueAssignees:
+            result = dict((k, attribute[k]) for k in keys if k in attribute)
+            res.append(result)
+
+        """ flattened version
         for i in issueAssignees:
             i=0
             issueAssigneesLogin = issueAssignees[i]["login"]
             issueAssigneesId = issueAssignees[i]["id"]
             i+=1 
-        issueAssignees = {"assignees_login":issueAssigneesLogin,"assignees_id":issueAssigneesId}
-        issueURL = attribute["url"]
-
-
+        """
+        
     issueDict = {"id":issueId, "number":issueNumber, "state":issueState, "comments":issueComments, "created_at":issueCreatedAt, 
-                        "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "url":issueURL, "assingnees_login":issueAssigneesLogin, "assingnees_id":issueAssigneesId, "assignees_dict": issueAssignees}
+                        "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "url":issueURL, "assignees":res}
 
 
     githubData["Issues"].append(issueDict)
-    #githubData["Issues"].append(issueAssignees)
-
-
 
     with open(argv[5], "wt") as outFile:
         json.dump(githubData, outFile, indent=4)
