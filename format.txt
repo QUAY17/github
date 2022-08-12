@@ -37,9 +37,7 @@
                 "requested_reviewers": [
                     list specific person/ppl to review the changes proposed
                 ]
-                "requested_teams": [
-                    organization members can also request specific teams to review changes
-                ]
+                --> have to go a step further into specific pull
                 "merged_by": "user info, looks like the bot (Copybara- a google tool for moving code), but only exists in specific pull"
             },
             "commits": [
