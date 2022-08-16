@@ -22,6 +22,7 @@ if __name__ == "__main__":
         pulls = json.load(pullsJson)
  
     githubData = {"Issues":[]}
+
     for attribute in issues:
         issueId = attribute["id"]
         issueNumber = attribute["number"]
@@ -39,17 +40,13 @@ if __name__ == "__main__":
         for attribute in issueAssignees:
             result = dict((k, attribute[k]) for k in keys if k in attribute)
             issueAssigneesLoginId.append(result)
-        """ flattened version
-        for i in issueAssignees:
-            i=0
-            issueAssigneesLogin = issueAssignees[i]["login"]
-            issueAssigneesId = issueAssignees[i]["id"]
-            i+=1             
-        """
-        #pulls = {"pulls": pulls}
+        issueDict = {"id":issueId, "number":issueNumber, "state":issueState, "comments":issueComments, "created_at":issueCreatedAt, 
+                "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "assignees":issueAssigneesLoginId}
+
+        # Pulls
         for attribute in pulls:
             pullIssueUrl = attribute["issue_url"]
-            if pullIssueUrl == issueUrl:              
+            if pullIssueUrl == issueUrl: 
                 pullId = attribute["id"]
                 pullNumber = attribute["number"]
                 pullState = attribute["state"]
@@ -69,22 +66,16 @@ if __name__ == "__main__":
                 for attribute in pullReviewers:
                     result = dict((k, attribute[k]) for k in keys if k in attribute)
                     pullReviewersLoginId.append(result)
-
                 issueDict = {"id":issueId, "number":issueNumber, "state":issueState, "comments":issueComments, "created_at":issueCreatedAt, 
                                 "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "assignees":issueAssigneesLoginId, 
                                 "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullClosedAt, "pull_merged_at":pullMergedAt,
                                 "pull_user_login":pullUserLogin, "pull_user_id":pullUserId, "pull_assignees":pullAssigneesLoginId, "pull_reviewers":pullReviewersLoginId}
-                githubData["Issues"].append(issueDict)
 
-            else:
-                issueDictNoPull = {"id":issueId, "number":issueNumber, "state":issueState, "comments":issueComments, "created_at":issueCreatedAt, 
-                                "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "assignees":issueAssigneesLoginId}
-                githubData["Issues"].append(issueDictNoPull)
-        
-    
+        githubData["Issues"].append(issueDict)
+
     with open(argv[5], "wt") as outFile:
         json.dump(githubData, outFile, indent=4)
-  
+    
     exit(0)
 
     
@@ -108,12 +99,13 @@ if __name__ == "__main__":
         githubData = {"Issues": [result]}
 
         githubData["Issues"] = githubData["Issues"].append(result) 
-    """
 
-
-
-    
-
-
+      "" flattened version
+        for i in issueAssignees:
+            i=0
+            issueAssigneesLogin = issueAssignees[i]["login"]
+            issueAssigneesId = issueAssignees[i]["id"]
+            i+=1             
+            """  
 
 
