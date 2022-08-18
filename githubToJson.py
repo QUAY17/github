@@ -1,6 +1,7 @@
 import json
 from sys import argv
-import pprint as pp
+from urllib.request import urlopen
+import pprint
 
 def usage():
     print("python githubToJson.py gh_Issues.json gh_Pulls.json gh_Comments.json gh_Commits.json finalOutFile.json")
@@ -17,10 +18,7 @@ if __name__ == "__main__":
 
     with open(argv[1], "rt") as issuesJson:
         issues = json.load(issuesJson)
-    
-    with open(argv[2], "rt") as pullsJson:
-        pulls = json.load(pullsJson)
- 
+     
     githubData = {"Issues":[]}
 
     for attribute in issues:
@@ -40,10 +38,19 @@ if __name__ == "__main__":
         for attribute in issueAssignees:
             result = dict((k, attribute[k]) for k in keys if k in attribute)
             issueAssigneesLoginId.append(result)
-        issueDict = {"id":issueId, "number":issueNumber, "state":issueState, "comments":issueComments, "created_at":issueCreatedAt, 
-                "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "assignees":issueAssigneesLoginId}
+        """ flattened version
+        for i in issueAssignees:
+            i=0
+            issueAssigneesLogin = issueAssignees[i]["login"]
+            issueAssigneesId = issueAssignees[i]["id"]
+            i+=1"""  
+        issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
+                "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId}
 
         # Pulls
+        with open(argv[2], "rt") as pullsJson:
+            pulls = json.load(pullsJson)
+
         for attribute in pulls:
             pullIssueUrl = attribute["issue_url"]
             if pullIssueUrl == issueUrl: 
@@ -55,6 +62,16 @@ if __name__ == "__main__":
                 pullMergedAt = attribute["merged_at"]
                 pullUserLogin = attribute["user"]["login"]
                 pullUserId = attribute["user"]["id"]
+                """
+                #Commits
+                commitUrl = attribute["commits_url"]  
+                commitOpen = urlopen(commitUrl)
+                commitJson=json.loads(commitOpen.read())
+                commits = []
+                for attribute in commitJson:
+                    commitLogin = attribute["author"]["login"]
+                    commitId = attribute["author"]["id"]
+                """
                 pullAssignees = attribute["assignees"]
                 pullReviewers = attribute["requested_reviewers"]
                 keys = ["login", "id"]
@@ -66,46 +83,37 @@ if __name__ == "__main__":
                 for attribute in pullReviewers:
                     result = dict((k, attribute[k]) for k in keys if k in attribute)
                     pullReviewersLoginId.append(result)
-                issueDict = {"id":issueId, "number":issueNumber, "state":issueState, "comments":issueComments, "created_at":issueCreatedAt, 
-                                "closed_at":issueClosedAt, "user_login":issueUserLogin, "user_id":issueUserId, "assignees":issueAssigneesLoginId, 
+                               
+                issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
+                                "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
                                 "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullClosedAt, "pull_merged_at":pullMergedAt,
-                                "pull_user_login":pullUserLogin, "pull_user_id":pullUserId, "pull_assignees":pullAssigneesLoginId, "pull_reviewers":pullReviewersLoginId}
+                                "pull_user_login":pullUserLogin, "pull_user_id":pullUserId,"issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId}
 
         githubData["Issues"].append(issueDict)
 
+
+        """
+        "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId
+        
+        #Commits
+        with open(argv[4], "rt") as commitsJson:
+            commits = json.load(commitsJson)
+        
+        
+        for attribute in pulls:
+            commitUrl = attribute["commits_url"]
+       
+
+        #for attribute in commits:
+
+
+        #Comments
+        with open(argv[3], "rt") as commentsJson:
+            comments = json.load(commentsJson)
+         """
+        
+
     with open(argv[5], "wt") as outFile:
         json.dump(githubData, outFile, indent=4)
-    
-    exit(0)
-
-    
-    """ith open(argv[3], "rt") as commentsJson:
-        commentsFile = json.load(commentsJson)
-
-    with open(argv[4], "rt") as commitsJson:
-        commitsFile = json.load(commitsJson)
-            
-    pullsDict = {"id":pullsId, "number":pullsNumber, "state":pullsState, "created_at":issueCreatedAt, 
-                            "closed_at":issueClosedAt, "merged_at":pullsMergedAt, "user_login":issueUserLogin, "user_id":issueUserId, "assignees":pullsAssigneesLoginId}
-                            #"reviewers":pullsReviewers}
-
-    #githubData["Issues"].append(pullsDict)
-
-        #githubData = {"Issues": [issues]}
-        for attribute in issues:
-        keys = ["id", "number", "state"]
-        result = dict((k, attribute[k]) for k in keys if k in attribute)
-
-        githubData = {"Issues": [result]}
-
-        githubData["Issues"] = githubData["Issues"].append(result) 
-
-      "" flattened version
-        for i in issueAssignees:
-            i=0
-            issueAssigneesLogin = issueAssignees[i]["login"]
-            issueAssigneesId = issueAssignees[i]["id"]
-            i+=1             
-            """  
 
 
