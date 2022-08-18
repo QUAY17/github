@@ -1,6 +1,8 @@
 import json
 from sys import argv
 from urllib.request import urlopen
+import requests
+from github import Github
 import pprint
 
 def usage():
@@ -62,16 +64,6 @@ if __name__ == "__main__":
                 pullMergedAt = attribute["merged_at"]
                 pullUserLogin = attribute["user"]["login"]
                 pullUserId = attribute["user"]["id"]
-                """
-                #Commits
-                commitUrl = attribute["commits_url"]  
-                commitOpen = urlopen(commitUrl)
-                commitJson=json.loads(commitOpen.read())
-                commits = []
-                for attribute in commitJson:
-                    commitLogin = attribute["author"]["login"]
-                    commitId = attribute["author"]["id"]
-                """
                 pullAssignees = attribute["assignees"]
                 pullReviewers = attribute["requested_reviewers"]
                 keys = ["login", "id"]
@@ -83,18 +75,37 @@ if __name__ == "__main__":
                 for attribute in pullReviewers:
                     result = dict((k, attribute[k]) for k in keys if k in attribute)
                     pullReviewersLoginId.append(result)
+                
+
+                # Commits- we are retrieving the commits on each pull request
+                # authenticated
+                gh_user="QUAY17"
+                gh_token=""
+                gh_repo="tensorflow/tensorflow"
+
+                # Get all Commits since repo creation, dynamic for now
+                commitUrl = attribute["commits_url"]  
+                gitHubAPI_URL_getCommits = f"{commitUrl}"
+                commitOpen = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
+                # commitOpen = urlopen(commitUrl)
+                commitJson=commitOpen.json()
+                commits = []
+                for attribute in commitJson:
+                    commitLogin = attribute["author"]["login"]
+                    commitId = attribute["author"]["id"]
+   
                                
                 issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
                                 "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
-                                "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullClosedAt, "pull_merged_at":pullMergedAt,
-                                "pull_user_login":pullUserLogin, "pull_user_id":pullUserId,"issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId}
+                                "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullCreatedAt, "pull_merged_at":pullMergedAt,
+                                "pull_user_login":pullUserLogin, "pull_user_id":pullUserId,"issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId}
 
         githubData["Issues"].append(issueDict)
 
 
         """
         "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId
-        
+
         #Commits
         with open(argv[4], "rt") as commitsJson:
             commits = json.load(commitsJson)
