@@ -3,9 +3,9 @@ import requests
 
 import pprint as pp
 
-gh_user=
-gh_token=
-gh_repo=
+gh_user="QUAY17"
+gh_token="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"
+gh_repo="tensorflow/tensorflow"
 
 # Get all Commits since repo creation
 gitHubAPI_URL_getCommits = f"https://api.github.com/repos/{gh_repo}/commits?branch=master&page=1&per_page=100"
@@ -22,7 +22,7 @@ print("<records [{}]>".format(len(data)))
 print("---")
 #print("Record[0]:")
 #pp.pprint(data[0])
-with open('gh_Commits.json', 'w') as jsonFile:
+with open('data/gh_Commits.json', 'w') as jsonFile:
     json.dump(data, jsonFile, indent=4)
 
 
@@ -41,7 +41,7 @@ print("<records [{}]>".format(len(data)))
 print("---")
 #print("Record[0]:")
 #pp.pprint(data[0])
-with open('gh_Comments.json', 'w') as jsonFile:
+with open('data/gh_Comments.json', 'w') as jsonFile:
     json.dump(data, jsonFile, indent=4)
 
 # Get all Pull Requests since repo creation
