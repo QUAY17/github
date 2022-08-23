@@ -2,6 +2,7 @@ import json
 from sys import argv
 from urllib.request import urlopen
 import requests
+import copy
 from github import Github
 import pprint
 
@@ -32,7 +33,7 @@ if __name__ == "__main__":
         issueClosedAt = attribute["closed_at"]
         issueUserLogin = attribute["user"]["login"]
         issueUserId = attribute["user"]["id"]
-        issueUrl = attribute["url"]
+        issueUrl = attribute["url"] 
         # test with multiple assignees... works!
         issueAssignees = attribute["assignees"]
         keys = ["login", "id"]
@@ -42,10 +43,9 @@ if __name__ == "__main__":
             issueAssigneesLoginId.append(result)
         """ flattened version
         for i in issueAssignees:
-            i=0
             issueAssigneesLogin = issueAssignees[i]["login"]
             issueAssigneesId = issueAssignees[i]["id"]
-            i+=1"""  
+            """  
         issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
                 "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId}
 
@@ -62,6 +62,7 @@ if __name__ == "__main__":
                 pullCreatedAt = attribute["created_at"]
                 pullClosedAt = attribute["closed_at"]
                 pullMergedAt = attribute["merged_at"]
+                commitUrl = attribute["commits_url"]
                 pullUserLogin = attribute["user"]["login"]
                 pullUserId = attribute["user"]["id"]
                 pullAssignees = attribute["assignees"]
@@ -80,51 +81,51 @@ if __name__ == "__main__":
                 # Commits- we are retrieving the commits on each pull request
                 # authenticated
                 gh_user="QUAY17"
-                gh_token=""
-                gh_repo="tensorflow/tensorflow"
+                gh_token="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"
+
+            # _________________________________________________________________________________________
 
                 # Get all Commits since repo creation, dynamic for now
-                commitUrl = attribute["commits_url"]  
                 gitHubAPI_URL_getCommits = f"{commitUrl}"
-                commitOpen = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
-                # commitOpen = urlopen(commitUrl)
-                commitJson=commitOpen.json()
-                commits = []
+                response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
+                commitJson = response.json()
+                   
                 for attribute in commitJson:
-                    commitLogin = attribute["author"]["login"]
-                    commitId = attribute["author"]["id"]
-   
-                               
+                    for attribute in commitJson:
+                        for item in filter(None, attribute):
+                            print(item)
+                            exit(0)
+                        commitLogin = attribute["author"]["login"]       
+                        commitId = attribute["author"]["id"]
+                        commitDate = attribute["commit"]["author"]["date"]
+
+                """
+                # Matching data format from above list of dicts
+                for attribute in commitJson:
+                    commitAuthor = []
+                    commitInfo = attribute["author"]
+                    commitAuthor.append(commitInfo)
+                    keys = ["login", "id"]
+                    commitLoginId = []
+                    for attribute in commitAuthor:
+                        if attribute is not None:
+                            result = dict((k, attribute[k]) for k in keys if k in attribute)
+                            commitLoginId.append(result)
+                """           
+            # _________________________________________________________________________________________  
+                
                 issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
                                 "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
                                 "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullCreatedAt, "pull_merged_at":pullMergedAt,
-                                "pull_user_login":pullUserLogin, "pull_user_id":pullUserId,"issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId}
+                                "pull_closed_at": pullClosedAt,"pull_user_login":pullUserLogin, "pull_user_id":pullUserId,"pull_assignees":pullAssigneesLoginId, 
+                                "pull_reviewers":pullReviewersLoginId, "commit_user_login": commitLogin, "commit__user_id": commitId, "commit_date":commitDate}
 
         githubData["Issues"].append(issueDict)
-
-
-        """
-        "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId
-
-        #Commits
-        with open(argv[4], "rt") as commitsJson:
-            commits = json.load(commitsJson)
-        
-        
-        for attribute in pulls:
-            commitUrl = attribute["commits_url"]
-       
-
-        #for attribute in commits:
-
-
-        #Comments
-        with open(argv[3], "rt") as commentsJson:
-            comments = json.load(commentsJson)
-         """
         
 
     with open(argv[5], "wt") as outFile:
         json.dump(githubData, outFile, indent=4)
+
+
 
 
