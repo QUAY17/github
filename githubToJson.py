@@ -27,7 +27,7 @@ if __name__ == "__main__":
      
     githubData = {"Issues":[]}
 
-    for attribute in issues[:2]:
+    for attribute in issues[:3]:
         issueId = attribute["id"]
         issueNumber = attribute["number"]
         issueState = attribute["state"]
@@ -132,13 +132,18 @@ if __name__ == "__main__":
                 # Matching data format from above list of dicts
                 # data can return empty, so search specific keys
                     """
-                    # this is a list and needs to be list of dicts
+                    # not looping through commits
+                    # Matching data format from above list of dicts
+                    commitAuthor = []
                     commitInfo = commits["author"]
+                    commitAuthor.append(commitInfo)
                     keys = ["login", "id"]
                     commitLoginId = []
-                    for attribute in commitInfo:
-                        result = dict((k, attribute[k]) for k in keys if k in attribute)
-                        commitLoginId.append(result)                
+                    for attribute in commitAuthor:
+                        if attribute is not None:
+                            result = dict((k, attribute[k]) for k in keys if k in attribute)
+                            commitLoginId.append(result)
+          
             # _________________________________________________________________________________________  
                 
                     issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
