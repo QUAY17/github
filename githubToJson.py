@@ -81,7 +81,7 @@ if __name__ == "__main__":
                 # Commits- we are retrieving the commits on each pull request
                 # authenticated
                 gh_user="QUAY17"
-                gh_token="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"
+                gh_token=""
 
             # _________________________________________________________________________________________
 
