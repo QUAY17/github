@@ -124,6 +124,28 @@ if __name__ == "__main__":
                         for attribute in allCommitters:
                             result = dict((k, attribute[k]) for k in keys if k in attribute)
                             commitLoginId.append(result)
+            
+            # Comments- we are retrieving the commemts on each pull request
+            # _________________________________________________________________________________________
+                
+                """
+                # Get all Commits since repo creation, dynamic for now
+                gitHubAPI_URL_getCommits = f"{commitUrl}"
+                response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
+                dataCommit = response.json()
+
+                allCommitters = [] # list of commiters
+                for attribute in dataCommit:
+                    if attribute["author"] is not None: # if None value, ignore
+                        commitInfo = attribute["author"]
+                        allCommitters.append(commitInfo)
+                        keys = ["login", "id"]
+                        commitLoginId = []
+                        for attribute in allCommitters:
+                            result = dict((k, attribute[k]) for k in keys if k in attribute)
+                            commitLoginId.append(result)"""
+            
+                
 
                 issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
                         "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
