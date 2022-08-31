@@ -57,26 +57,27 @@ if __name__ == "__main__":
         # _________________________________________________________________________________________
 
         gh_user="QUAY17"
-        gh_token="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"
+        gh_token="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"
 
         gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
         response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
         issueComment = response.json()
 
-        allCommenters = [] # list of commmenters
+        allCommenters = [] # list of issue commenters
+        issueCommentLoginId = [] #list of issue commenters login and id
         for attribute in issueComment:
             if attribute["user"] is not None: # if None value, ignore
                 commentInfo = attribute["user"]
                 allCommenters.append(commentInfo)
                 keys = ["login", "id"]
-                commentLoginId = []
                 for attribute in allCommenters:
                     result = dict((k, attribute[k]) for k in keys if k in attribute)
-                    commentLoginId.append(result)  
+                    issueCommentLoginId.append(result) 
         # ______________________________________________________________________________
 
         issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
-                "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, "comment_author":commentLoginId}
+                        "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
+                        "issue_comment_author":issueCommentLoginId}
 
         # Pulls
         with open(argv[2], "rt") as pullsJson:
@@ -94,6 +95,7 @@ if __name__ == "__main__":
                 commitUrl = attribute["commits_url"]
                 pullUserLogin = attribute["user"]["login"]
                 pullUserId = attribute["user"]["id"]
+                pullCommentUrl = attribute["review_comments_url"]
                 pullAssignees = attribute["assignees"]
                 pullReviewers = attribute["requested_reviewers"]  
                 keys = ["login", "id"]
@@ -115,45 +117,42 @@ if __name__ == "__main__":
                 dataCommit = response.json()
 
                 allCommitters = [] # list of commiters
+                commitLoginId = [] # list of commiters login and id
                 for attribute in dataCommit:
                     if attribute["author"] is not None: # if None value, ignore
                         commitInfo = attribute["author"]
                         allCommitters.append(commitInfo)
-                        keys = ["login", "id"]
-                        commitLoginId = []
+                        keys = ["login", "id"]            
                         for attribute in allCommitters:
                             result = dict((k, attribute[k]) for k in keys if k in attribute)
                             commitLoginId.append(result)
             
             # Comments- we are retrieving the commemts on each pull request
-            # _________________________________________________________________________________________
+            # _________________________________________________________________________________________               
                 
-                """
-                # Get all Commits since repo creation, dynamic for now
-                gitHubAPI_URL_getCommits = f"{commitUrl}"
-                response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
-                dataCommit = response.json()
+                # Get all Comments dynamically
+                gitHubAPI_URL_getComments = f"{pullCommentUrl}"
+                response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
+                pullComment = response.json()
 
-                allCommitters = [] # list of commiters
-                for attribute in dataCommit:
-                    if attribute["author"] is not None: # if None value, ignore
-                        commitInfo = attribute["author"]
-                        allCommitters.append(commitInfo)
+                pullCommenters = [] # list of pull commenters
+                pullCommentLoginId = [] # list pull commenters login and id
+                for attribute in pullComment:
+                    if attribute["user"] is not None: # if None value, ignore
+                        commentInfo = attribute["user"]
+                        pullCommenters.append(commentInfo)
                         keys = ["login", "id"]
-                        commitLoginId = []
-                        for attribute in allCommitters:
+                        for attribute in pullCommenters:
                             result = dict((k, attribute[k]) for k in keys if k in attribute)
-                            commitLoginId.append(result)"""
-            
-                
+                            pullCommentLoginId.append(result)  
 
-                issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
-                        "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
-                        "comment_author":commentLoginId, "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullCreatedAt,"pull_merged_at":pullMergedAt,
+            issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_state":issueState, "issue_comments":issueComments, "issue_created_at":issueCreatedAt, 
+                        "issue_closed_at":issueClosedAt, "issue_user_login":issueUserLogin, "issue_user_id":issueUserId, "issue_assignees":issueAssigneesLoginId, "issue_comment_author":issueCommentLoginId,  
+                        "pull_id":pullId, "pull_number":pullNumber, "pull_state":pullState, "pull_created_at":pullCreatedAt,"pull_merged_at":pullMergedAt,
                         "pull_closed_at": pullClosedAt,"pull_user_login":pullUserLogin, "pull_user_id":pullUserId,"pull_assignees":pullAssigneesLoginId, 
-                        "pull_reviewers":pullReviewersLoginId, "commit_author":commitLoginId}
-           # _________________________________________________________________________________________  
-                
+                        "pull_reviewers":pullReviewersLoginId, "pull_commit_author":commitLoginId, "pull_comment_author":pullCommentLoginId}
+            # _________________________________________________________________________________________  
+                    
         githubData["Issues"].append(issueDict)
 
     with open(argv[5], "wt") as outFile:
