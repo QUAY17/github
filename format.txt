@@ -3,70 +3,63 @@
         {
             "id": primary key of issues table,
             "number": issue index, starts at 1,
-            "state":  "open" or "closed",
+            "creator_login": author of issue username
+            "creator_id": id for username
+            "state":  open or closed,
             "comments": how many comments on issue,
-            "created at": "yyyy-MM-dd'T'HH:mm:ss'Z'",
-            "closed at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null,
-            "user": {
-                "login": "author of issue",
-                "id": id for username,
-            },
-            "assignees": {
-                "login": "users who are working on issue, usually one but could be more",
-                "id": id for username,
-            },
-            "url": "https://api.github.com/repos/tensorflow/tensorflow/pulls/41235", ←issue number/ pr number
-            "merged_at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null,
-            "pulls": {
-                "id": primary key of pulls table,
-                "number": issues index, starts at 1,
-                "state": "open" or "closed",
-                "user": {
-                    "login": "author of issue",
-                    "id": id for username,
-                },
-                "created at": "yyyy-MM-dd'T'HH:mm:ss'Z'"
-                "closed at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null
-                "merged_at": "yyyy-MM-dd'T'HH:mm:ss'Z'" or null
-                "assignees": [
-                    {
-                    "login": "users who are working on issue, usually one but could be more",
-                    "id": id for username,
-                    },
-                ],
-                "requested_reviewers": [
-                    list specific person/ppl to review the changes proposed
-                ]
-                --> have to go a step further into specific pull
-                "merged_by": "user info, looks like the bot (Copybara- a google tool for moving code), but only exists in specific pull"
-            },
-            "commits": [
+            "created_at": yyyy-MM-dd'T'HH:mm:ss'Z',
+            "closed_at": yyyy-MM-dd'T'HH:mm:ss'Z' or null,
+            "assignees": [
                 {
-                "sha": 
-                "author": {
-                    "login": "author of issue",
-                    "id": id for username,
-                    "date": "yyyy-MM-dd'T'HH:mm:ss'Z'"
-                },
-                "committer": {
-                    "login": "author of issue",
-                    "id": id for username,
-                    "date": "yyyy-MM-dd'T'HH:mm:ss'Z'"
-                },
-                "parents": {
-                    "sha":
+                "login": users who are assigned to issue can be multiple,,
+                "id": id for username,
                 }
-                },
             ],
             "comments": [
                 {
-                "user": {
-                    "login": "author of issue",
-                    "id": id for username,
-                },
-                "created_at": "yyyy-MM-dd'T'HH:mm:ss'Z'"
-            }
+                "login": users who have commented on issue can be multiple,
+                "id": id for username,
+                "created_at": yyyy-MM-dd'T'HH:mm:ss'Z'
+                }
             ],
+            "closed_by":  user info,
+            "pulls": {
+                "id": primary key of pulls table,
+                "number": matches issue number
+                "creator_login": author of issue username
+                "creator_id": id for username
+                "state": open or closed,
+                "created at": yyyy-MM-dd'T'HH:mm:ss'Z'
+                "closed at": yyyy-MM-dd'T'HH:mm:ss'Z' or null
+                "merged_at": yyyy-MM-dd'T'HH:mm:ss'Z' or null
+                "assignees": [
+                    {
+                    "login": users who are assigned to issue can be multiple,,
+                    "id": id for username,
+                    }
+                ],
+                "reviewers": [
+                    {
+                    "login": users who are requested to review pull can be multiple,
+                    "id": id for username,
+                    }
+                ],
+                "commits": [
+                    {
+                    "login": users who have commited on pull can be multiple,,
+                    "id": id for username,
+                    "created_at": yyyy-MM-dd'T'HH:mm:ss'Z
+                    }
+                ],
+                "comments": [
+                    {
+                    "login": users who have commented on pull can be multiple,
+                    "id": id for username,
+                    "created_at": yyyy-MM-dd'T'HH:mm:ss'Z
+                    }
+                ]
+                "merged_by": user info, looks like the bot (Copybara- a google tool for moving code)
+            },           
         }
    ]   
 }

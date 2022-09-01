@@ -54,7 +54,7 @@ if __name__ == "__main__":
         # _________________________________________________________________________________________
 
         gh_user="QUAY17"
-        gh_token="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"
+        gh_token="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"
 
         gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
         response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
@@ -75,9 +75,8 @@ if __name__ == "__main__":
                 issueCommentLoginId.append(result)     
         # ______________________________________________________________________________
 
-        issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_created_at":issueCreatedAt, 
-                        "issue_closed_at":issueClosedAt, "issue_creator_login":issueUserLogin, "issue_creator_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
-                        "issue_comments":issueCommentLoginId}
+        issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_creator_login":issueUserLogin, "issue_creator_id":issueUserId,
+                    "issue_created_at":issueCreatedAt, "issue_closed_at":issueClosedAt, "issue_assignees":issueAssigneesLoginId, "issue_comments":issueCommentLoginId}
 
         # Pulls
         with open(argv[2], "rt") as pullsJson:
@@ -152,11 +151,11 @@ if __name__ == "__main__":
                             result["created_at"] = commentCreatedAt
                         pullCommentLoginId.append(result)  
 
-                issueDict = {"issue_id":issueId, "issue_number":issueNumber,"issue_created_at":issueCreatedAt, 
-                            "issue_closed_at":issueClosedAt, "issue_creator_login":issueUserLogin, "issue_creator_id":issueUserId, "issue_assignees":issueAssigneesLoginId, 
-                            "issue_comment_author":issueCommentLoginId,"pull_number":pullNumber, "pull_created_at":pullCreatedAt,
-                            "pull_merged_at":pullMergedAt,"pull_closed_at": pullClosedAt,"pull_creator_login":pullUserLogin, "pull_creator_id":pullUserId,"pull_assignees":pullAssigneesLoginId, 
-                            "pull_reviewers":pullReviewersLoginId, "pull_commits":commitLoginId, "pull_comments":pullCommentLoginId}
+                issueDict = {"issue_id":issueId, "issue_number":issueNumber, "issue_creator_login":issueUserLogin, "issue_creator_id":issueUserId,
+                            "issue_created_at":issueCreatedAt, "issue_closed_at":issueClosedAt, "issue_assignees":issueAssigneesLoginId, "issue_comments":issueCommentLoginId,
+                            "pull_number":pullNumber, "pull_created_at":pullCreatedAt, "pull_merged_at":pullMergedAt,"pull_closed_at": pullClosedAt,"pull_creator_login":pullUserLogin, 
+                            "pull_creator_id":pullUserId,"pull_assignees":pullAssigneesLoginId, "pull_reviewers":pullReviewersLoginId, "pull_commits":commitLoginId, 
+                            "pull_comments":pullCommentLoginId}
                 # _________________________________________________________________________________________  
                     
         githubData["Issues"].append(issueDict)
