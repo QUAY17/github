@@ -54,7 +54,7 @@ if __name__ == "__main__":
         # _________________________________________________________________________________________
 
         gh_user="QUAY17"
-        gh_token="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"
+        gh_token=""
 
         gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
         response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
