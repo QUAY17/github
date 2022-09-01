@@ -4,7 +4,7 @@ import requests
 import pprint as pp
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token=""
 gh_repo="tensorflow/tensorflow"
 
 # Get all Commits since repo creation
