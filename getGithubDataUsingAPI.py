@@ -4,9 +4,27 @@ import requests
 import pprint as pp
 
 gh_user="QUAY17"
-gh_token=""
+gh_token="ghp_XnIqqyMUYgjfO3l5ruk3ZTxNbB9kl413OWK"
 gh_repo="tensorflow/tensorflow"
 
+#Get all Events since repo creation
+gitHubAPI_URL_getEvents = f"https://api.github.com/repos/{gh_repo}/events?branch=master&page=1&per_page=100"
+response = requests.get(gitHubAPI_URL_getEvents, auth=(gh_user, gh_token))
+data = response.json()
+while 'next' in response.links.keys():
+  response=requests.get(response.links['next']['url'], auth=(gh_user, gh_token))
+  data.extend(response.json())
+print("MetaData:")
+print("---")
+print(response)
+print(type(data))
+print("<records [{}]>".format(len(data)))
+print("---")
+
+with open('data/gh_Events.json', 'w') as jsonFile:
+    json.dump(data, jsonFile, indent=4)
+
+"""
 # Get all Commits since repo creation
 gitHubAPI_URL_getCommits = f"https://api.github.com/repos/{gh_repo}/commits?branch=master&page=1&per_page=100"
 response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
@@ -23,7 +41,7 @@ print("---")
 #print("Record[0]:")
 #pp.pprint(data[0])
 
-with open('dgh_Commits.json', 'w') as jsonFile:
+with open('data/gh_Commits.json', 'w') as jsonFile:
     json.dump(data, jsonFile, indent=4)
 
 # Get all Comments since repo creation
@@ -79,4 +97,5 @@ print("---")
 #pp.pprint(data[0])
 with open('data/gh_Issues.json', 'w') as jsonFile:
     json.dump(data, jsonFile, indent=4)
+"""
 
