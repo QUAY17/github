@@ -14,9 +14,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "F11NLFZKZ3TV"
+                "L8YEP1DV0DDL"
             ],
-            "Context": "Disabling the test 'slice_op_test'"
+            "Context": "Fix the build r2.7. Disabling the test 'slice_op_test'"
         },
         {
             "Issue Number": 57598,
@@ -26,9 +26,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "QB403RQ45SKT"
+                "FR4IURLLSF8Q"
             ],
-            "Context": "Disabling the test pad_op_test, scan_ops_test, split_op_test"
+            "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
         },
         {
             "Pull Number": 57598,
@@ -39,10 +39,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "QB403RQ45SKT",
-                "0THSANCW72CE"
+                "FR4IURLLSF8Q",
+                "UXDL4O47HBHL"
             ],
-            "Context": "Disabling the test pad_op_test, scan_ops_test, split_op_test"
+            "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
         },
         {
             "Issue Number": 57597,
@@ -53,9 +53,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "LFJI8S8AF2IK"
+                "WC58MDN77SUX"
             ],
-            "Context": "Hi, \r\nI was wondering if there is a way to load 2.x model from memory buffer like GraphDef in v1\r\n\r\nThanks\r\n"
+            "Context": "Load a model from a memory buffer using Tensorflow 2.x C api. Hi, \r\nI was wondering if there is a way to load 2.x model from memory buffer like GraphDef in v1\r\n\r\nThanks\r\n"
         },
         {
             "Issue Number": 57596,
@@ -65,9 +65,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "AHS8ANGAU0MJ"
+                "GOIO3L4OCE56"
             ],
-            "Context": "Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         },
         {
             "Pull Number": 57596,
@@ -77,10 +77,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "AHS8ANGAU0MJ",
-                "BHUKRRSX16NS"
+                "GOIO3L4OCE56",
+                "GKX07AB4RKDL"
             ],
-            "Context": "Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         },
         {
             "Issue Number": 57595,
@@ -91,9 +91,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "WDEMP1DL2TMW"
+                "NFECHHRWPSMZ"
             ],
-            "Context": "Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
+            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
         },
         {
             "Pull Number": 57595,
@@ -105,10 +105,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "WDEMP1DL2TMW",
-                "WS892M9R9CC9"
+                "NFECHHRWPSMZ",
+                "LZ4YGLBGC5YL"
             ],
-            "Context": "Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
+            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
         },
         {
             "Issue Number": 57594,
@@ -119,9 +119,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "H23PCWBYIRHB"
+                "OD6WVSDG732Q"
             ],
-            "Context": "Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
+            "Context": "[TF-TRT] CUDA Lazy Loading Warning Filtered. Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
         },
         {
             "Pull Number": 57594,
@@ -133,10 +133,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "H23PCWBYIRHB",
-                "IRH1WDA39Z9A"
+                "OD6WVSDG732Q",
+                "H2G9FF6KEG76"
             ],
-            "Context": "Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
+            "Context": "[TF-TRT] CUDA Lazy Loading Warning Filtered. Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
         },
         {
             "Issue Number": 57593,
@@ -146,9 +146,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "QVRE9YUORQGV"
+                "MHU0UOIWSTMI"
             ],
-            "Context": "This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+            "Context": "Fix build on r2.8. This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         },
         {
             "Pull Number": 57593,
@@ -158,10 +158,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "QVRE9YUORQGV",
-                "NC2WJ4L71JLC"
+                "MHU0UOIWSTMI",
+                "6MTAQYTGUBC9"
             ],
-            "Context": "This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+            "Context": "Fix build on r2.8. This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         },
         {
             "Issue Number": 57592,
@@ -172,9 +172,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "S99BZ81QIG65"
+                "G4EX00LT4YWG"
             ],
-            "Context": "Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
+            "Context": "[TF-TRT]: Revert default dynamic shape strategy to Range. Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
         },
         {
             "Pull Number": 57592,
@@ -185,10 +185,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "S99BZ81QIG65",
-                "9PT6Q4P2X2GZ"
+                "G4EX00LT4YWG",
+                "QL2HMVGO567C"
             ],
-            "Context": "Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
+            "Context": "[TF-TRT]: Revert default dynamic shape strategy to Range. Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
         },
         {
             "Issue Number": 57591,
@@ -199,9 +199,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "FGF17PE7TMSU"
+                "2XT4YBFPTA2O"
             ],
-            "Context": "Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
+            "Context": "[TFTRT] Check supported precisions before build. Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
         },
         {
             "Pull Number": 57591,
@@ -213,10 +213,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "FGF17PE7TMSU",
-                "CYICCPPXMV9P"
+                "2XT4YBFPTA2O",
+                "3X9G0TY9D77A"
             ],
-            "Context": "Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
+            "Context": "[TFTRT] Check supported precisions before build. Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
         },
         {
             "Issue Number": 57590,
@@ -226,9 +226,9 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "JWLY23HXTMC4"
+                "OQFZ2KIV8YPB"
             ],
-            "Context": "See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+            "Context": "Pin protobuf.. See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         },
         {
             "Pull Number": 57590,
@@ -238,10 +238,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "JWLY23HXTMC4",
-                "BY7MGAIURPRE"
+                "OQFZ2KIV8YPB",
+                "9ARH5UM2UC1C"
             ],
-            "Context": "See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+            "Context": "Pin protobuf.. See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         }
     ]
 }
