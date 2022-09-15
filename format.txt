@@ -1,14 +1,14 @@
 {
    "Issues": [
         {
-            "id": primary key of issues table,
+            "id": primary key of issues table
             "number": issue index, starts at 1
             "creator_login": author of issue username
             "creator_id": id for username
             "state":  open or closed
-            "comments": how many comments on issue,
-            "created_at": yyyy-MM-dd'T'HH:mm:ss'Z',
-            "closed_at": yyyy-MM-dd'T'HH:mm:ss'Z' or null,
+            "comments": how many comments on issue
+            "created_at": yyyy-MM-dd'T'HH:mm:ss'Z'
+            "closed_at": yyyy-MM-dd'T'HH:mm:ss'Z' or null
             "assignees": [
                 {
                 "login": users who are assigned to issue can be multiple
@@ -22,9 +22,9 @@
                 "created_at": yyyy-MM-dd'T'HH:mm:ss'Z'
                 }
             ],
-            "closed_by":  user info,
+            "closed_by":  user info
             "pulls": {
-                "id": primary key of pulls table,
+                "id": primary key of pulls table
                 "number": matches issue number
                 "creator_login": author of issue username
                 "creator_id": id for username
@@ -34,32 +34,32 @@
                 "merged_at": yyyy-MM-dd'T'HH:mm:ss'Z' or null
                 "assignees": [
                     {
-                    "login": users who are assigned to issue can be multiple,,
+                    "login": users who are assigned to issue can be multiple
                     "id": id for username
                     }
                 ],
                 "reviewers": [
                     {
-                    "login": users who are requested to review pull can be multiple,
+                    "login": users who are requested to review pull can be multiple
                     "id": id for username
                     }
                 ],
                 "commits": [
                     {
-                    "login": users who have commited on pull can be multiple,,
+                    "login": users who have commited on pull can be multiple
                     "id": id for username
                     "created_at": yyyy-MM-dd'T'HH:mm:ss'Z
                     }
                 ],
                 "comments": [
                     {
-                    "login": users who have commented on pull can be multiple,
+                    "login": users who have commented on pull can be multiple
                     "id": id for username
                     "created_at": yyyy-MM-dd'T'HH:mm:ss'Z
                     }
                 ]
                 "merged_by": user info, looks like the bot (Copybara- a google tool for moving code)
-            },           
+            }           
         }
    ]   
 }
