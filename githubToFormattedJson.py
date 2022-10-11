@@ -42,7 +42,7 @@ if __name__ == "__main__":
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
             issueMessage = attribute["body"] # Issue Body
-            issueContext = issueTitle+ ". "+issueMessage
+            issueContext = issueTitle+ ". "+issueMessage # Issue title + body
             issueNumber = attribute["number"] # To match issue and pr
             issueCreatedAt = attribute["created_at"] # Timestamp
             issueUserId = attribute["user"]["id"] # Entity Ids []
@@ -59,7 +59,7 @@ if __name__ == "__main__":
             sameIssueId = issueId # when we need id to be the same for multiple events
             relationalalIds.append(issueId)
 
-            issueDict = {"Issue Number":issueNumber,"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
+            issueDict = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
 
             data.append(issueDict)
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
                     samePrId = prId # when we need id to be the same for multiple events
                     relationalalIds = [sameIssueId, prId]
 
-                    prDict = {"Pull Number": pullNumber,"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
+                    prDict = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
 
                     data.append(prDict)
 

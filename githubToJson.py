@@ -1,5 +1,4 @@
 import json
-from re import I
 from sys import argv
 from urllib.request import urlopen
 import requests
@@ -11,7 +10,7 @@ def authentication():
 """
 
 def usage():
-    print("python githubToJson.py gh_Issues.json gh_Pulls.json finalOutFile.json")
+    print("python githubToFormattedJson.py gh_Issues.json gh_Pulls.json finalOutFile.json")
     print("\tgh_Issues.json - the Issues json file")
     print("\tgh_Pulls.json - the Pulls json file")
     print("\tfinalOutFile.json - a json file that will contain all the Github data we find useful")
@@ -23,10 +22,10 @@ if __name__ == "__main__":
 
     with open(argv[1], "rt") as issuesJson:
         issues = json.load(issuesJson)
-     
+
     githubData = {"Issues":[]}
 
-    for attribute in issues[:5]:
+    for attribute in issues[:100]:
         issueId = attribute["id"]
         issueNumber = attribute["number"]
         #issueState = attribute["state"]
@@ -54,7 +53,7 @@ if __name__ == "__main__":
         # _________________________________________________________________________________________
 
         gh_user="QUAY17"
-        gh_token=""
+        gh_token="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"
 
         gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
         response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
