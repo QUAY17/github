@@ -11,7 +11,7 @@ import hashlib
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token=""
 gh_repo="tensorflow/tensorflow"
 
 def usage():

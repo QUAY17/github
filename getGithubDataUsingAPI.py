@@ -23,7 +23,7 @@ print("---")
 with open('data/gh_Events.json', 'w') as jsonFile:
     json.dump(data, jsonFile, indent=4)
 
-"""
+
 # Get all Commits since repo creation
 gitHubAPI_URL_getCommits = f"https://api.github.com/repos/{gh_repo}/commits?branch=master&page=1&per_page=100"
 response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
@@ -96,5 +96,5 @@ print("---")
 #pp.pprint(data[0])
 with open('data/gh_Issues.json', 'w') as jsonFile:
     json.dump(data, jsonFile, indent=4)
-"""
+
 

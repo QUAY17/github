@@ -53,12 +53,11 @@ if __name__ == "__main__":
         # _________________________________________________________________________________________
 
         gh_user="QUAY17"
-        gh_token="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"
+        gh_token=""
 
         gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
         response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
         issueComment = response.json()
-
         allCommenters = [] # list of issue commenters
         issueCommentLoginId = [] #list of issue commenters login and id
         for attribute in issueComment:
