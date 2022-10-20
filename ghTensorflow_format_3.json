@@ -1,0 +1,129 @@
+{
+    "Data Name": "Github Data for Tensorflow",
+    "Creation Date": "2015-11-07T01:19:20Z",
+    "Data Range Start": "2015-11-09T14:21:11Z",
+    "Data Range End": "2022-09-01T22:12:06Z",
+    "Version Information": 1.0,
+    "Provenance Information": "Utlizes data/gh_Issues.json, data/gh_Pulls.json and dynamic requests to the Github API",
+    "Predicted Symbols": [
+        "tbd"
+    ],
+    "Prediction Period": "tbd",
+    "Entities": [
+        {
+            "id": 86808158,
+            "symbols": [
+                {
+                    "contribution type": "Pull Requestor",
+                    "valid from": "2022-09-01T18:33:04Z",
+                    "valid to": null
+                }
+            ],
+            "properties": [
+                {
+                    "committer type": "Light Committer",
+                    "valid from": "2021-07-01T22:48:26Z",
+                    "valid to": "2022-06-23T19:01:42Z"
+                }
+            ]
+        }
+    ],
+    "Data": [
+        {
+            "Timestamp": "2022-09-01T22:12:06Z",
+            "EntityIds": [
+                106367904
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "G5EQCSG0B50P"
+            ],
+            "Context": "Fix the build r2.7. Disabling the test 'slice_op_test'"
+        },
+        {
+            "Timestamp": "2022-09-01T21:35:23Z",
+            "EntityIds": [
+                106367904
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "KKOEEBOX3UZ5"
+            ],
+            "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
+        },
+        {
+            "Timestamp": "2022-09-01T21:35:23Z",
+            "EntityIds": [
+                106367904,
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "KKOEEBOX3UZ5",
+                "9DVUX4ZEBU2G"
+            ],
+            "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
+        },
+        {
+            "Timestamp": "2022-09-01T19:56:01Z",
+            "EntityIds": [
+                739632,
+                84765720
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "L1SVURRAYZ2T"
+            ],
+            "Context": "Load a model from a memory buffer using Tensorflow 2.x C api. Hi, \r\nI was wondering if there is a way to load 2.x model from memory buffer like GraphDef in v1\r\n\r\nThanks\r\n"
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:36Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "UOZ4N7X4WIOP"
+            ],
+            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:36Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "UOZ4N7X4WIOP",
+                "BK0LTVZ6NFY8"
+            ],
+            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:04Z",
+            "EntityIds": [
+                86808158,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "I7ZIALCGIR3T"
+            ],
+            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:04Z",
+            "EntityIds": [
+                86808158,
+                48215717,
+                35820639
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "I7ZIALCGIR3T",
+                "EQIX9SHFOXGI"
+            ],
+            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
+        }
+    ]
+}

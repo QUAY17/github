@@ -7,11 +7,10 @@ import requests
 from datetime import datetime
 import random
 import string
-import hashlib
 import bcrypt
 
 gh_user="QUAY17"
-gh_token=""
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -42,9 +41,9 @@ def commit_type(login, gh_user, gh_token):
     if userCommits["total_count"]:
         commits = userCommits["total_count"]
         if commits < 10000:
-            commit_type = "light committer"
+            commit_type = "Light Committer"
         else:
-            commit_type = "heavy committer"
+            commit_type = "Heavy Committer"
     else:
         commit_type = None
     return commit_type
@@ -58,7 +57,7 @@ if __name__ == "__main__":
 
     data = []
     
-    for attribute in issues[:10]:
+    for attribute in issues[:5]:
     # Issue Creation
         relationalalIds = []
         if attribute["created_at"]:
@@ -66,14 +65,28 @@ if __name__ == "__main__":
             issueMessage = attribute["body"] # Issue Body
             issueContext = issueTitle+ ". "+issueMessage # Issue title + body
             issueNumber = attribute["number"] # To match issue and pr
-            issueCreatedAt = attribute["created_at"] # Timestamp
+            issueCreatedAt = attribute["created_at"] # Timestamp created
+            issueClosedAt = attribute["closed_at"] # Timestamp closed
             issueUserLogin = attribute["user"]["login"] 
+
             login = issueUserLogin # Login to follow url for number of commits
             committerType = commit_type(login, gh_user, gh_token)
+            issueUserUrl = attribute["user"]["url"]
+
+            # User date range
+            gitHubAPI_URL_getUserDates = f"{issueUserUrl}"
+            response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+            dataUser = response.json()
+            if dataUser["created_at"]:
+                userCreatedAt = dataUser["created_at"] # valid from
+            if dataUser["updated_at"]:
+                userUpdatedAt = dataUser["updated_at"] # valid to: "updated" is the timestamp of the last activity
             issueUserId = attribute["user"]["id"] # Entity Ids []
             entityId = issueUserId
-            type = "Issue Creator"
+            contributeType = "Issue Creator"
+
             #issueUserId = salt_hash_id(issueUserId)
+
             entityIds = []
             entityIds.append(issueUserId)
             issueAssignees = attribute["assignees"]
@@ -86,9 +99,23 @@ if __name__ == "__main__":
             sameIssueId = issueId # when we need id to be the same for multiple events
             relationalalIds.append(issueId)
 
-            issueDict = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
+            # Entities list
+            dataEntities = []
 
-            data.append(issueDict)
+            symbols = [] #symbols list
+            symDict = {"contribution type": contributeType, "valid from": issueCreatedAt, "valid to": issueClosedAt}
+            symbols.append(symDict)
+
+            properties = [] # properties list
+            propDict = {"committer type": committerType, "valid from": userCreatedAt, "valid to": userUpdatedAt}
+            properties.append(propDict)
+
+            entDict = {"id": entityId, "symbols":symbols, "properties":properties}
+            dataEntities.append(entDict)
+
+            issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
+
+            data.append(issueData)
 
             with open(argv[2], "rt") as pullsJson: # Pulls
                 pulls = json.load(pullsJson)
@@ -100,13 +127,16 @@ if __name__ == "__main__":
                     prTitle = attribute["title"] # PR Title
                     prMessage = attribute["body"] # PR Body
                     prContext = prTitle+ ". "+prMessage
-                    pullCreatedAt = attribute["created_at"]
+                    pullCreatedAt = attribute["created_at"] # Timestamp created at
+                    pullClosedAt = attribute["closed_at"] # Timestamp closed at
                     pullUserId = attribute["user"]["id"]
                     pullUserLogin = attribute["user"]["login"] 
+                    
                     login = pullUserLogin # Login to follow url for number of commits
                     committerType = commit_type(login, gh_user, gh_token)
                     entityId = pullUserId
-                    type = "Pull Requestor"
+
+                    contributeType = "Pull Requestor"
                     entityIds = []
                     entityIds.append(pullUserId)
                     pullAssignees = attribute["assignees"]
@@ -122,9 +152,23 @@ if __name__ == "__main__":
                     samePrId = prId # when we need id to be the same for multiple events
                     relationalalIds = [sameIssueId, prId]
 
-                    prDict = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
+                    # Entities list
+                    dataEntities = []
 
-                    data.append(prDict)
+                    symbols = [] #symbols list
+                    symDict = {"contribution type": contributeType, "valid from": pullCreatedAt, "valid to": pullClosedAt}
+                    symbols.append(symDict)
+
+                    properties = [] # properties list
+                    propDict = {"committer type": committerType, "valid from": userCreatedAt, "valid to": userUpdatedAt}
+                    properties.append(propDict)
+
+                    entDict = {"id": entityId, "symbols":symbols, "properties":properties}
+                    dataEntities.append(entDict)
+
+                    prData = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
+
+                    data.append(prData)
     
 
     # Header info ___________________________________________________________________________________
@@ -139,23 +183,10 @@ if __name__ == "__main__":
     # predicted symbols
     tbd = "tbd"
     predSym = [tbd]
-
-    # entities
-    dataEntities = [] # entities list
-    valid = ""
-    symbols = [] #symbols list
-    symDict = {"contribution type": type, "valid from": valid, "valid to": valid}
-    symbols.append(symDict)
-    properties = [] # properties list
-    propDict = {"committer type": committerType, "valid from": valid, "valid to": valid}
-    properties.append(propDict)
-    entDict = {"id": entityId, "symbols":symbols, "properties":properties}
-    dataEntities.append(entDict)
-
     
     # Header info ___________________________________________________________________________________
     
-    githubDataFormatted = {"Data Name":dataName, "Creation Date":dataCreation, "Data Range Start":dataStart, "Data Range End":dataEnd, "Version Information":dataVersion, "Provenance Information":dataOrigin, "Predicted Symbols":predSym, "Prediction Period": tbd, "Entities": dataEntities, "Properties": tbd, "data":data}
+    githubDataFormatted = {"Data Name":dataName, "Creation Date":dataCreation, "Data Range Start":dataStart, "Data Range End":dataEnd, "Version Information":dataVersion, "Provenance Information":dataOrigin, "Predicted Symbols":predSym, "Prediction Period": tbd, "Entities": dataEntities, "Data":data}
     
     with open(argv[3], "wt") as outFile:
         json.dump(githubDataFormatted, outFile, indent=4)
