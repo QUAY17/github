@@ -10,7 +10,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token=""
 gh_repo="tensorflow/tensorflow"
 
 def usage():
