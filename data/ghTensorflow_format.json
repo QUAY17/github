@@ -4,34 +4,49 @@
     "Data Range Start": "2015-11-09T14:21:11Z",
     "Data Range End": "2022-09-01T22:12:06Z",
     "Version Information": 1.0,
-    "Provenance Information": "Utlizes data/gh_Issues.json, gh_Pulls.json and dynamic requests to the Github API",
-    "data": [
+    "Provenance Information": "Utlizes data/gh_Issues.json, data/gh_Pulls.json and dynamic requests to the Github API",
+    "Predicted Symbols": [
+        "tbd"
+    ],
+    "Prediction Period": "tbd",
+    "Entities": [
         {
-            "Issue Number": 57599,
-            "Timestamp": "2022-09-01T22:12:06Z",
-            "EntityIds": [
-                106367904
+            "id": 106367904,
+            "symbols": [
+                {
+                    "contribution type": "Issue Creator",
+                    "valid from": "2022-09-01T21:35:23Z",
+                    "valid to": null
+                },
+                {
+                    "contribution type": "Pull Requestor",
+                    "valid from": "2022-09-01T21:35:23Z",
+                    "valid to": null
+                }
             ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "L8YEP1DV0DDL"
-            ],
-            "Context": "Fix the build r2.7. Disabling the test 'slice_op_test'"
-        },
+            "properties": [
+                {
+                    "follower type": "Less Followers",
+                    "committer type": "Light Committer",
+                    "valid from": "2022-05-27T05:25:55Z",
+                    "valid to": "2022-08-23T21:44:45Z"
+                }
+            ]
+        }
+    ],
+    "Data": [
         {
-            "Issue Number": 57598,
             "Timestamp": "2022-09-01T21:35:23Z",
             "EntityIds": [
                 106367904
             ],
             "Symbol": "Issue Creation",
-            "Relational ID": [ 
-                "FR4IURLLSF8Q"
+            "Relational ID": [
+                "R8HILHPMWUQW"
             ],
             "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
         },
         {
-            "Pull Number": 57598,
             "Timestamp": "2022-09-01T21:35:23Z",
             "EntityIds": [
                 106367904,
@@ -39,210 +54,10 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "FR4IURLLSF8Q",
-                "UXDL4O47HBHL"
-
+                "R8HILHPMWUQW",
+                "INXPUNSSJ53A"
             ],
             "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
-        },
-        {
-            "Issue Number": 57597,
-            "Timestamp": "2022-09-01T19:56:01Z",
-            "EntityIds": [
-                739632,
-                84765720
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "WC58MDN77SUX"
-            ],
-            "Context": "Load a model from a memory buffer using Tensorflow 2.x C api. Hi, \r\nI was wondering if there is a way to load 2.x model from memory buffer like GraphDef in v1\r\n\r\nThanks\r\n"
-        },
-        {
-            "Issue Number": 57596,
-            "Timestamp": "2022-09-01T18:33:36Z",
-            "EntityIds": [
-                323199
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "GOIO3L4OCE56"
-            ],
-            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
-        },
-        {
-            "Pull Number": 57596,
-            "Timestamp": "2022-09-01T18:33:36Z",
-            "EntityIds": [
-                323199
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "GOIO3L4OCE56",
-                "GKX07AB4RKDL"
-            ],
-            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
-        },
-        {
-            "Issue Number": 57595,
-            "Timestamp": "2022-09-01T18:33:04Z",
-            "EntityIds": [
-                86808158,
-                48215717
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "NFECHHRWPSMZ"
-            ],
-            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
-        },
-        {
-            "Pull Number": 57595,
-            "Timestamp": "2022-09-01T18:33:04Z",
-            "EntityIds": [
-                86808158,
-                48215717,
-                35820639
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "NFECHHRWPSMZ",
-                "LZ4YGLBGC5YL"
-            ],
-            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
-        },
-        {
-            "Issue Number": 57594,
-            "Timestamp": "2022-09-01T18:31:25Z",
-            "EntityIds": [
-                10923599,
-                48215717
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "OD6WVSDG732Q"
-            ],
-            "Context": "[TF-TRT] CUDA Lazy Loading Warning Filtered. Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
-        },
-        {
-            "Pull Number": 57594,
-            "Timestamp": "2022-09-01T18:31:25Z",
-            "EntityIds": [
-                10923599,
-                48215717,
-                35820639
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "OD6WVSDG732Q",
-                "H2G9FF6KEG76"
-            ],
-            "Context": "[TF-TRT] CUDA Lazy Loading Warning Filtered. Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
-        },
-        {
-            "Issue Number": 57593,
-            "Timestamp": "2022-09-01T18:16:28Z",
-            "EntityIds": [
-                323199
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "MHU0UOIWSTMI"
-            ],
-            "Context": "Fix build on r2.8. This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
-        },
-        {
-            "Pull Number": 57593,
-            "Timestamp": "2022-09-01T18:16:28Z",
-            "EntityIds": [
-                323199
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "MHU0UOIWSTMI",
-                "6MTAQYTGUBC9"
-            ],
-            "Context": "Fix build on r2.8. This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
-        },
-        {
-            "Issue Number": 57592,
-            "Timestamp": "2022-09-01T18:07:46Z",
-            "EntityIds": [
-                80416898,
-                48215717
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "G4EX00LT4YWG"
-            ],
-            "Context": "[TF-TRT]: Revert default dynamic shape strategy to Range. Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
-        },
-        {
-            "Pull Number": 57592,
-            "Timestamp": "2022-09-01T18:07:46Z",
-            "EntityIds": [
-                80416898,
-                48215717
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "G4EX00LT4YWG",
-                "QL2HMVGO567C"
-            ],
-            "Context": "[TF-TRT]: Revert default dynamic shape strategy to Range. Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
-        },
-        {
-            "Issue Number": 57591,
-            "Timestamp": "2022-09-01T18:04:58Z",
-            "EntityIds": [
-                86808158,
-                48215717
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "2XT4YBFPTA2O"
-            ],
-            "Context": "[TFTRT] Check supported precisions before build. Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
-        },
-        {
-            "Pull Number": 57591,
-            "Timestamp": "2022-09-01T18:04:58Z",
-            "EntityIds": [
-                86808158,
-                48215717,
-                35820639
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "2XT4YBFPTA2O",
-                "3X9G0TY9D77A"
-            ],
-            "Context": "[TFTRT] Check supported precisions before build. Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
-        },
-        {
-            "Issue Number": 57590,
-            "Timestamp": "2022-09-01T18:04:34Z",
-            "EntityIds": [
-                323199
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "OQFZ2KIV8YPB"
-            ],
-            "Context": "Pin protobuf.. See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
-        },
-        {
-            "Pull Number": 57590,
-            "Timestamp": "2022-09-01T18:04:34Z",
-            "EntityIds": [
-                323199
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "OQFZ2KIV8YPB",
-                "9ARH5UM2UC1C"
-            ],
-            "Context": "Pin protobuf.. See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         }
     ]
 }

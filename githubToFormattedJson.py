@@ -33,20 +33,34 @@ def salt_hash_id(issueUserId):
 
 # get all user Commits dynamically
 def commit_type(login, gh_user, gh_token):
-    # Get all Commits dynamically
     commitCountUrl = f"https://api.github.com/search/commits?q=author:{login}&sort=author-date&order=desc&page=1%27"
     gitHubAPI_URL_getCommitCount = f"{commitCountUrl}"
     response = requests.get(gitHubAPI_URL_getCommitCount, auth=(gh_user, gh_token))
     userCommits = response.json()
     if userCommits["total_count"]:
         commits = userCommits["total_count"]
-        if commits < 10000:
+        if commits < 5000:
             commit_type = "Light Committer"
         else:
             commit_type = "Heavy Committer"
     else:
         commit_type = None
     return commit_type
+
+# get follower count dynamically
+def follow_type(login, gh_user, gh_token):
+    followerCountUrl = f"https://api.github.com/users/{login}/followers"
+    gitHubAPI_URL_getFollowerCount = f"{followerCountUrl}"
+    response = requests.get(gitHubAPI_URL_getFollowerCount, auth=(gh_user, gh_token))
+    userFollowers = response.json()
+    count = len(userFollowers)
+    if count < 10:
+        followingType = "Less Followers"
+    elif count >= 10 and count < 25:
+        followingType = "Average Followers"
+    else:
+        followingType = "More Followers"
+    return followingType
 
 if __name__ == "__main__":
     if len(argv) != 4:
@@ -56,8 +70,11 @@ if __name__ == "__main__":
         issues = json.load(issuesJson)
 
     data = []
-    
-    for attribute in issues[:5]:
+    dataEntities = []
+
+    # Issues ___________________________________________________________________________________
+
+    for attribute in issues[1:2]:
     # Issue Creation
         relationalalIds = []
         if attribute["created_at"]:
@@ -68,12 +85,13 @@ if __name__ == "__main__":
             issueCreatedAt = attribute["created_at"] # Timestamp created
             issueClosedAt = attribute["closed_at"] # Timestamp closed
             issueUserLogin = attribute["user"]["login"] 
-
-            login = issueUserLogin # Login to follow url for number of commits
+            
+            login = issueUserLogin # Login to follow url for user stats
             committerType = commit_type(login, gh_user, gh_token)
-            issueUserUrl = attribute["user"]["url"]
+            followingType = follow_type(login, gh_user, gh_token)
 
             # User date range
+            issueUserUrl = attribute["user"]["url"]
             gitHubAPI_URL_getUserDates = f"{issueUserUrl}"
             response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
             dataUser = response.json()
@@ -103,19 +121,19 @@ if __name__ == "__main__":
             dataEntities = []
 
             symbols = [] #symbols list
-            symDict = {"contribution type": contributeType, "valid from": issueCreatedAt, "valid to": issueClosedAt}
-            symbols.append(symDict)
+            symIssue = {"contribution type": contributeType, "valid from": issueCreatedAt, "valid to": issueClosedAt}
+            symbols.append(symIssue)
 
             properties = [] # properties list
-            propDict = {"committer type": committerType, "valid from": userCreatedAt, "valid to": userUpdatedAt}
+            propDict = {"follower type": followingType, "committer type": committerType, "valid from": userCreatedAt, "valid to": userUpdatedAt}
             properties.append(propDict)
-
-            entDict = {"id": entityId, "symbols":symbols, "properties":properties}
-            dataEntities.append(entDict)
 
             issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
 
+            #dataEntities.append(dataIssueEntities)    
             data.append(issueData)
+
+             # Pulls ___________________________________________________________________________________
 
             with open(argv[2], "rt") as pullsJson: # Pulls
                 pulls = json.load(pullsJson)
@@ -152,16 +170,8 @@ if __name__ == "__main__":
                     samePrId = prId # when we need id to be the same for multiple events
                     relationalalIds = [sameIssueId, prId]
 
-                    # Entities list
-                    dataEntities = []
-
-                    symbols = [] #symbols list
-                    symDict = {"contribution type": contributeType, "valid from": pullCreatedAt, "valid to": pullClosedAt}
-                    symbols.append(symDict)
-
-                    properties = [] # properties list
-                    propDict = {"committer type": committerType, "valid from": userCreatedAt, "valid to": userUpdatedAt}
-                    properties.append(propDict)
+                    symPull = {"contribution type": contributeType, "valid from": pullCreatedAt, "valid to": pullClosedAt}
+                    symbols.append(symPull)
 
                     entDict = {"id": entityId, "symbols":symbols, "properties":properties}
                     dataEntities.append(entDict)
@@ -169,7 +179,7 @@ if __name__ == "__main__":
                     prData = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
 
                     data.append(prData)
-    
+
 
     # Header info ___________________________________________________________________________________
 
@@ -183,10 +193,10 @@ if __name__ == "__main__":
     # predicted symbols
     tbd = "tbd"
     predSym = [tbd]
-    
+
     # Header info ___________________________________________________________________________________
-    
+
     githubDataFormatted = {"Data Name":dataName, "Creation Date":dataCreation, "Data Range Start":dataStart, "Data Range End":dataEnd, "Version Information":dataVersion, "Provenance Information":dataOrigin, "Predicted Symbols":predSym, "Prediction Period": tbd, "Entities": dataEntities, "Data":data}
-    
+
     with open(argv[3], "wt") as outFile:
         json.dump(githubDataFormatted, outFile, indent=4)
