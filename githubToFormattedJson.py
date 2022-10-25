@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[1:2]:
+    for attribute in issues[:3]:
     # Issue Creation
         relationalalIds = []
         if attribute["created_at"]:
@@ -117,16 +117,16 @@ if __name__ == "__main__":
             sameIssueId = issueId # when we need id to be the same for multiple events
             relationalalIds.append(issueId)
 
-            # Entities list
-            dataEntities = []
-
             symbols = [] #symbols list
-            symIssue = {"contribution type": contributeType, "valid from": issueCreatedAt, "valid to": issueClosedAt}
+            symIssue = {"Contribution Type": contributeType, "Valid From": issueCreatedAt, "Valid To": issueClosedAt}
             symbols.append(symIssue)
 
             properties = [] # properties list
-            propDict = {"follower type": followingType, "committer type": committerType, "valid from": userCreatedAt, "valid to": userUpdatedAt}
+            propDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
             properties.append(propDict)
+
+            entDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+            dataEntities.append(entDict)
 
             issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
 
@@ -170,13 +170,13 @@ if __name__ == "__main__":
                     samePrId = prId # when we need id to be the same for multiple events
                     relationalalIds = [sameIssueId, prId]
 
-                    symPull = {"contribution type": contributeType, "valid from": pullCreatedAt, "valid to": pullClosedAt}
+                    symPull = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
                     symbols.append(symPull)
 
-                    entDict = {"id": entityId, "symbols":symbols, "properties":properties}
-                    dataEntities.append(entDict)
+                    #entDict = {"Symbols":symbols}
+                    #dataEntities.append(entDict)
 
-                    prData = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
+                    prData = {"Timestamp":pullCreatedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
 
                     data.append(prData)
 
