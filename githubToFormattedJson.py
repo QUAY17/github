@@ -10,7 +10,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -37,14 +37,19 @@ def commit_type(login, gh_user, gh_token):
     gitHubAPI_URL_getCommitCount = f"{commitCountUrl}"
     response = requests.get(gitHubAPI_URL_getCommitCount, auth=(gh_user, gh_token))
     userCommits = response.json()
+    print("\n\n", userCommits)
+
     if userCommits["total_count"]:
         commits = userCommits["total_count"]
-        if commits < 5000:
+        if commits < 2500:
             commit_type = "Light Committer"
         else:
             commit_type = "Heavy Committer"
+    elif userCommits["message"]:
+        commit_type = None
     else:
         commit_type = None
+
     return commit_type
 
 # get follower count dynamically
@@ -74,19 +79,19 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[:30]:
-    # Issue Creation
+    for attribute in issues[0:75]:
+        # Issue Creation
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
-            if attribute["body"]: # Issue Body
-                issueMessage = attribute["body"] 
-                issueContext = issueTitle+ ". "+issueMessage # Issue title + body
+        if attribute["body"]: # Issue Body
+            issueMessage = attribute["body"] 
+            issueContext = issueTitle+ ". "+issueMessage # Issue title + body
             issueNumber = attribute["number"] # To match issue and pr
             issueCreatedAt = attribute["created_at"] # Timestamp created
             issueClosedAt = attribute["closed_at"] # Timestamp closed
             issueUserLogin = attribute["user"]["login"] 
-            
+                
             login = issueUserLogin # Login to follow url for user stats
             committerType = commit_type(login, gh_user, gh_token)
             followingType = follow_type(login, gh_user, gh_token)
@@ -134,53 +139,53 @@ if __name__ == "__main__":
             #dataEntities.append(dataIssueEntities)    
             data.append(issueData)
 
-             # Pulls ___________________________________________________________________________________
+            # Pulls ___________________________________________________________________________________
 
-            with open(argv[2], "rt") as pullsJson: # Pulls
-                pulls = json.load(pullsJson)
+        with open(argv[2], "rt") as pullsJson: # Pulls
+            pulls = json.load(pullsJson)
 
-            for attribute in pulls:        
+        for attribute in pulls:        
             # PR Creation
-                pullNumber = attribute["number"]
-                if pullNumber == issueNumber:
-                    prTitle = attribute["title"] # PR Title
-                    if attribute["body"]: # PR Body
-                        prMessage = attribute["body"] # PR Body
-                        prContext = prTitle+ ". "+prMessage
-                    pullCreatedAt = attribute["created_at"] # Timestamp created at
-                    pullClosedAt = attribute["closed_at"] # Timestamp closed at
-                    pullUserId = attribute["user"]["id"]
-                    pullUserLogin = attribute["user"]["login"] 
-                    
-                    login = pullUserLogin # Login to follow url for number of commits
-                    committerType = commit_type(login, gh_user, gh_token)
-                    entityId = pullUserId
+            pullNumber = attribute["number"]
+            if pullNumber == issueNumber:
+                prTitle = attribute["title"] # PR Title
+                if attribute["body"]: # PR Body
+                    prMessage = attribute["body"] # PR Body
+                    prContext = prTitle+ ". "+prMessage
+                pullCreatedAt = attribute["created_at"] # Timestamp created at
+                pullClosedAt = attribute["closed_at"] # Timestamp closed at
+                pullUserId = attribute["user"]["id"]
+                pullUserLogin = attribute["user"]["login"] 
+                
+                login = pullUserLogin # Login to follow url for number of commits
+                committerType = commit_type(login, gh_user, gh_token)
+                entityId = pullUserId
 
-                    contributeType = "Pull Requestor"
-                    entityIds = []
-                    entityIds.append(pullUserId)
-                    pullAssignees = attribute["assignees"]
-                    pullReviewers = attribute["requested_reviewers"] 
-                    for attribute in pullAssignees:
-                        pullAssigneesId = attribute["id"]
-                        entityIds.append(pullAssigneesId)
-                    for attribute in pullReviewers:
-                        pullReviewersId = attribute["id"]
-                        entityIds.append(pullReviewersId)
-                    eventName = "Pull Request Creation" # Symbol Name
-                    prId = id_generator() # Pull Request Id
-                    samePrId = prId # when we need id to be the same for multiple events
-                    relationalalIds = [sameIssueId, prId]
+                contributeType = "Pull Requestor"
+                entityIds = []
+                entityIds.append(pullUserId)
+                pullAssignees = attribute["assignees"]
+                pullReviewers = attribute["requested_reviewers"] 
+                for attribute in pullAssignees:
+                    pullAssigneesId = attribute["id"]
+                    entityIds.append(pullAssigneesId)
+                for attribute in pullReviewers:
+                    pullReviewersId = attribute["id"]
+                    entityIds.append(pullReviewersId)
+                eventName = "Pull Request Creation" # Symbol Name
+                prId = id_generator() # Pull Request Id
+                samePrId = prId # when we need id to be the same for multiple events
+                relationalalIds = [sameIssueId, prId]
 
-                    symPull = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
-                    symbols.append(symPull)
+                symPull = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
+                symbols.append(symPull)
 
-                    #entDict = {"Symbols":symbols}
-                    #dataEntities.append(entDict)
+                #entDict = {"Symbols":symbols}
+                #dataEntities.append(entDict)
 
-                    prData = {"Timestamp":pullCreatedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
+                prData = {"Timestamp":pullCreatedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
 
-                    data.append(prData)
+                data.append(prData)
 
 
     # Header info ___________________________________________________________________________________
