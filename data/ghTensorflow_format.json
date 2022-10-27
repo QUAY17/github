@@ -68,6 +68,577 @@
                     "Valid To": "2021-08-09T01:05:34Z"
                 }
             ]
+        },
+        {
+            "Id": 323199,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:33:36Z",
+                    "Valid To": "2022-09-01T18:34:47Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:33:36Z",
+                    "Valid To": "2022-09-01T18:34:47Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2010-07-05T11:26:31Z",
+                    "Valid To": "2022-10-23T14:58:58Z"
+                }
+            ]
+        },
+        {
+            "Id": 86808158,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:33:04Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:33:04Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-07-01T22:48:26Z",
+                    "Valid To": "2022-06-23T19:01:42Z"
+                }
+            ]
+        },
+        {
+            "Id": 10923599,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:31:25Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:31:25Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2015-02-09T13:35:29Z",
+                    "Valid To": "2022-10-24T22:25:44Z"
+                }
+            ]
+        },
+        {
+            "Id": 323199,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:16:28Z",
+                    "Valid To": "2022-09-01T18:22:43Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:16:28Z",
+                    "Valid To": "2022-09-01T18:22:43Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2010-07-05T11:26:31Z",
+                    "Valid To": "2022-10-23T14:58:58Z"
+                }
+            ]
+        },
+        {
+            "Id": 80416898,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:07:46Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:07:46Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-03-10T17:27:05Z",
+                    "Valid To": "2022-10-13T23:36:44Z"
+                }
+            ]
+        },
+        {
+            "Id": 86808158,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:04:58Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:04:58Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-07-01T22:48:26Z",
+                    "Valid To": "2022-06-23T19:01:42Z"
+                }
+            ]
+        },
+        {
+            "Id": 323199,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T18:04:34Z",
+                    "Valid To": "2022-09-01T18:04:52Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T18:04:34Z",
+                    "Valid To": "2022-09-01T18:04:52Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2010-07-05T11:26:31Z",
+                    "Valid To": "2022-10-23T14:58:58Z"
+                }
+            ]
+        },
+        {
+            "Id": 32910461,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T16:53:07Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T16:53:07Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2017-10-18T18:10:59Z",
+                    "Valid To": "2022-10-24T15:49:29Z"
+                }
+            ]
+        },
+        {
+            "Id": 10442001,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T14:40:00Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T14:40:00Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2015-01-07T23:05:07Z",
+                    "Valid To": "2022-07-21T08:44:25Z"
+                }
+            ]
+        },
+        {
+            "Id": 107059430,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T14:20:31Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": null,
+                    "Valid From": "2022-06-07T15:08:29Z",
+                    "Valid To": "2022-10-08T10:19:15Z"
+                }
+            ]
+        },
+        {
+            "Id": 10442001,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T14:14:23Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T14:14:23Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2015-01-07T23:05:07Z",
+                    "Valid To": "2022-07-21T08:44:25Z"
+                }
+            ]
+        },
+        {
+            "Id": 13285808,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T12:40:38Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T12:40:38Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2015-07-11T07:54:07Z",
+                    "Valid To": "2022-10-24T18:25:10Z"
+                }
+            ]
+        },
+        {
+            "Id": 27568333,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T12:26:25Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2017-04-15T16:01:50Z",
+                    "Valid To": "2022-10-24T10:03:54Z"
+                }
+            ]
+        },
+        {
+            "Id": 50069574,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T09:42:05Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2019-04-28T07:41:22Z",
+                    "Valid To": "2022-10-24T09:11:55Z"
+                }
+            ]
+        },
+        {
+            "Id": 67035463,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T09:31:52Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2020-06-17T02:43:34Z",
+                    "Valid To": "2022-08-13T06:00:54Z"
+                }
+            ]
+        },
+        {
+            "Id": 75348594,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T09:14:20Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2020-12-02T02:50:11Z",
+                    "Valid To": "2022-07-12T16:47:22Z"
+                }
+            ]
+        },
+        {
+            "Id": 71369657,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T05:59:50Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": null,
+                    "Valid From": "2020-09-16T06:08:09Z",
+                    "Valid To": "2022-08-16T04:37:11Z"
+                }
+            ]
+        },
+        {
+            "Id": 108649012,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T05:49:49Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": null,
+                    "Valid From": "2022-07-04T05:10:06Z",
+                    "Valid To": "2022-10-24T16:40:17Z"
+                }
+            ]
+        },
+        {
+            "Id": 86464649,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T05:19:53Z",
+                    "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T05:19:53Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-06-25T07:31:47Z",
+                    "Valid To": "2022-10-27T14:34:09Z"
+                }
+            ]
+        },
+        {
+            "Id": 106367904,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T02:53:28Z",
+                    "Valid To": "2022-09-01T03:08:18Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T02:53:28Z",
+                    "Valid To": "2022-09-01T03:08:18Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2022-05-27T05:25:55Z",
+                    "Valid To": "2022-08-23T21:44:45Z"
+                }
+            ]
+        },
+        {
+            "Id": 106367904,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T02:34:50Z",
+                    "Valid To": "2022-09-01T02:36:37Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-09-01T02:34:50Z",
+                    "Valid To": "2022-09-01T02:36:37Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2022-05-27T05:25:55Z",
+                    "Valid To": "2022-08-23T21:44:45Z"
+                }
+            ]
+        },
+        {
+            "Id": 7644676,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T00:46:08Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2014-05-20T12:44:03Z",
+                    "Valid To": "2022-10-07T23:04:31Z"
+                }
+            ]
+        },
+        {
+            "Id": 241317,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-09-01T00:18:05Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2010-04-11T01:28:24Z",
+                    "Valid To": "2022-06-22T00:07:14Z"
+                }
+            ]
+        },
+        {
+            "Id": 16668746,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-08-31T22:04:15Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2016-01-12T15:09:28Z",
+                    "Valid To": "2022-10-21T11:39:26Z"
+                }
+            ]
+        },
+        {
+            "Id": 323199,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-08-31T21:27:11Z",
+                    "Valid To": "2022-08-31T21:28:45Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-08-31T21:27:11Z",
+                    "Valid To": "2022-08-31T21:28:45Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2010-07-05T11:26:31Z",
+                    "Valid To": "2022-10-23T14:58:58Z"
+                }
+            ]
+        },
+        {
+            "Id": 323199,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-08-31T21:19:52Z",
+                    "Valid To": "2022-08-31T21:20:33Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-08-31T21:19:52Z",
+                    "Valid To": "2022-08-31T21:20:33Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2010-07-05T11:26:31Z",
+                    "Valid To": "2022-10-23T14:58:58Z"
+                }
+            ]
+        },
+        {
+            "Id": 323199,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Creator",
+                    "Valid From": "2022-08-31T21:19:41Z",
+                    "Valid To": "2022-08-31T21:20:37Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-08-31T21:19:41Z",
+                    "Valid To": "2022-08-31T21:20:37Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2010-07-05T11:26:31Z",
+                    "Valid To": "2022-10-23T14:58:58Z"
+                }
+            ]
         }
     ],
     "Data": [
@@ -78,7 +649,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "XVG5GK64HCLZ"
+                "OUHBI9E23K4P"
             ],
             "Context": "Fix the build r2.7. Disabling the test 'slice_op_test'"
         },
@@ -89,7 +660,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "MN11LAU8UT9Z"
+                "U8TEVTMRA6G0"
             ],
             "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
         },
@@ -101,8 +672,8 @@
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "MN11LAU8UT9Z",
-                "VA8CGYXIAJEW"
+                "U8TEVTMRA6G0",
+                "NE9KXBGWS1EX"
             ],
             "Context": "Fix the build r2.7. Disabling the test pad_op_test, scan_ops_test, split_op_test"
         },
@@ -114,9 +685,547 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "CYMJH3UE35BY"
+                "SGABV2IQH8EU"
             ],
             "Context": "Load a model from a memory buffer using Tensorflow 2.x C api. Hi, \r\nI was wondering if there is a way to load 2.x model from memory buffer like GraphDef in v1\r\n\r\nThanks\r\n"
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:36Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "FWGQY7HE0HCR"
+            ],
+            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:36Z",
+            "Entity Ids": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "FWGQY7HE0HCR",
+                "FQJZKY16K7BK"
+            ],
+            "Context": "Fix conflict resolution error. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:04Z",
+            "EntityIds": [
+                86808158,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "BDB3ZSRMOT1T"
+            ],
+            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
+        },
+        {
+            "Timestamp": "2022-09-01T18:33:04Z",
+            "Entity Ids": [
+                86808158,
+                48215717,
+                35820639
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "BDB3ZSRMOT1T",
+                "A74IXJ9FVQFL"
+            ],
+            "Context": "[TFTRT] Additional ConvertPool validation. Add additional validation for TRT failure cases for `ConvertPool` and `ConvertPool3D`, so that failing nodes will not be converted."
+        },
+        {
+            "Timestamp": "2022-09-01T18:31:25Z",
+            "EntityIds": [
+                10923599,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "9RMQZNOWDG8V"
+            ],
+            "Context": "[TF-TRT] CUDA Lazy Loading Warning Filtered. Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
+        },
+        {
+            "Timestamp": "2022-09-01T18:31:25Z",
+            "Entity Ids": [
+                10923599,
+                48215717,
+                35820639
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "9RMQZNOWDG8V",
+                "XLCAEV1IWX77"
+            ],
+            "Context": "[TF-TRT] CUDA Lazy Loading Warning Filtered. Add an extra substring to filter CUDA Lazy Loading Warning Messages in TRT 8.5"
+        },
+        {
+            "Timestamp": "2022-09-01T18:16:28Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "O93NNEXREYDQ"
+            ],
+            "Context": "Fix build on r2.8. This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:16:28Z",
+            "Entity Ids": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "O93NNEXREYDQ",
+                "BSFGP9KL8GK3"
+            ],
+            "Context": "Fix build on r2.8. This is caused by bad merge conflict resolution, duplicate lines with old and new API were left in the code.\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:07:46Z",
+            "EntityIds": [
+                80416898,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "2B7D2L8TQUTY"
+            ],
+            "Context": "[TF-TRT]: Revert default dynamic shape strategy to Range. Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
+        },
+        {
+            "Timestamp": "2022-09-01T18:07:46Z",
+            "Entity Ids": [
+                80416898,
+                48215717
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "2B7D2L8TQUTY",
+                "2K7KDB0XITYT"
+            ],
+            "Context": "[TF-TRT]: Revert default dynamic shape strategy to Range. Revert \"Make default dynamic shape profile strategy to implicit batch compatible\"\r\n\r\nCurrently, the ImplicitBatchModeCompatible strategy creates profiles with the\r\nassumption that the first dim is always the batch dim. This does not necessarily\r\nhold for TRTEngineOps deeper in the graph, therefore we cannot simply override\r\ndim 0 for all the min values. We have a case where this leads to inconsistent\r\nprofiles and engine creation failure in certain BERT networks.\r\n\r\nThe Range profile strategy does not have this issue, so revert to using\r\nRange as the default.\r\n\r\nThis reverts commit 0737efbe374b2bc89134f153d54a45af6811592a.\r\n\r\ncc: @tfeher @bixia1 @DEKHTIARJonathan "
+        },
+        {
+            "Timestamp": "2022-09-01T18:04:58Z",
+            "EntityIds": [
+                86808158,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "7GA5XW3RJ9KP"
+            ],
+            "Context": "[TFTRT] Check supported precisions before build. Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
+        },
+        {
+            "Timestamp": "2022-09-01T18:04:58Z",
+            "Entity Ids": [
+                86808158,
+                48215717,
+                35820639
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "7GA5XW3RJ9KP",
+                "9CCQJJ65SUZX"
+            ],
+            "Context": "[TFTRT] Check supported precisions before build. Checks the platform's supported precisions prior to building each engine. If the selected precision mode is not supported, terminate the program with a detailed message.\r\n\r\ncc: @DEKHTIARJonathan @meena-at-work"
+        },
+        {
+            "Timestamp": "2022-09-01T18:04:34Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "ZUN90KOG1035"
+            ],
+            "Context": "Pin protobuf.. See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T18:04:34Z",
+            "Entity Ids": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "ZUN90KOG1035",
+                "2D1B81AIZUWF"
+            ],
+            "Context": "Pin protobuf.. See https://github.com/tensorflow/tensorflow/releases/tag/v2.9.1\r\n\r\nSigned-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-09-01T16:53:07Z",
+            "EntityIds": [
+                32910461,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "HH6R5R4H3L1E"
+            ],
+            "Context": "Refactoring of the CombinedNMS converter.. Combining two pairs of converters and test procedures:\r\n```\r\nStatus ConvertCombinedNMS(const OpConverterParams* params)\r\nTEST_P(OpConverter_FP32_Test, ConvertCombinedNMS)\r\n```\r\nwhich were written, respectively, for\r\n```\r\n#if IS_TRT_VERSION_GE(8, 2, 1, 6) || defined(TF_TRT_USE_EFFICIENT_NMS_PLUGIN)\r\n....\r\n#elif IS_TRT_VERSION_GE(7, 1, 3, 0)\r\n```\r\nThe new code is almost 200 lines shorter, easier to maintain and to rewrite via  `OpConverterBase`.\r\n"
+        },
+        {
+            "Timestamp": "2022-09-01T16:53:07Z",
+            "Entity Ids": [
+                32910461,
+                48215717,
+                35820639
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "HH6R5R4H3L1E",
+                "FRJQ85HHIJP3"
+            ],
+            "Context": "Refactoring of the CombinedNMS converter.. Combining two pairs of converters and test procedures:\r\n```\r\nStatus ConvertCombinedNMS(const OpConverterParams* params)\r\nTEST_P(OpConverter_FP32_Test, ConvertCombinedNMS)\r\n```\r\nwhich were written, respectively, for\r\n```\r\n#if IS_TRT_VERSION_GE(8, 2, 1, 6) || defined(TF_TRT_USE_EFFICIENT_NMS_PLUGIN)\r\n....\r\n#elif IS_TRT_VERSION_GE(7, 1, 3, 0)\r\n```\r\nThe new code is almost 200 lines shorter, easier to maintain and to rewrite via  `OpConverterBase`.\r\n"
+        },
+        {
+            "Timestamp": "2022-09-01T14:40:00Z",
+            "EntityIds": [
+                10442001,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "PKZHMZZK20ZP"
+            ],
+            "Context": "Prevent actions from running in forks. Forks of the main repo do not have the resources or\r\ncredentials for running the Actions, so bail when\r\nthat is attempted"
+        },
+        {
+            "Timestamp": "2022-09-01T14:40:00Z",
+            "Entity Ids": [
+                10442001,
+                48215717
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "PKZHMZZK20ZP",
+                "INODLY0TFILM"
+            ],
+            "Context": "Prevent actions from running in forks. Forks of the main repo do not have the resources or\r\ncredentials for running the Actions, so bail when\r\nthat is attempted"
+        },
+        {
+            "Timestamp": "2022-09-01T14:20:31Z",
+            "EntityIds": [
+                107059430,
+                81610181
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "N1FVI3I8SG06"
+            ],
+            "Context": "Unncessary semicolons in tutorials terminate statements, possible documentation improvement. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nDocumentation Bug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.9.1\n\n### Custom Code\n\nNo\n\n### OS Platform and Distribution\n\n_No response_\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n_No response_\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nThe documentation found at `https://www.tensorflow.org/guide/basics` under heading 'Training loops' as well as additional documentation on that tutorial/guide page have unnecessary semicolons (`;`) at end of statements, not necessary for Python syntactically. \r\n\r\nFor example, `plt.legend();` under 'Training loops' heading throws warning errors in certain IDEs with AI-assisted code review such as VSCode because of the superfluous `;`.\r\n\r\nI kindly recommend discontinuation of unnecessary semicolons and revision of this page to remove all that are not needed per proper syntax or convention. Kindly let me know if any more information is needed. Thank you for consideration.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nimport tensorflow as tf\r\nimport matplotlib\r\nfrom matplotlib import pyplot as plt\r\nmatplotlib.rcParams['figure-figsize'] = [9, 6]\r\n\r\nx = tf.linspace(-2, 2, 201)\r\nx = tf.cast(x, tf.float32)\r\n\r\ndef f(x):\r\n  y = x**2 + 2*x - 5\r\n  return y\r\n\r\ny = f(x) + tf.random.normal(shape=[201])\r\n\r\nplt.plot(x.numpy(), y.numpy(), '.', label='Data')\r\nplt.plot(x, f(x), label='Ground truth')\r\nplt.legend();\r\n\r\n_excerpted from: https://www.tensorflow.org/guide/basics_\n```\n\n\n### Relevant log output\n\n```shell\nn/a\n```\n</details>"
+        },
+        {
+            "Timestamp": "2022-09-01T14:14:23Z",
+            "EntityIds": [
+                10442001,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "ZHMM9ZEU2YV0"
+            ],
+            "Context": "Fix compilation and linking of compiler/xla/runtime:custom_call_test. Failure was\r\n`ERROR: /home/builder/1/tensorflow_build/tensorflow-git/tensorflow/compiler/xla/runtime/BUILD:45:11: Compiling tensorflow/compiler/xla/runtime/async_runtime.cc failed: undeclared inclusion(s) in rule '//tensorflow/compiler/xla/runtime:async_runtime':\r\nthis rule is missing dependency declarations for the following files included by 'tensorflow/compiler/xla/runtime/async_runtime.cc':\r\n  'external/com_google_absl/absl/status/status.h'\r\n  'external/com_google_absl/absl/status/internal/status_internal.h'\r\nTarget //tensorflow/compiler/xla/runtime:custom_call_test failed to build\r\n`\r\nAfter fixing that it failed with\r\n`ERROR: /home/builder/1/tensorflow_build/tensorflow-git/tensorflow/compiler/xla/runtime/BUILD:102:11: Linking tensorflow/compiler/xla/runtime/custom_call_test failed: (Exit 1): gcc failed: error executing command \r\n  (cd /home/builder/.cache/bazel/_bazel_builder/9dc2dbd69dc3512cedb530e1521082e7/execroot/org_tensorflow && \\\r\n  exec env - \\\r\n    LD_LIBRARY_PATH=/usr/local/lib64:/usr/local/lib \\\r\n    PATH=/home/builder/.cache/bazelisk/downloads/bazelbuild/bazel-5.3.0-linux-arm64/bin:/home/builder/1/tensorflow_build/venv_py38/bin:/home/builder/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin \\\r\n    PWD=/proc/self/cwd \\\r\n    PYTHON_BIN_PATH=/home/builder/1/tensorflow_build/venv_py38/bin/python3 \\\r\n    PYTHON_LIB_PATH=/home/builder/1/tensorflow_build/venv_py38/lib/python3.8/site-packages \\\r\n    TF2_BEHAVIOR=1 \\\r\n  /usr/local/bin/gcc @bazel-out/aarch64-opt/bin/tensorflow/compiler/xla/runtime/custom_call_test-2.params)\r\n# Configuration: 6a157ea5430c4f8c0216a3c013aa8930b2449e788f4e52217225891817f5290a\r\n# Execution platform: @local_execution_config_platform//:platform\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64AsmParser'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64AsmPrinter'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64TargetMC'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64Target'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64TargetInfo'\r\ncollect2: error: ld returned 1 exit status\r\nTarget //tensorflow/compiler/xla/runtime:custom_call_test failed to build\r\n`"
+        },
+        {
+            "Timestamp": "2022-09-01T14:14:23Z",
+            "Entity Ids": [
+                10442001,
+                48215717,
+                1835471
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "ZHMM9ZEU2YV0",
+                "V4CRFTOTBZC6"
+            ],
+            "Context": "Fix compilation and linking of compiler/xla/runtime:custom_call_test. Failure was\r\n`ERROR: /home/builder/1/tensorflow_build/tensorflow-git/tensorflow/compiler/xla/runtime/BUILD:45:11: Compiling tensorflow/compiler/xla/runtime/async_runtime.cc failed: undeclared inclusion(s) in rule '//tensorflow/compiler/xla/runtime:async_runtime':\r\nthis rule is missing dependency declarations for the following files included by 'tensorflow/compiler/xla/runtime/async_runtime.cc':\r\n  'external/com_google_absl/absl/status/status.h'\r\n  'external/com_google_absl/absl/status/internal/status_internal.h'\r\nTarget //tensorflow/compiler/xla/runtime:custom_call_test failed to build\r\n`\r\nAfter fixing that it failed with\r\n`ERROR: /home/builder/1/tensorflow_build/tensorflow-git/tensorflow/compiler/xla/runtime/BUILD:102:11: Linking tensorflow/compiler/xla/runtime/custom_call_test failed: (Exit 1): gcc failed: error executing command \r\n  (cd /home/builder/.cache/bazel/_bazel_builder/9dc2dbd69dc3512cedb530e1521082e7/execroot/org_tensorflow && \\\r\n  exec env - \\\r\n    LD_LIBRARY_PATH=/usr/local/lib64:/usr/local/lib \\\r\n    PATH=/home/builder/.cache/bazelisk/downloads/bazelbuild/bazel-5.3.0-linux-arm64/bin:/home/builder/1/tensorflow_build/venv_py38/bin:/home/builder/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin \\\r\n    PWD=/proc/self/cwd \\\r\n    PYTHON_BIN_PATH=/home/builder/1/tensorflow_build/venv_py38/bin/python3 \\\r\n    PYTHON_LIB_PATH=/home/builder/1/tensorflow_build/venv_py38/lib/python3.8/site-packages \\\r\n    TF2_BEHAVIOR=1 \\\r\n  /usr/local/bin/gcc @bazel-out/aarch64-opt/bin/tensorflow/compiler/xla/runtime/custom_call_test-2.params)\r\n# Configuration: 6a157ea5430c4f8c0216a3c013aa8930b2449e788f4e52217225891817f5290a\r\n# Execution platform: @local_execution_config_platform//:platform\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64AsmParser'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64AsmPrinter'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64TargetMC'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64Target'\r\nbazel-out/aarch64-opt/bin/_solib_aarch64/libtensorflow_Scompiler_Sxla_Smlir_Stransforms_Sruntime_Slibjit_Ucompiler.so: error: undefined reference to 'LLVMInitializeAArch64TargetInfo'\r\ncollect2: error: ld returned 1 exit status\r\nTarget //tensorflow/compiler/xla/runtime:custom_call_test failed to build\r\n`"
+        },
+        {
+            "Timestamp": "2022-09-01T12:40:38Z",
+            "EntityIds": [
+                13285808,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "98G6NVOR5026"
+            ],
+            "Context": "Update Embedded Linux toolchains to GCC 11.3.1. This PR upgrades the [Embedded Linux toolchains](https://github.com/tensorflow/tensorflow/blob/4cfeb0e3eb6027f95a3be624041c7331dee98911/.bazelrc#L81-L84) from the discontinued ARM GCC 8.3 toolchain to the latest [GCC 11.3.1 based release](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads).\r\n\r\nThis PR fixes #57364 which would be great to back-port to the 2.10 release candidates as well.\r\n\r\n/cc @sachinprasadhs @arfaian"
+        },
+        {
+            "Timestamp": "2022-09-01T12:40:38Z",
+            "Entity Ids": [
+                13285808,
+                48215717,
+                1106365
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "98G6NVOR5026",
+                "K4690XJ0OPJR"
+            ],
+            "Context": "Update Embedded Linux toolchains to GCC 11.3.1. This PR upgrades the [Embedded Linux toolchains](https://github.com/tensorflow/tensorflow/blob/4cfeb0e3eb6027f95a3be624041c7331dee98911/.bazelrc#L81-L84) from the discontinued ARM GCC 8.3 toolchain to the latest [GCC 11.3.1 based release](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads).\r\n\r\nThis PR fixes #57364 which would be great to back-port to the 2.10 release candidates as well.\r\n\r\n/cc @sachinprasadhs @arfaian"
+        },
+        {
+            "Timestamp": "2022-09-01T12:26:25Z",
+            "EntityIds": [
+                27568333,
+                86464649
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "UR5FNV47E959"
+            ],
+            "Context": "Can't build project with included TensorFlow Lite in Play Services (vision task). Gradle version: 7.3.3\r\nFull code: https://github.com/vladd11/ar-shop/\r\n\r\n**Standalone code to reproduce the issue**\r\n\r\nI include TensorFlow Lite in Play Services dependency:\r\n\r\n```\r\ndependencies {\r\n    ...\r\n    implementation 'org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03'\r\n}\r\n```\r\n\r\nWhen syncing, Gradle gives me these warnings:\r\n```\r\nFailed to resolve: org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244\r\nFailed to resolve: org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252\r\nFailed to resolve: org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401\r\n```\r\n\r\nWhen I build project, I have this error:\r\n```\r\nExecuting tasks: [:app:assembleDebug] in project /home/vladislav/AndroidStudioProjects/ARshop\r\n\r\n> Task :app:preBuild UP-TO-DATE\r\n> Task :app:preDebugBuild UP-TO-DATE\r\n> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE\r\n> Task :app:compileDebugAidl NO-SOURCE\r\n> Task :app:compileDebugRenderscript NO-SOURCE\r\n> Task :app:generateDebugBuildConfig UP-TO-DATE\r\n> Task :app:generateSafeArgsDebug UP-TO-DATE\r\n> Task :app:checkDebugAarMetadata FAILED\r\n> Task :app:generateDebugResValues UP-TO-DATE\r\n> Task :app:generateDebugResources UP-TO-DATE\r\n> Task :app:mergeDebugResources FAILED\r\n> Task :app:packageDebugResources UP-TO-DATE\r\n> Task :app:parseDebugLocalResources UP-TO-DATE\r\n> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE\r\n> Task :app:extractDeepLinksDebug UP-TO-DATE\r\n> Task :app:processDebugMainManifest FAILED\r\n> Task :app:javaPreCompileDebug UP-TO-DATE\r\n> Task :app:mergeDebugShaders UP-TO-DATE\r\n> Task :app:compileDebugShaders NO-SOURCE\r\n> Task :app:generateDebugAssets UP-TO-DATE\r\n> Task :app:mergeDebugAssets FAILED\r\n> Task :app:processDebugJavaRes NO-SOURCE\r\n> Task :app:checkDebugDuplicateClasses FAILED\r\n> Task :app:desugarDebugFileDependencies FAILED\r\n> Task :app:extractNativeLibraries\r\n> Task :app:configureCMakeDebug[arm64-v8a]\r\n> Task :app:buildCMakeDebug[arm64-v8a]\r\n> Task :app:configureCMakeDebug[armeabi-v7a]\r\n> Task :app:buildCMakeDebug[armeabi-v7a]\r\n> Task :app:configureCMakeDebug[x86]\r\n> Task :app:buildCMakeDebug[x86]\r\n> Task :app:externalNativeBuildDebug\r\n> Task :app:mergeDebugJniLibFolders UP-TO-DATE\r\n> Task :app:mergeDebugNativeLibs FAILED\r\n> Task :app:validateSigningDebug UP-TO-DATE\r\n> Task :app:writeDebugAppMetadata UP-TO-DATE\r\n> Task :app:writeDebugSigningConfigVersions UP-TO-DATE\r\n\r\nFAILURE: Build completed with 7 failures.\r\n\r\n1: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:checkDebugAarMetadata'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n2: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:mergeDebugResources'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n3: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:processDebugMainManifest'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n4: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:mergeDebugAssets'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n5: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:checkDebugDuplicateClasses'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n6: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:desugarDebugFileDependencies'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n7: Task failed with an exception.\r\n-----------\r\n* What went wrong:\r\nExecution failed for task ':app:mergeDebugNativeLibs'.\r\n> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.\r\n   > Could not find org.tensorflow:tensorflow-lite-api:0.0.0-nightly-20220719.054020-244.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-api-0.0.0-nightly-20220719.054020-244.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03 > com.google.android.gms:play-services-tflite-java:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-support-api:0.0.0-nightly-20220719.045912-252.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-support-api/0.0.0-nightly-SNAPSHOT/tensorflow-lite-support-api-0.0.0-nightly-20220719.045912-252.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03 > com.google.android.gms:play-services-tflite-support:16.0.0-beta03\r\n   > Could not find org.tensorflow:tensorflow-lite-task-base:0.0.0-nightly-20220719.045922-401.\r\n     Searched in the following locations:\r\n       - https://dl.google.com/dl/android/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n       - https://repo.maven.apache.org/maven2/org/tensorflow/tensorflow-lite-task-base/0.0.0-nightly-SNAPSHOT/tensorflow-lite-task-base-0.0.0-nightly-20220719.045922-401.pom\r\n     Required by:\r\n         project :app > org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2-beta03\r\n\r\n* Try:\r\n> Run with --stacktrace option to get the stack trace.\r\n> Run with --info or --debug option to get more log output.\r\n> Run with --scan to get full insights.\r\n==============================================================================\r\n\r\n* Get more help at https://help.gradle.org\r\n\r\nBUILD FAILED in 6s\r\n28 actionable tasks: 15 executed, 13 up-to-date\r\n```"
+        },
+        {
+            "Timestamp": "2022-09-01T09:42:05Z",
+            "EntityIds": [
+                50069574,
+                84765720
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "CNV9A0MJF7OF"
+            ],
+            "Context": "Tensorflow customized embedding not work on GPU. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nbinary\n\n### Tensorflow Version\n\nv2.3.0-rc2-23-gb36436b087 2.3.0\n\n### Custom Code\n\nNo\n\n### OS Platform and Distribution\n\nUbuntu 17.04\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.7\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n10.1 / 7.6.5\n\n### GPU model and memory\n\nTesla-V100 32G\n\n### Current Behaviour?\n\n```shell\nI made a tensorflow model like following:\r\n\r\nclass EnhancedEmbedding(tf.keras.layers.Embedding):\r\n    def __init__(self, input_dim, output_dim, embeddings_initializer='uniform', embeddings_regularizer=None, activity_regularizer=None, embeddings_constraint=None, mask_zero=False, input_length=None, **kwargs):\r\n        super().__init__(input_dim, output_dim, embeddings_initializer, embeddings_regularizer, activity_regularizer, embeddings_constraint, mask_zero, input_length, **kwargs)\r\n        self.five=tf.constant(0.5)\r\n        self.zero=tf.constant(0)\r\n    \r\n    def embedding(self,inputs):\r\n        return super().call(inputs)\r\n    \r\n    def map_2(self,tokens):\r\n        identifier=self.embedding(tokens[0])\r\n        cur_word=self.embedding(tokens[2])\r\n        return tf.cond(tf.equal(tf.shape(tokens[0]),self.zero),\r\n                lambda: tf.squeeze(cur_word),\r\n                lambda: tf.squeeze(tf.reduce_mean(identifier)*self.five+cur_word*self.five))\r\n\r\n\r\n    def map_1(self,inputs):\r\n        return tf.map_fn(fn=lambda x :self.map_2(x),elems=inputs,dtype=tf.float32)\r\n\r\n    def call(self, inputs):\r\n        final_embeddings=tf.map_fn(fn=lambda x:self.map_1(x),elems=inputs,dtype=tf.float32)\r\n\r\n        return final_embeddings\r\n```\r\n```\r\nclass EnhancedModel(Model):\r\n    def __init__(self,  embedding_dim, hidden_dim, vocab_size, label_size,seq_len, pretrained_weight):\r\n        super().__init__()\r\n        self.hidden_dim = hidden_dim\r\n        self.vocab_size = vocab_size\r\n        self.embedding_dim = embedding_dim\r\n        self.label_size = label_size\r\n        self.activation = tf.keras.activations.tanh\r\n        self.num_layers = 1\r\n\r\n        self.embedding=EnhancedEmbedding(vocab_size,embedding_dim,embeddings_initializer=keras.initializers.Constant(pretrained_weight))\r\n        self.encoder = Bidirectional(LSTM(hidden_dim, return_sequences=True,input_shape=(seq_len,embedding_dim)))\r\n        self.pool=MaxPool1D(hidden_dim*2)\r\n        self.decoder = Dense(self.label_size)\r\n\r\n    def call(self, inputs):\r\n        embeddings = self.embedding(inputs)\r\n        embeddings=tf.reshape(embeddings,[-1,400,32])\r\n        lstm_out = self.encoder(embeddings)\r\n        lstm_out = tf.transpose(lstm_out, perm=[0,2,1])\r\n        pool_out=self.pool(lstm_out)\r\n        out = tf.squeeze(pool_out,[1])\r\n        out = self.decoder(out)\r\n        return out\r\n```\r\nActually it is a model that cited from others. I only changed the embedding layer and the input.\r\nthe input is a RaggedTensor with shape(batch_size,400,3,None), and i use ``` and ```map_2``` function in ```EnhancedEmbedding``` to general final embedding for the following layers. Everything works fine except that the model is not work with GPU. I looked the GPU utilization using ```nvidia-smi``` and the result is about 5%. But CPU-Util is about 100%.\r\n\r\nGPU can be used in the virtual env:\r\n```\r\n>>>tf.test.is_gpu_available()\r\n>>>True\r\n```\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nthe training code is here but it cannot be reproduced since the pretrained vectors, the training data are too large.\r\n\r\nhttps://colab.research.google.com/drive/1qdo629GsnIdgbFpqTbIrwOaIHCsfwyJr?usp=sharing\n```\n\n\n### Relevant log output\n\n_No response_</details>"
+        },
+        {
+            "Timestamp": "2022-09-01T09:31:52Z",
+            "EntityIds": [
+                67035463,
+                81610181
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "KKLHZHDZ2CME"
+            ],
+            "Context": "Memory allocation. Hi sorry for bothering. I am just wondering when using multiple streams for model inference. Will the cached memory blocks been shared by different streams? Or they are not shared like in pytorch?\r\n"
+        },
+        {
+            "Timestamp": "2022-09-01T09:14:20Z",
+            "EntityIds": [
+                75348594,
+                84765720
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "1X32KBW0DIZC"
+            ],
+            "Context": "the edtion of TensorRT for TF-TRT. <img width=\"936\" alt=\"image\" src=\"https://user-images.githubusercontent.com/75348594/187877984-f321d97a-92a1-4953-a0fa-703626c106a4.png\">\r\nOn the website, I can know the edtion of cuda and cudnn, but how can I know the edtion of TensorRT?"
+        },
+        {
+            "Timestamp": "2022-09-01T05:59:50Z",
+            "EntityIds": [
+                71369657,
+                73069040
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "SYAN4A0EWVZ0"
+            ],
+            "Context": "Pose estimation line mismatch. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n pod 'TensorFlowLiteSwift', '~> 0.0.1-nightly', :subspecs => ['CoreML', 'Metal']\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nMacOS\n\n### Mobile device\n\niPhone X\n\n### Python version\n\n_No response_\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nWhen I am performing some exercise pose estimation model lines display cross.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nWhen I am performing Squat sometimes lines display cross.\n```\n\n\n### Relevant log output\n\n_No response_</details>"
+        },
+        {
+            "Timestamp": "2022-09-01T05:49:49Z",
+            "EntityIds": [
+                108649012,
+                81610181
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "8B7MXI7NLHTT"
+            ],
+            "Context": "tf.linalg.solve produces incorrect output when compiled using XLA. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nbinary\n\n### Tensorflow Version\n\n2.9.1\n\n### Custom Code\n\nNo\n\n### OS Platform and Distribution\n\nLinux Ubuntu 20.04.4 LTS\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.8.10\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\ntf.linalg.solve when compiled with XLA produces different (incorrect) output when compared to a standalone TF execution.\r\n\r\nIn the sample code below, the solveEquation function solves for Ax = B and returns Ax. This function is run with and without XLA enabled. Both executions produce very different outputs!\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nimport numpy as np\r\nimport tensorflow as tf\r\n\r\ndata_type = tf.float32\r\n\r\ndef solveEquation(A, B):\r\n\r\n    ATA = tf.matmul(A, A, transpose_a=True)\r\n    ATB = tf.matmul(A, B, transpose_a=True)\r\n\r\n    output = tf.linalg.solve(ATA, ATB)\r\n\r\n    return (tf.matmul(A, output))\r\n\r\nP = 2\r\nQ = 3\r\nR = 5\r\n\r\nnp.random.seed(0)\r\nmat1 = tf.constant(np.random.random((P, Q)), dtype=data_type)\r\nmat2 = tf.constant(np.random.random((P, R)), dtype=data_type)\r\n\r\noutput_standard = solveEquation(mat1, mat2)\r\n\r\ntf_func_xla = tf.function(func=solveEquation, \r\n                          input_signature=[tf.TensorSpec(shape=(P,Q),dtype=data_type),\r\n                                           tf.TensorSpec(shape=(P,R),dtype=data_type)], \r\n                          jit_compile=True)\r\noutput_xla = tf_func_xla(mat1, mat2)\r\n\r\ntf.print(output_standard)\r\ntf.print(output_xla)\n```\n\n\n### Relevant log output\n\n```shell\n# output with XLA disabled\r\n[[0.43758738 0.891772866 0.963661969 0.383441627 0.791725397]\r\n [0.528894722 0.568044662 0.92559737 0.0710358918 0.0871287584]]\r\n\r\n# output with XLA enabled\r\n[[0.274795085 0.876262307 0.82626003 0.345206 0.581315041]\r\n [0.3589876 0.553595543 0.778286219 0.0325973332 -0.126585901]]\n```\n</details>"
+        },
+        {
+            "Timestamp": "2022-09-01T05:19:53Z",
+            "EntityIds": [
+                86464649,
+                48215717
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "F2ECAK5CXAUC"
+            ],
+            "Context": "Updated Documentation on CoreML delegate. Updated Documentation on CoreML delegate as mentioned in #57565"
+        },
+        {
+            "Timestamp": "2022-09-01T05:19:53Z",
+            "Entity Ids": [
+                86464649,
+                48215717,
+                2908505
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "F2ECAK5CXAUC",
+                "62UJMQ458SP9"
+            ],
+            "Context": "Updated Documentation on CoreML delegate. Updated Documentation on CoreML delegate as mentioned in #57565"
+        },
+        {
+            "Timestamp": "2022-09-01T02:53:28Z",
+            "EntityIds": [
+                106367904
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "LW51PD3LR2CW"
+            ],
+            "Context": "Fix the build. Fix the build"
+        },
+        {
+            "Timestamp": "2022-09-01T02:53:28Z",
+            "Entity Ids": [
+                106367904,
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "LW51PD3LR2CW",
+                "N7GBZM247X9Z"
+            ],
+            "Context": "Fix the build. Fix the build"
+        },
+        {
+            "Timestamp": "2022-09-01T02:34:50Z",
+            "EntityIds": [
+                106367904
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "QZQBN555X1P0"
+            ],
+            "Context": "Fix the build. Fix the build"
+        },
+        {
+            "Timestamp": "2022-09-01T02:34:50Z",
+            "Entity Ids": [
+                106367904,
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "QZQBN555X1P0",
+                "01JOTXC44IMA"
+            ],
+            "Context": "Fix the build. Fix the build"
+        },
+        {
+            "Timestamp": "2022-09-01T00:46:08Z",
+            "EntityIds": [
+                7644676,
+                84765720
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "NBZK1E6LZJ9B"
+            ],
+            "Context": "Make tf.image.resize gradient computation compatible with XLA compilation.  ### Issue Type\r\n\r\nFeature Request\r\n\r\n### Source\r\n\r\nbinary\r\n\r\n### Tensorflow Version\r\n\r\ntf 2.11.0-dev20220831\r\n\r\n### Custom Code\r\n\r\nNo\r\n\r\n### Current Behaviour?\r\n\r\nCurrently, XLA compilation does not work for gradient computation of `tf.image.resize`, for example for the default method `ResizeMethod.BILINEAR`:\r\n\r\n> ResizeBilinearGrad with align_corners=False or half_pixel_centers=True is not yet implemented\r\n\r\nSupport for forward pass has recently been added: https://github.com/tensorflow/tensorflow/issues/46447\r\n\r\nThis makes it impossible to XLA compile models for training that use resizing, such as RetinaNet.\r\n\r\n\r\n### Standalone code to reproduce the issue\r\n\r\n[Colab to reproduce error](https://colab.research.google.com/drive/1eevpjtJYqQ7Mkg7PujJu_I5UOfL1PnWX?usp=sharing)\r\n"
+        },
+        {
+            "Timestamp": "2022-09-01T00:18:05Z",
+            "EntityIds": [
+                241317,
+                84765720
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "3O46PBY1DM7F"
+            ],
+            "Context": "Cannot deserialize keras model using __add__. <details><summary>Click to expand!</summary> \r\n \r\n ### Issue Type\r\n\r\nBug\r\n\r\n### Source\r\n\r\nsource\r\n\r\n### Tensorflow Version\r\n\r\nv2.9.1-0-gd8ce9f9c301 2.9.1\r\n\r\n### Custom Code\r\n\r\nNo\r\n\r\n### OS Platform and Distribution\r\n\r\nUbuntu 20.04\r\n\r\n### Mobile device\r\n\r\n_No response_\r\n\r\n### Python version\r\n\r\n3.9.13\r\n\r\n### Bazel version\r\n\r\n5.0.0\r\n\r\n### GCC/Compiler version\r\n\r\nGCC 9.2\r\n\r\n### CUDA/cuDNN version\r\n\r\n11.7/8.4.1.50\r\n\r\n### GPU model and memory\r\n\r\nA100-SXM4-40GB\r\n\r\n### Current Behaviour?\r\n\r\nWhen calling `tf.keras.models.load_model(\"/tmp/my_model\")` I get\r\n\r\n```\r\nFile \"/mnt/disks/data/src/conda/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py\", line 1078, in op_dispatch_handler\r\n    result = api_dispatcher.Dispatch(args, kwargs)\r\nTypeError: Missing required positional argument\r\n```\r\n\r\nI expected the model to load successfully. I trained my model for 2 days and now I can't load it.\r\n\r\n\r\n### Standalone code to reproduce the issue\r\n\r\n```python\r\nimport tensorflow as tf\r\nfrom tensorflow.keras.layers import Dense, Layer\r\n\r\nclass MyLayer(Layer):\r\n    def __init__(self):\r\n        super().__init__()\r\n        self.dense = Dense(512)\r\n    def __call__(self, X):\r\n        short = X\r\n        X = self.dense(X)\r\n        X = short + X\r\n        return X\r\n\r\n\r\ndef main():\r\n    model = tf.keras.Sequential([MyLayer()])\r\n    model.build([None, 512])\r\n    model.save(\"/tmp/my_model\")\r\n\r\n    tf.keras.models.load_model(\"/tmp/my_model\")\r\n\r\nif __name__ == \"__main__\":\r\n    main()\r\n```\r\n\r\n\r\n### Relevant log output\r\n\r\n```shell\r\napi_dispatcher.Dispatch=<bound method PyCapsule.Dispatch of <Dispatch(_add_dispatch): >, args=(<tf.Tensor 'Placeholder:0' shape=(None, 512) dtype=float32>,), kwargs={}\r\nTraceback (most recent call last):\r\n  File \"/mnt/disks/data/src/repro.py\", line 24, in <module>\r\n    main()\r\n  File \"/mnt/disks/data/src/repro.py\", line 21, in main\r\n    tf.keras.models.load_model(\"/tmp/my_model\")\r\n  File \"/mnt/disks/data/src/conda/lib/python3.9/site-packages/keras/utils/traceback_utils.py\", line 67, in error_handler\r\n    raise e.with_traceback(filtered_tb) from None\r\n  File \"/mnt/disks/data/src/conda/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py\", line 1078, in op_dispatch_handler\r\n    result = api_dispatcher.Dispatch(args, kwargs)\r\nTypeError: Missing required positional argument\r\n```\r\n</details>"
+        },
+        {
+            "Timestamp": "2022-08-31T22:04:15Z",
+            "EntityIds": [
+                16668746,
+                84765720
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "TRD484TIJ24H"
+            ],
+            "Context": "Tried to export a function which references 'untracked' resource Tensor. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.8.2\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nColab\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.7\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nI am not able to export models with a custom signature that contains preprocessing layers as part of the model graph.\r\n\r\nThis issue happens for different kinds of layers, in my case it was `Normalization`, `IntegerLookup` and `StringLookup`.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nLink for colab: https://colab.research.google.com/drive/15pPBp8uVBMpdHscljUz1kk_OylDp43-G?usp=sharing\r\n\r\n\r\ndef model_fn():\r\n    age_input = L.Input(shape=(1,), dtype=tf.float32, name='age')\r\n    sex_input = L.Input(shape=(1,), dtype=tf.float32, name='sex')\r\n    cp_input = L.Input(shape=(len(cp_vocab),), dtype=tf.float32, name='cp')\r\n    thal_input = L.Input(shape=(len(thal_vocab),), dtype=tf.float32, name='thal')\r\n\r\n    concat_inputs = L.Concatenate()([age_input, sex_input, cp_input, thal_input])\r\n    x = L.Dense(32, activation=\"relu\")(concat_inputs)\r\n    x = L.Dropout(0.5)(x)\r\n    output = L.Dense(1, activation=\"sigmoid\")(x)\r\n\r\n    return tf.keras.models.Model(inputs=[age_input, sex_input, cp_input, thal_input], outputs=output)\r\n\r\nmodel = model_fn()\r\n\r\ndef custom_signature(model):\r\n    input_signature = [\r\n        tf.TensorSpec([1,], tf.int64, name=\"age\"), \r\n        tf.TensorSpec([1,], tf.int64, name=\"sex\"), \r\n        tf.TensorSpec([1,], tf.int64, name=\"cp\"), \r\n        tf.TensorSpec([1,], tf.string, name=\"thal\")\r\n    ]\r\n    @tf.function(input_signature=[input_signature])\r\n    def serving_fn(input):\r\n        age_processed = age_preprocessing(input[0])\r\n        sex_processed = tf.cast(sex_preprocessing(input[1]), \r\n                                dtype=tf.float32)\r\n        cp_processed = cp_preprocessing(input[2])\r\n        thal_processed = thal_preprocessing(input[3])\r\n\r\n        preprocessed_inputs = {\"age\": age_processed, \r\n                              \"sex\": sex_processed, \r\n                              \"cp\": tf.expand_dims(cp_processed, 0), \r\n                              \"thal\": tf.expand_dims(thal_processed, 0)}\r\n        probs = model(preprocessed_inputs)\r\n        return {\"probs\": probs}\r\n\r\n    return serving_fn\r\n\r\ntf.saved_model.save(\r\n        obj=model,\r\n        export_dir=\"signature_model/\",\r\n        signatures={\r\n            \"serving_default\": custom_signature(model)\r\n        },\r\n    )\r\n```\n```\n\n\n### Relevant log output\n\n```shell\nAssertionError: Tried to export a function which references 'untracked' resource Tensor(\"3629:0\", shape=(), dtype=resource). TensorFlow objects (e.g. tf.Variable) captured by functions must be 'tracked' by assigning them to an attribute of a tracked object or assigned to an attribute of the main object directly.\r\n\r\n Trackable Python objects referring to this tensor (from gc.get_referrers, limited to two hops):\r\n<tensorflow.python.ops.lookup_ops.StaticHashTable object at 0x7f1d051b2e10>\n```\n</details>"
+        },
+        {
+            "Timestamp": "2022-08-31T21:27:11Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "VG8D1BPNEETO"
+            ],
+            "Context": "Fix invalid conflict resolution. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-08-31T21:27:11Z",
+            "Entity Ids": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "VG8D1BPNEETO",
+                "XLHVXZ7RN9U5"
+            ],
+            "Context": "Fix invalid conflict resolution. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-08-31T21:19:52Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "QIKFF72U52EU"
+            ],
+            "Context": "Fix build on r2.7. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-08-31T21:19:52Z",
+            "Entity Ids": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "QIKFF72U52EU",
+                "HE17GAY4KX16"
+            ],
+            "Context": "Fix build on r2.7. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-08-31T21:19:41Z",
+            "EntityIds": [
+                323199
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "TBCJMHSBAK1W"
+            ],
+            "Context": "Fix build on r2.8. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
+        },
+        {
+            "Timestamp": "2022-08-31T21:19:41Z",
+            "Entity Ids": [
+                323199
+            ],
+            "Symbol": "Pull Request Creation",
+            "Relational IDs": [
+                "TBCJMHSBAK1W",
+                "MKSI85KCDRTV"
+            ],
+            "Context": "Fix build on r2.8. Signed-off-by: Mihai Maruseac <mihaimaruseac@google.com>"
         }
     ]
 }

@@ -10,7 +10,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token=""
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -74,13 +74,14 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[:3]:
+    for attribute in issues[:30]:
     # Issue Creation
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
-            issueMessage = attribute["body"] # Issue Body
-            issueContext = issueTitle+ ". "+issueMessage # Issue title + body
+            if attribute["body"]: # Issue Body
+                issueMessage = attribute["body"] 
+                issueContext = issueTitle+ ". "+issueMessage # Issue title + body
             issueNumber = attribute["number"] # To match issue and pr
             issueCreatedAt = attribute["created_at"] # Timestamp created
             issueClosedAt = attribute["closed_at"] # Timestamp closed
@@ -143,8 +144,9 @@ if __name__ == "__main__":
                 pullNumber = attribute["number"]
                 if pullNumber == issueNumber:
                     prTitle = attribute["title"] # PR Title
-                    prMessage = attribute["body"] # PR Body
-                    prContext = prTitle+ ". "+prMessage
+                    if attribute["body"]: # PR Body
+                        prMessage = attribute["body"] # PR Body
+                        prContext = prTitle+ ". "+prMessage
                     pullCreatedAt = attribute["created_at"] # Timestamp created at
                     pullClosedAt = attribute["closed_at"] # Timestamp closed at
                     pullUserId = attribute["user"]["id"]
@@ -194,7 +196,7 @@ if __name__ == "__main__":
     tbd = "tbd"
     predSym = [tbd]
 
-    # Header info ___________________________________________________________________________________
+    # _________________________________________________________________________________________________
 
     githubDataFormatted = {"Data Name":dataName, "Creation Date":dataCreation, "Data Range Start":dataStart, "Data Range End":dataEnd, "Version Information":dataVersion, "Provenance Information":dataOrigin, "Predicted Symbols":predSym, "Prediction Period": tbd, "Entities": dataEntities, "Data":data}
 
