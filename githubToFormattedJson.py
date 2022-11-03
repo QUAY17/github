@@ -10,7 +10,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -38,19 +38,16 @@ def commit_type(login, gh_user, gh_token):
     response = requests.get(gitHubAPI_URL_getCommitCount, auth=(gh_user, gh_token))
     userCommits = response.json()
     print("\n\n", userCommits)
-
-    if userCommits["total_count"]:
+    if "total_count" not in userCommits: # this occurs when a user is private/ isn't found
+        commit_type = None
+    elif userCommits["total_count"]:
         commits = userCommits["total_count"]
         if commits < 2500:
             commit_type = "Light Committer"
         else:
             commit_type = "Heavy Committer"
-    elif userCommits["message"]:
-        commit_type = None
-    else:
-        commit_type = None
-
-    return commit_type
+ 
+        return commit_type
 
 # get follower count dynamically
 def follow_type(login, gh_user, gh_token):
@@ -91,6 +88,9 @@ if __name__ == "__main__":
             issueCreatedAt = attribute["created_at"] # Timestamp created
             issueClosedAt = attribute["closed_at"] # Timestamp closed
             issueUserLogin = attribute["user"]["login"] 
+            issueUserId = attribute["user"]["id"] # Entity Ids []
+            entityId = issueUserId
+            contributeType = "Issue Creator"
                 
             login = issueUserLogin # Login to follow url for user stats
             committerType = commit_type(login, gh_user, gh_token)
@@ -101,16 +101,15 @@ if __name__ == "__main__":
             gitHubAPI_URL_getUserDates = f"{issueUserUrl}"
             response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
             dataUser = response.json()
-            if dataUser["created_at"]:
+            print("\n\n", dataUser)
+            if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                userCreatedAt = None
+                userUpdatedAt = None
+            elif dataUser["created_at"]:
                 userCreatedAt = dataUser["created_at"] # valid from
-            if dataUser["updated_at"]:
-                userUpdatedAt = dataUser["updated_at"] # valid to: "updated" is the timestamp of the last activity
-            issueUserId = attribute["user"]["id"] # Entity Ids []
-            entityId = issueUserId
-            contributeType = "Issue Creator"
+                userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
 
             #issueUserId = salt_hash_id(issueUserId)
-
             entityIds = []
             entityIds.append(issueUserId)
             issueAssignees = attribute["assignees"]
@@ -139,7 +138,7 @@ if __name__ == "__main__":
             #dataEntities.append(dataIssueEntities)    
             data.append(issueData)
 
-            # Pulls ___________________________________________________________________________________
+        # Pulls ___________________________________________________________________________________
 
         with open(argv[2], "rt") as pullsJson: # Pulls
             pulls = json.load(pullsJson)
