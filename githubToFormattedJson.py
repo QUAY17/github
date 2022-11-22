@@ -8,7 +8,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token=""
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -35,7 +35,6 @@ def commit_type(login, gh_user, gh_token):
     gitHubAPI_URL_getCommitCount = f"{commitCountUrl}"
     response = requests.get(gitHubAPI_URL_getCommitCount, auth=(gh_user, gh_token))
     userCommits = response.json()
-    #print("\n\n", userCommits)
     if "total_count" not in userCommits: # this occurs when a user is private/ isn't found
         commit_type = None
     elif userCommits["total_count"]:
@@ -68,7 +67,8 @@ def merger_id(pullNumber, gh_user, gh_token):
     response = requests.get(gitHubAPI_URL_getMergerId, auth=(gh_user, gh_token))
     getMergerId = response.json()
     if "merged_by" in getMergerId:
-        pullMergerId = attribute["id"] # Pull merger id
+        pullMergerId = getMergerId["merged_by"]["id"] # Pull merger id
+        print("in func", pullMergerId)
         return pullMergerId
 
 def merger_login(pullNumber, gh_user, gh_token):
@@ -77,7 +77,8 @@ def merger_login(pullNumber, gh_user, gh_token):
     response = requests.get(gitHubAPI_URL_getMergerLogin, auth=(gh_user, gh_token))
     getMergerLogin = response.json()
     if "merged_by" in getMergerLogin:
-        pullMergerLogin = attribute["login"] # Pull merger login
+        pullMergerLogin = getMergerLogin["merged_by"]["login"] # Pull merger login
+        print("in func", pullMergerLogin)
         return pullMergerLogin
 
 def merger_url(pullNumber, gh_user, gh_token):
@@ -86,8 +87,10 @@ def merger_url(pullNumber, gh_user, gh_token):
     response = requests.get(gitHubAPI_URL_getMergedId, auth=(gh_user, gh_token))
     getMergerUrl = response.json()
     if "merged_by" in getMergerUrl:
-        pullMergerUserUrl = attribute["url"] # Pull merger url
+        pullMergerUserUrl = getMergerUrl["merged_by"]["url"] # Pull merger url
+        print("in func", pullMergerUserUrl)
         return pullMergerUserUrl
+
 
 if __name__ == "__main__":
     if len(argv) != 4:
@@ -118,9 +121,9 @@ if __name__ == "__main__":
                 issueMessage = attribute["body"] 
                 issueContext = issueTitle+ ". "+issueMessage # Issue title + body
     
-            login = issueUserLogin # Login to follow url for user stats
-            committerType = commit_type(login, gh_user, gh_token)
-            followingType = follow_type(login, gh_user, gh_token)
+            #login = issueUserLogin # Login to follow url for user stats
+            committerType = commit_type(issueUserLogin, gh_user, gh_token)
+            followingType = follow_type(issueUserLogin, gh_user, gh_token)
 
             # User date range
             issueUserUrl = attribute["user"]["url"]
@@ -183,8 +186,8 @@ if __name__ == "__main__":
                 print("1",pullMergedAt)
                 pullUserId = attribute["user"]["id"] # Pull Creator Id
                 pullUserLogin = attribute["user"]["login"]
-                login = pullUserLogin # Login to follow url for number of commits
-                committerType = commit_type(login, gh_user, gh_token)
+                #login = pullUserLogin # Login to follow url
+                committerType = commit_type(pullUserLogin, gh_user, gh_token)
 
                 # Pull Requestor _____________________________________________________________________
                 
@@ -216,44 +219,45 @@ if __name__ == "__main__":
                 if pullMergedAt is not None:
                     print("pull 2 block",pullMergedAt)
                     mergerId = merger_id(pullNumber, gh_token, gh_user)
+                    entityId = mergerId
                     contributeType = "Pull Merger"
                     entityIds = []
                     entityIds.append(mergerId)
                     eventName = "Pull Request Merged" # Symbol Name
                     prMergeId = id_generator() # Pull Request Id
                     samePrMergeId = prMergeId # when we need id to be the same for multiple events
-                    relationalalIds = [sameIssueId, prMergeId]
+                    relationalalIds = [sameIssueId, samePrId, prMergeId]
 
                     # Symbols
-                    symPull = {"Contribution Type": contributeType, "Valid From": pullMergedAt, "Valid To": pullClosedAt}
-                    symbols.append(symPull)
+                    symMerge = {"Contribution Type": contributeType, "Valid From": pullMergedAt, "Valid To": pullClosedAt}
+                    symbols.append(symMerge)
 
                     # Properties this should be a function ?
                     mergerLogin =  merger_login(pullNumber, gh_user, gh_token)
-                    login = mergerLogin # Login to follow url for user stats
-                    committerType = commit_type(login, gh_user, gh_token)
-                    followingType = follow_type(login, gh_user, gh_token)
+                    #login = mergerLogin # Login to follow url for user stats
+                    committerType = commit_type(mergerLogin, gh_user, gh_token)
+                    followingType = follow_type(mergerLogin, gh_user, gh_token)
                     # User date range
                     mergerUrl = merger_url(pullNumber, gh_user, gh_token)
                     if mergerUrl is not None:
                         gitHubAPI_URL_getUserDates = f"{mergerUrl}"
                         response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
                         dataUser = response.json()
-                        if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                        if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found or a bot profile
                             userCreatedAt = None
                             userUpdatedAt = None
                         elif dataUser["created_at"]:
                             userCreatedAt = dataUser["created_at"] # valid from
                             userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
-                    else: # this occurs when a bot is the merger
+                    else: # error handling, not sure edge case
                         userCreatedAt = None
                         userUpdatedAt = None
                     properties = [] # properties list
-                    propDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
-                    properties.append(propDict)
+                    propMergeDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                    properties.append(propMergeDict)
 
-                    entDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
-                    dataEntities.append(entDict)
+                    entMergeDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                    dataEntities.append(entMergeDict)
 
                     prMergeData = {"Timestamp":pullMergedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
 
