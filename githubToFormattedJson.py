@@ -1,6 +1,4 @@
-from html import entities
 import json
-import os
 from sys import argv
 from urllib.request import urlopen
 import requests
@@ -10,7 +8,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token=""
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -37,7 +35,7 @@ def commit_type(login, gh_user, gh_token):
     gitHubAPI_URL_getCommitCount = f"{commitCountUrl}"
     response = requests.get(gitHubAPI_URL_getCommitCount, auth=(gh_user, gh_token))
     userCommits = response.json()
-    print("\n\n", userCommits)
+    #print("\n\n", userCommits)
     if "total_count" not in userCommits: # this occurs when a user is private/ isn't found
         commit_type = None
     elif userCommits["total_count"]:
@@ -46,7 +44,6 @@ def commit_type(login, gh_user, gh_token):
             commit_type = "Light Committer"
         else:
             commit_type = "Heavy Committer"
- 
         return commit_type
 
 # get follower count dynamically
@@ -64,6 +61,34 @@ def follow_type(login, gh_user, gh_token):
         followingType = "More Followers"
     return followingType
 
+# get merged by info
+def merger_id(pullNumber, gh_user, gh_token):
+    pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
+    gitHubAPI_URL_getMergerId = f"{pullByUrl}"
+    response = requests.get(gitHubAPI_URL_getMergerId, auth=(gh_user, gh_token))
+    getMergerId = response.json()
+    if "merged_by" in getMergerId:
+        pullMergerId = attribute["id"] # Pull merger id
+        return pullMergerId
+
+def merger_login(pullNumber, gh_user, gh_token):
+    pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
+    gitHubAPI_URL_getMergerLogin = f"{pullByUrl}"
+    response = requests.get(gitHubAPI_URL_getMergerLogin, auth=(gh_user, gh_token))
+    getMergerLogin = response.json()
+    if "merged_by" in getMergerLogin:
+        pullMergerLogin = attribute["login"] # Pull merger login
+        return pullMergerLogin
+
+def merger_url(pullNumber, gh_user, gh_token):
+    pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
+    gitHubAPI_URL_getMergedId = f"{pullByUrl}"
+    response = requests.get(gitHubAPI_URL_getMergedId, auth=(gh_user, gh_token))
+    getMergerUrl = response.json()
+    if "merged_by" in getMergerUrl:
+        pullMergerUserUrl = attribute["url"] # Pull merger url
+        return pullMergerUserUrl
+
 if __name__ == "__main__":
     if len(argv) != 4:
         usage()
@@ -76,22 +101,23 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[0:75]:
+    for attribute in issues[0:50]:
         # Issue Creation
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
-        if attribute["body"]: # Issue Body
-            issueMessage = attribute["body"] 
-            issueContext = issueTitle+ ". "+issueMessage # Issue title + body
             issueNumber = attribute["number"] # To match issue and pr
+            print(issueNumber)
             issueCreatedAt = attribute["created_at"] # Timestamp created
             issueClosedAt = attribute["closed_at"] # Timestamp closed
             issueUserLogin = attribute["user"]["login"] 
             issueUserId = attribute["user"]["id"] # Entity Ids []
             entityId = issueUserId
             contributeType = "Issue Creator"
-                
+            if attribute["body"]: # Issue Body
+                issueMessage = attribute["body"] 
+                issueContext = issueTitle+ ". "+issueMessage # Issue title + body
+    
             login = issueUserLogin # Login to follow url for user stats
             committerType = commit_type(login, gh_user, gh_token)
             followingType = follow_type(login, gh_user, gh_token)
@@ -101,7 +127,7 @@ if __name__ == "__main__":
             gitHubAPI_URL_getUserDates = f"{issueUserUrl}"
             response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
             dataUser = response.json()
-            print("\n\n", dataUser)
+            #print("\n\n", dataUser)
             if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
                 userCreatedAt = None
                 userUpdatedAt = None
@@ -143,23 +169,25 @@ if __name__ == "__main__":
         with open(argv[2], "rt") as pullsJson: # Pulls
             pulls = json.load(pullsJson)
 
-        for attribute in pulls:        
-            # PR Creation
+        for attribute in pulls: # PR Creation
             pullNumber = attribute["number"]
             if pullNumber == issueNumber:
                 prTitle = attribute["title"] # PR Title
-                if attribute["body"]: # PR Body
-                    prMessage = attribute["body"] # PR Body
-                    prContext = prTitle+ ". "+prMessage
+                if attribute["body"]: # PR message body
+                    prMessage = attribute["body"] 
+                    prContext = prTitle+ ". "+prMessage  
                 pullCreatedAt = attribute["created_at"] # Timestamp created at
                 pullClosedAt = attribute["closed_at"] # Timestamp closed at
-                pullUserId = attribute["user"]["id"]
-                pullUserLogin = attribute["user"]["login"] 
-                
+                print(pullNumber, pullCreatedAt)
+                pullMergedAt = attribute["merged_at"] # Merged at
+                print("1",pullMergedAt)
+                pullUserId = attribute["user"]["id"] # Pull Creator Id
+                pullUserLogin = attribute["user"]["login"]
                 login = pullUserLogin # Login to follow url for number of commits
                 committerType = commit_type(login, gh_user, gh_token)
-                entityId = pullUserId
 
+                # Pull Requestor _____________________________________________________________________
+                
                 contributeType = "Pull Requestor"
                 entityIds = []
                 entityIds.append(pullUserId)
@@ -179,14 +207,58 @@ if __name__ == "__main__":
                 symPull = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
                 symbols.append(symPull)
 
-                #entDict = {"Symbols":symbols}
-                #dataEntities.append(entDict)
-
                 prData = {"Timestamp":pullCreatedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
 
                 data.append(prData)
 
+                # Pull Merger/Closer  _____________________________________________________________________
 
+                if pullMergedAt is not None:
+                    print("pull 2 block",pullMergedAt)
+                    mergerId = merger_id(pullNumber, gh_token, gh_user)
+                    contributeType = "Pull Merger"
+                    entityIds = []
+                    entityIds.append(mergerId)
+                    eventName = "Pull Request Merged" # Symbol Name
+                    prMergeId = id_generator() # Pull Request Id
+                    samePrMergeId = prMergeId # when we need id to be the same for multiple events
+                    relationalalIds = [sameIssueId, prMergeId]
+
+                    # Symbols
+                    symPull = {"Contribution Type": contributeType, "Valid From": pullMergedAt, "Valid To": pullClosedAt}
+                    symbols.append(symPull)
+
+                    # Properties this should be a function ?
+                    mergerLogin =  merger_login(pullNumber, gh_user, gh_token)
+                    login = mergerLogin # Login to follow url for user stats
+                    committerType = commit_type(login, gh_user, gh_token)
+                    followingType = follow_type(login, gh_user, gh_token)
+                    # User date range
+                    mergerUrl = merger_url(pullNumber, gh_user, gh_token)
+                    if mergerUrl is not None:
+                        gitHubAPI_URL_getUserDates = f"{mergerUrl}"
+                        response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+                        dataUser = response.json()
+                        if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                            userCreatedAt = None
+                            userUpdatedAt = None
+                        elif dataUser["created_at"]:
+                            userCreatedAt = dataUser["created_at"] # valid from
+                            userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
+                    else: # this occurs when a bot is the merger
+                        userCreatedAt = None
+                        userUpdatedAt = None
+                    properties = [] # properties list
+                    propDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                    properties.append(propDict)
+
+                    entDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                    dataEntities.append(entDict)
+
+                    prMergeData = {"Timestamp":pullMergedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
+
+                    data.append(prMergeData)
+                
     # Header info ___________________________________________________________________________________
 
     dataName = "Github Data for Tensorflow"
