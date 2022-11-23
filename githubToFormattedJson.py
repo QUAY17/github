@@ -1,6 +1,5 @@
 import json
 from sys import argv
-from urllib.request import urlopen
 import requests
 from datetime import datetime
 import random
@@ -8,7 +7,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token=""
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -60,7 +59,7 @@ def follow_type(login, gh_user, gh_token):
         followingType = "More Followers"
     return followingType
 
-# get merged by info
+# get merger id- was truncated from json
 def merger_id(pullNumber, gh_user, gh_token):
     pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
     gitHubAPI_URL_getMergerId = f"{pullByUrl}"
@@ -68,9 +67,9 @@ def merger_id(pullNumber, gh_user, gh_token):
     getMergerId = response.json()
     if "merged_by" in getMergerId:
         pullMergerId = getMergerId["merged_by"]["id"] # Pull merger id
-        print("in func", pullMergerId)
         return pullMergerId
 
+# get merger login- was truncated from json
 def merger_login(pullNumber, gh_user, gh_token):
     pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
     gitHubAPI_URL_getMergerLogin = f"{pullByUrl}"
@@ -81,6 +80,7 @@ def merger_login(pullNumber, gh_user, gh_token):
         print("in func", pullMergerLogin)
         return pullMergerLogin
 
+# get merger url- was truncated from json
 def merger_url(pullNumber, gh_user, gh_token):
     pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
     gitHubAPI_URL_getMergedId = f"{pullByUrl}"
@@ -181,9 +181,7 @@ if __name__ == "__main__":
                     prContext = prTitle+ ". "+prMessage  
                 pullCreatedAt = attribute["created_at"] # Timestamp created at
                 pullClosedAt = attribute["closed_at"] # Timestamp closed at
-                print(pullNumber, pullCreatedAt)
                 pullMergedAt = attribute["merged_at"] # Merged at
-                print("1",pullMergedAt)
                 pullUserId = attribute["user"]["id"] # Pull Creator Id
                 pullUserLogin = attribute["user"]["login"]
                 #login = pullUserLogin # Login to follow url
@@ -211,24 +209,23 @@ if __name__ == "__main__":
                 symbols.append(symPull)
 
                 prData = {"Timestamp":pullCreatedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
-
                 data.append(prData)
 
                 # Pull Merger/Closer  _____________________________________________________________________
 
                 if pullMergedAt is not None:
-                    print("pull 2 block",pullMergedAt)
-                    mergerId = merger_id(pullNumber, gh_token, gh_user)
-                    entityId = mergerId
+                    pullMergerId = merger_id(pullNumber, gh_token, gh_user)
+                    print("pull 2 block",pullMergedAt, pullMergerId)
                     contributeType = "Pull Merger"
                     entityIds = []
-                    entityIds.append(mergerId)
+                    entityIds.append(pullMergerId)
                     eventName = "Pull Request Merged" # Symbol Name
                     prMergeId = id_generator() # Pull Request Id
                     samePrMergeId = prMergeId # when we need id to be the same for multiple events
                     relationalalIds = [sameIssueId, samePrId, prMergeId]
 
                     # Symbols
+                    symbols = []
                     symMerge = {"Contribution Type": contributeType, "Valid From": pullMergedAt, "Valid To": pullClosedAt}
                     symbols.append(symMerge)
 
@@ -252,15 +249,15 @@ if __name__ == "__main__":
                     else: # error handling, not sure edge case
                         userCreatedAt = None
                         userUpdatedAt = None
+
                     properties = [] # properties list
                     propMergeDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
                     properties.append(propMergeDict)
 
-                    entMergeDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                    entMergeDict = {"Id": pullMergerId, "Symbols":symbols, "Properties":properties}
                     dataEntities.append(entMergeDict)
 
                     prMergeData = {"Timestamp":pullMergedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
-
                     data.append(prMergeData)
                 
     # Header info ___________________________________________________________________________________
