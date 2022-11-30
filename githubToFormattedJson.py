@@ -68,7 +68,6 @@ def merger_id(pullNumber, gh_user, gh_token):
     if "merged_by" in getMergerId:
         pullMergerId = getMergerId["merged_by"]["id"] # Pull merger id
         return pullMergerId
-
 # get merger login- was truncated from json
 def merger_login(pullNumber, gh_user, gh_token):
     pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
@@ -77,9 +76,7 @@ def merger_login(pullNumber, gh_user, gh_token):
     getMergerLogin = response.json()
     if "merged_by" in getMergerLogin:
         pullMergerLogin = getMergerLogin["merged_by"]["login"] # Pull merger login
-        print("in func", pullMergerLogin)
         return pullMergerLogin
-
 # get merger url- was truncated from json
 def merger_url(pullNumber, gh_user, gh_token):
     pullByUrl = f"https://api.github.com/repos/tensorflow/tensorflow/pulls/{pullNumber}"
@@ -88,7 +85,6 @@ def merger_url(pullNumber, gh_user, gh_token):
     getMergerUrl = response.json()
     if "merged_by" in getMergerUrl:
         pullMergerUserUrl = getMergerUrl["merged_by"]["url"] # Pull merger url
-        print("in func", pullMergerUserUrl)
         return pullMergerUserUrl
 
 
@@ -104,8 +100,7 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[0:50]:
-        
+    for attribute in issues[0:2]:
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
@@ -116,31 +111,26 @@ if __name__ == "__main__":
             issueUserLogin = attribute["user"]["login"] 
             issueUserId = attribute["user"]["id"] # Entity Ids []
             issueCommentsUrl = attribute["comments_url"]
-
             # Issue Creation ___________________________________________________________________________
             entityId = issueUserId
             contributeType = "Issue Creator"
             if attribute["body"]: # Issue Body
                 issueMessage = attribute["body"] 
                 issueContext = issueTitle+ ". "+issueMessage # Issue title + body
-    
             #login = issueUserLogin # Login to follow url for user stats
             committerType = commit_type(issueUserLogin, gh_user, gh_token)
             followingType = follow_type(issueUserLogin, gh_user, gh_token)
-
             # User date range
             issueUserUrl = attribute["user"]["url"]
             gitHubAPI_URL_getUserDates = f"{issueUserUrl}"
             response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
             dataUser = response.json()
-            #print("\n\n", dataUser)
             if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
                 userCreatedAt = None
                 userUpdatedAt = None
             elif dataUser["created_at"]:
                 userCreatedAt = dataUser["created_at"] # valid from
                 userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
-
             #issueUserId = salt_hash_id(issueUserId)
             entityIds = []
             entityIds.append(issueUserId)
@@ -167,77 +157,65 @@ if __name__ == "__main__":
 
             issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
 
-            #dataEntities.append(dataIssueEntities)    
             data.append(issueData)
 
             # Issue Comments ___________________________________________________________________________
-
+            
             gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
+            print(issueCommentsUrl)
             response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
             issueComment = response.json()
-            for attribute in issueComment:
-                commentTitle = attribute["title"]
-                if attribute["created_at"] is not None:
-                    commentCreatedAt = attribute["created_at"]
-                if attribute["user"] is not None: # if None value, ignore
+            print(issueComment)
+            if issueComment is not None:
+                for attribute in issueComment:
                     issueCommenterId = attribute["user"]["id"]
+                    print(issueCommenterId)
                     issueCommenterLogin = attribute["user"]["login"]
+                    commentCreatedAt = attribute["created_at"]
+                    commentUpdatedAt = attribute["updated_at"]
+                    entityId = issueCommenterId
+                    contributeType = "Issue Commenter"
+                    if attribute["body"]: # Comment Body
+                        commentMessage = attribute["body"] 
+                    committerType = commit_type(issueCommenterLogin, gh_user, gh_token)
+                    followingType = follow_type(issueCommenterLogin, gh_user, gh_token)
+                    # User date range
+                    issueCommenterUrl = attribute["user"]["url"]
+                    gitHubAPI_URL_getUserDates = f"{issueCommenterUrl}"
+                    response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+                    dataUser = response.json()
+                    if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                        userCreatedAt = None
+                        userUpdatedAt = None
+                    elif dataUser["created_at"]:
+                        userCreatedAt = dataUser["created_at"] # valid from
+                        userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
+                    #issueUserId = salt_hash_id(issueUserId)
+                    eventName = "Issue Comment" # Symbol Name
+                    #issueCommentId = id_generator() # Issue Id
+                    #sameCommentIssueId = issueCommentId # when we need id to be the same for multiple events
+                    #relationalalIds.append(issueCommentId)
 
-            entityId = issueCommenterId
-            contributeType = "Issue Commenter"
-
-            if attribute["body"]: # Comment Body
-                commentMessage = attribute["body"] 
-                issueContext = commentTitle+ ". "+issueMessage # Issue title + body
-    
-            #login = issueUserLogin # Login to follow url for user stats
-            committerType = commit_type(issueUserLogin, gh_user, gh_token)
-            followingType = follow_type(issueUserLogin, gh_user, gh_token)
-
-            # User date range
-            issueUserUrl = attribute["user"]["url"]
-            gitHubAPI_URL_getUserDates = f"{issueUserUrl}"
-            response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
-            dataUser = response.json()
-            #print("\n\n", dataUser)
-            if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
-                userCreatedAt = None
-                userUpdatedAt = None
-            elif dataUser["created_at"]:
-                userCreatedAt = dataUser["created_at"] # valid from
-                userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
-
-            #issueUserId = salt_hash_id(issueUserId)
-            entityIds = []
-            entityIds.append(issueUserId)
-            issueAssignees = attribute["assignees"]
-            for attribute in issueAssignees:
-                issueAssigneesId = attribute["id"]
-                #issueAssigneesId = salt_hash_id(issueAssigneesId)
-                entityIds.append(issueAssigneesId)
-            eventName = "Issue Creation" # Symbol Name
-            issueId = id_generator() # Issue Id
-            sameIssueId = issueId # when we need id to be the same for multiple events
-            relationalalIds.append(issueId)
-
-            symbols = [] #symbols list
-            symIssue = {"Contribution Type": contributeType, "Valid From": issueCreatedAt, "Valid To": issueClosedAt}
-            symbols.append(symIssue)
-
-            properties = [] # properties list
-            propDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
-            properties.append(propDict)
-
-            entDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
-            dataEntities.append(entDict)
-
-            issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
-
-            #dataEntities.append(dataIssueEntities)    
-            data.append(issueData)
+                    if issueCommenterId != issueUserId:
+                        symbols = [] #symbols list
+                        properties = [] # properties list
+                        entityIds.append(issueCommenterId) # adds commenters id to entity list
+                        propCommentDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                        properties.append(propCommentDict)
+                        entCommentDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                        dataEntities.append(entCommentDict)
+                        symIssueComment = {"Contribution Type": contributeType, "Valid From": commentCreatedAt, "Valid To": commentUpdatedAt}
+                        symbols.append(symIssueComment)
+                        issueCommentData = {"Timestamp":commentCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commentMessage}
+                        data.append(issueCommentData)
+                    else: 
+                        symIssueComment = {"Contribution Type": contributeType, "Valid From": commentCreatedAt, "Valid To": commentUpdatedAt}
+                        symbols.append(symIssueComment)
+                        issueCommentData = {"Timestamp":commentCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commentMessage}
+                        data.append(issueCommentData)
 
         # Pulls ___________________________________________________________________________________
-
+       
         with open(argv[2], "rt") as pullsJson: # Pulls
             pulls = json.load(pullsJson)
 
@@ -270,9 +248,9 @@ if __name__ == "__main__":
                     pullReviewersId = attribute["id"]
                     entityIds.append(pullReviewersId)
                 eventName = "Pull Request Creation" # Symbol Name
-                prId = id_generator() # Pull Request Id
-                samePrId = prId # when we need id to be the same for multiple events
-                relationalalIds = [sameIssueId, prId]
+                #prId = id_generator() # Pull Request Id
+                #samePrId = prId # when we need id to be the same for multiple events
+                #relationalalIds = [sameIssueId, prId]
 
                 symPull = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
                 symbols.append(symPull)
@@ -289,9 +267,9 @@ if __name__ == "__main__":
                     entityIds = []
                     entityIds.append(pullMergerId)
                     eventName = "Pull Request Merged" # Symbol Name
-                    prMergeId = id_generator() # Pull Request Id
-                    samePrMergeId = prMergeId # when we need id to be the same for multiple events
-                    relationalalIds = [sameIssueId, samePrId, prMergeId]
+                    #prMergeId = id_generator() # Pull Request Id
+                    #samePrMergeId = prMergeId # when we need id to be the same for multiple events
+                    #relationalalIds = [sameIssueId, samePrId, prMergeId]
 
                     # Symbols
                     symbols = []
