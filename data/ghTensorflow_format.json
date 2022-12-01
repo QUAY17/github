@@ -11,107 +11,25 @@
     "Prediction Period": "tbd",
     "Entities": [
         {
-            "Id": 78156688,
+            "Id": 657617,
             "Symbols": [
                 {
                     "Contribution Type": "Issue Creator",
-                    "Valid From": "2022-11-16T14:16:37Z",
+                    "Valid From": "2022-11-22T16:10:10Z",
                     "Valid To": null
                 },
                 {
-                    "Contribution Type": "Pull Requestor",
-                    "Valid From": "2022-11-16T14:16:37Z",
-                    "Valid To": null
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-11-22T16:10:39Z",
+                    "Valid To": "2022-11-22T16:10:39Z"
                 }
             ],
             "Properties": [
                 {
-                    "Follower type": "Less Followers",
-                    "Committer Type": "Light Committer",
-                    "Valid From": "2021-01-28T14:07:17Z",
-                    "Valid To": "2022-11-22T18:54:56Z"
-                }
-            ]
-        },
-        {
-            "Id": 60800749,
-            "Symbols": [
-                {
-                    "Contribution Type": "Issue Creator",
-                    "Valid From": "2022-11-16T13:54:48Z",
-                    "Valid To": "2022-11-16T21:23:13Z"
-                },
-                {
-                    "Contribution Type": "Pull Requestor",
-                    "Valid From": "2022-11-16T13:54:48Z",
-                    "Valid To": "2022-11-16T21:23:13Z"
-                }
-            ],
-            "Properties": [
-                {
-                    "Follower type": "Less Followers",
-                    "Committer Type": "Light Committer",
-                    "Valid From": "2020-02-08T00:01:52Z",
-                    "Valid To": "2022-08-17T13:17:41Z"
-                }
-            ]
-        },
-        {
-            "Id": 56741989,
-            "Symbols": [
-                {
-                    "Contribution Type": "Pull Merger",
-                    "Valid From": "2022-11-16T21:23:13Z",
-                    "Valid To": "2022-11-16T21:23:13Z"
-                }
-            ],
-            "Properties": [
-                {
-                    "Follower type": "Less Followers",
-                    "Committer Type": "Light Committer",
-                    "Valid From": "2019-10-18T20:47:54Z",
-                    "Valid To": "2019-10-18T20:47:54Z"
-                }
-            ]
-        },
-        {
-            "Id": 9656425,
-            "Symbols": [
-                {
-                    "Contribution Type": "Issue Creator",
-                    "Valid From": "2022-11-16T09:33:42Z",
-                    "Valid To": null
-                }
-            ],
-            "Properties": [
-                {
-                    "Follower type": "Less Followers",
-                    "Committer Type": "Light Committer",
-                    "Valid From": "2014-11-10T12:48:12Z",
-                    "Valid To": "2022-10-18T06:09:05Z"
-                }
-            ]
-        },
-        {
-            "Id": 106367904,
-            "Symbols": [
-                {
-                    "Contribution Type": "Issue Creator",
-                    "Valid From": "2022-11-16T01:16:16Z",
-                    "Valid To": "2022-11-16T01:17:12Z"
-                },
-                {
-                    "Contribution Type": "Pull Requestor",
-                    "Valid From": "2022-11-16T01:16:16Z",
-                    "Valid To": "2022-11-16T01:17:12Z"
-                }
-            ],
-            "Properties": [
-                {
-                    "Follower type": "Less Followers",
-                    "Committer Type": "Light Committer",
-                    "Valid From": "2022-05-27T05:25:55Z",
-                    "Valid To": "2022-11-11T02:52:41Z"
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2011-03-08T12:22:53Z",
+                    "Valid To": "2022-11-17T01:30:34Z"
                 }
             ]
         },
@@ -119,9 +37,14 @@
             "Id": 323199,
             "Symbols": [
                 {
-                    "Contribution Type": "Pull Merger",
-                    "Valid From": "2022-11-16T01:17:12Z",
-                    "Valid To": "2022-11-16T01:17:12Z"
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-11-22T17:17:08Z",
+                    "Valid To": "2022-11-22T17:17:08Z"
+                },
+                {
+                    "Contribution Type": "Pull Requestor",
+                    "Valid From": "2022-11-22T16:10:10Z",
+                    "Valid To": null
                 }
             ],
             "Properties": [
@@ -129,175 +52,113 @@
                     "Follower type": "More Followers",
                     "Committer Type": "Heavy Committer",
                     "Valid From": "2010-07-05T11:26:31Z",
-                    "Valid To": "2022-10-29T18:11:58Z"
+                    "Valid To": "2022-11-30T16:29:27Z"
                 }
             ]
         },
         {
-            "Id": 3444368,
+            "Id": 1710528,
             "Symbols": [
                 {
                     "Contribution Type": "Issue Creator",
-                    "Valid From": "2022-11-16T01:02:38Z",
+                    "Valid From": "2022-11-22T13:41:46Z",
                     "Valid To": null
                 },
                 {
-                    "Contribution Type": "Pull Requestor",
-                    "Valid From": "2022-11-16T01:02:38Z",
-                    "Valid To": null
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-11-22T13:43:52Z",
+                    "Valid To": "2022-11-22T13:43:52Z"
                 }
             ],
             "Properties": [
                 {
-                    "Follower type": "Less Followers",
-                    "Committer Type": "Light Committer",
-                    "Valid From": "2013-02-01T02:32:23Z",
-                    "Valid To": "2022-11-16T00:55:46Z"
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2012-05-06T12:17:54Z",
+                    "Valid To": "2022-11-23T20:55:11Z"
                 }
             ]
         }
     ],
     "Data": [
         {
-            "Timestamp": "2022-11-16T14:16:37Z",
+            "Timestamp": "2022-11-22T16:10:10Z",
             "EntityIds": [
-                78156688,
-                48215717
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "XRUP4NRI2EOE"
-            ],
-            "Context": "Fix the endianness issue in v1 frozen graphs in python:lite_test on BE machines. This PR is to add big-endian support to TensorFlow v1 frozen graphs.\r\n \r\nThe `byte_swap_tensor` related code in `tensorflow/python/saved_model/utils_impl.py` has been refactored and function `swap_tensor_in_frozen_graph()` was added to deal with the LE/BE conversion in TensorFlow v1 frozen graphs. This function is invoked in frozen graph read/write process so that TensorFlow v1 frozen graphs would be stored with LE format in files and converted to BE format after being loaded into memory on BE machines.\r\n \r\nThis code change also extended the covered code paths for byte-swapping in read/write process of TensorFlow v2 saved models.\r\n \r\nThis PR could fix `//tensorflow/lite/python:lite_test` on s390x (BE machines) and will not cause any regressions on LE/BE platforms.\r\n\r\nFixes issue https://github.com/tensorflow/tensorflow/issues/57215 .\r\n\r\nSigned-off-by: Kun-Lu <kun.lu@ibm.com>"
-        },
-        {
-            "Timestamp": "2022-11-16T14:16:37Z",
-            "Entity Ids": [
-                78156688,
+                657617,
                 48215717,
-                5112267
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "XRUP4NRI2EOE",
-                "Y40T1K52FSS4"
-            ],
-            "Context": "Fix the endianness issue in v1 frozen graphs in python:lite_test on BE machines. This PR is to add big-endian support to TensorFlow v1 frozen graphs.\r\n \r\nThe `byte_swap_tensor` related code in `tensorflow/python/saved_model/utils_impl.py` has been refactored and function `swap_tensor_in_frozen_graph()` was added to deal with the LE/BE conversion in TensorFlow v1 frozen graphs. This function is invoked in frozen graph read/write process so that TensorFlow v1 frozen graphs would be stored with LE format in files and converted to BE format after being loaded into memory on BE machines.\r\n \r\nThis code change also extended the covered code paths for byte-swapping in read/write process of TensorFlow v2 saved models.\r\n \r\nThis PR could fix `//tensorflow/lite/python:lite_test` on s390x (BE machines) and will not cause any regressions on LE/BE platforms.\r\n\r\nFixes issue https://github.com/tensorflow/tensorflow/issues/57215 .\r\n\r\nSigned-off-by: Kun-Lu <kun.lu@ibm.com>"
-        },
-        {
-            "Timestamp": "2022-11-16T13:54:48Z",
-            "EntityIds": [
-                60800749,
-                48215717
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "DQ71V5HQ21II"
-            ],
-            "Context": "Move plugin rule to the XLA directory. Moves the dependency of `//tensorflow/compiler/xla/pjrt:pjrt_plugin_device_client` from `//tensorflow/compiler/plugin` to `//tensorflow/compiler/xla/pjrt/plugin`.\r\n\r\nThe old plugin folder is retained to avoid breaking anyone using that rule for unrelated reasons, but it no longer connects to the xla_client.\r\n\r\n@joker-eph @skye @penpornk "
-        },
-        {
-            "Timestamp": "2022-11-16T13:54:48Z",
-            "Entity Ids": [
-                60800749,
-                48215717,
-                348959,
-                1835471
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "DQ71V5HQ21II",
-                "Z0KYOET4GA18"
-            ],
-            "Context": "Move plugin rule to the XLA directory. Moves the dependency of `//tensorflow/compiler/xla/pjrt:pjrt_plugin_device_client` from `//tensorflow/compiler/plugin` to `//tensorflow/compiler/xla/pjrt/plugin`.\r\n\r\nThe old plugin folder is retained to avoid breaking anyone using that rule for unrelated reasons, but it no longer connects to the xla_client.\r\n\r\n@joker-eph @skye @penpornk "
-        },
-        {
-            "Timestamp": "2022-11-16T21:23:13Z",
-            "Entity Ids": [
-                56741989
-            ],
-            "Symbol": "Pull Request Merged",
-            "Relational IDs": [
-                "DQ71V5HQ21II",
-                "Z0KYOET4GA18",
-                "KGCDX8ECT04L"
-            ],
-            "Context": "Move plugin rule to the XLA directory. Moves the dependency of `//tensorflow/compiler/xla/pjrt:pjrt_plugin_device_client` from `//tensorflow/compiler/plugin` to `//tensorflow/compiler/xla/pjrt/plugin`.\r\n\r\nThe old plugin folder is retained to avoid breaking anyone using that rule for unrelated reasons, but it no longer connects to the xla_client.\r\n\r\n@joker-eph @skye @penpornk "
-        },
-        {
-            "Timestamp": "2022-11-16T09:33:42Z",
-            "EntityIds": [
-                9656425,
-                73069040
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "Q4FEOX2QUX6T"
-            ],
-            "Context": "there is no operator to calculate the matrix's inverse using tflite. tf.raw_ops.MatrixInverse and tf.linalg.svd is not supported in tflite \r\nBatchMatrixInverse is not available in GraphDef version 1205.\r\n\r\nHence\uff0c how to calculate the matrix's inverse using tflite?\r\n\r\nI need some Op to calculate the  matrix's inverse\r\n\r\n\r\nbest wishes\r\n\r\n\r\n\r\n\r\n"
-        },
-        {
-            "Timestamp": "2022-11-16T01:16:16Z",
-            "EntityIds": [
-                106367904
-            ],
-            "Symbol": "Issue Creation",
-            "Relational ID": [
-                "F6FN7I8CSF7P"
-            ],
-            "Context": "Broken tests is causing release builds failures - TF 2.11.0. # TODO(b/259319686) : Disable the test"
-        },
-        {
-            "Timestamp": "2022-11-16T01:16:16Z",
-            "Entity Ids": [
-                106367904,
-                66660475
-            ],
-            "Symbol": "Pull Request Creation",
-            "Relational IDs": [
-                "F6FN7I8CSF7P",
-                "ZYV46C99BJR5"
-            ],
-            "Context": "Broken tests is causing release builds failures - TF 2.11.0. # TODO(b/259319686) : Disable the test"
-        },
-        {
-            "Timestamp": "2022-11-16T01:17:12Z",
-            "Entity Ids": [
                 323199
             ],
-            "Symbol": "Pull Request Merged",
-            "Relational IDs": [
-                "F6FN7I8CSF7P",
-                "ZYV46C99BJR5",
-                "4L4G6V4QFU8K"
-            ],
-            "Context": "Broken tests is causing release builds failures - TF 2.11.0. # TODO(b/259319686) : Disable the test"
-        },
-        {
-            "Timestamp": "2022-11-16T01:02:38Z",
-            "EntityIds": [
-                3444368,
-                48215717
-            ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "S53X0WW5C3C5"
+                "PCS4GPI1ITE9"
             ],
-            "Context": "Support writing non conversion report to more filesystems. This PR allows tf trt non conversion report to save in all filesystems supported by tensorflow. This is especially useful when user has a use case to convert a remotely saved model.\r\n\r\nRegarding unit test: I didn't find corresponding unit test for this function in `segment_test.cc`. For this kind of functionality maybe an integration test is more suitable? Please let me know and I could work on that."
+            "Context": "Make fuzztest fuzzer ready for OSS-Fuzz. The goal here is to make the fuzztest fuzzers run in the OSS-Fuzz infrastructure. I'm starting with a single fuzzer to confirm it all works.\r\n\r\nI also updated the googletest dependency, will this have any negative impact?\r\n\r\nCross-referencing https://github.com/google/oss-fuzz/pull/8992 in the OSS-Fuzz repo.\r\n\r\nSigned-off-by: David Korczynski <david@adalogics.com>"
         },
         {
-            "Timestamp": "2022-11-16T01:02:38Z",
-            "Entity Ids": [
-                3444368,
+            "Timestamp": "2022-11-22T16:10:39Z",
+            "EntityIds": [
+                657617,
                 48215717,
-                35820639
+                323199
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "PCS4GPI1ITE9"
+            ],
+            "Context": "@mihaimaruseac could you assist here?"
+        },
+        {
+            "Timestamp": "2022-11-22T17:17:08Z",
+            "EntityIds": [
+                657617,
+                48215717,
+                323199
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "PCS4GPI1ITE9"
+            ],
+            "Context": "Seems right to me. Might need to also change internal copybara rules, etc. but can take care of it."
+        },
+        {
+            "Timestamp": "2022-11-22T16:10:10Z",
+            "Entity Ids": [
+                657617,
+                48215717
             ],
             "Symbol": "Pull Request Creation",
             "Relational IDs": [
-                "S53X0WW5C3C5",
-                "VGAT84ZLYZTW"
+                "PCS4GPI1ITE9"
             ],
-            "Context": "Support writing non conversion report to more filesystems. This PR allows tf trt non conversion report to save in all filesystems supported by tensorflow. This is especially useful when user has a use case to convert a remotely saved model.\r\n\r\nRegarding unit test: I didn't find corresponding unit test for this function in `segment_test.cc`. For this kind of functionality maybe an integration test is more suitable? Please let me know and I could work on that."
+            "Context": "Make fuzztest fuzzer ready for OSS-Fuzz. The goal here is to make the fuzztest fuzzers run in the OSS-Fuzz infrastructure. I'm starting with a single fuzzer to confirm it all works.\r\n\r\nI also updated the googletest dependency, will this have any negative impact?\r\n\r\nCross-referencing https://github.com/google/oss-fuzz/pull/8992 in the OSS-Fuzz repo.\r\n\r\nSigned-off-by: David Korczynski <david@adalogics.com>"
+        },
+        {
+            "Timestamp": "2022-11-22T13:41:46Z",
+            "EntityIds": [
+                1710528,
+                31752514,
+                68572250,
+                81610181
+            ],
+            "Symbol": "Issue Creation",
+            "Relational ID": [
+                "J1A0EQ0WCNOQ"
+            ],
+            "Context": "SigmoidGrad legalization. <details><summary>Click to expand!</summary> \r\n \r\n ### Issue Type\r\n\r\nBug\r\n\r\n### Source\r\n\r\nsource\r\n\r\n### Tensorflow Version\r\n\r\nmaster\r\n\r\n### Custom Code\r\n\r\nYes\r\n\r\n### OS Platform and Distribution\r\n\r\n_No response_\r\n\r\n### Mobile device\r\n\r\n_No response_\r\n\r\n### Python version\r\n\r\n_No response_\r\n\r\n### Bazel version\r\n\r\n_No response_\r\n\r\n### GCC/Compiler version\r\n\r\n_No response_\r\n\r\n### CUDA/cuDNN version\r\n\r\n_No response_\r\n\r\n### GPU model and memory\r\n\r\n_No response_\r\n\r\n### Current Behaviour?\r\n\r\nWe had a legalization error with the MLIR bridge with the sigmoid in the focal loss:\r\nhttps://github.com/keras-team/keras-cv/blob/master/keras_cv/losses/focal.py#L82\r\n\r\n\r\n### Standalone code to reproduce the issue\r\n\r\nhttps://colab.research.google.com/gist/ianstenbit/6cbcf6e034fbf63e22208f3d9a479297/sigmoid-loss-issue-retinanet-on-tpu.ipynb\r\n\r\nSee also:\r\nhttps://github.com/keras-team/keras-cv/issues/1018\r\n\r\n\r\n### Relevant log output\r\n\r\n```python\r\n(0) INVALID_ARGUMENT: {{function_node __inference_train_function_133447}} TF to XLA legalization failed: <unknown>:0: error: loc(fused[\"SigmoidGrad:\", \"gradient_tape/FocalLoss/Sigmoid/SigmoidGrad\"]): 'mhlo.constant' op result #0 must be statically shaped tensor of floating-point or pred (AKA boolean or 1-bit integer) or 8/16/32/64-bit signless integer or 8/16/32/64-bit unsigned integer or complex type with 32-bit float or 64-bit float elements values, but got 'tensor<?x?x20xf32>'\r\n<unknown>:0: note: loc(fused[\"SigmoidGrad:\", \"gradient_tape/FocalLoss/Sigmoid/SigmoidGrad\"]): see current operation: %5996 = \"mhlo.constant\"() {value = dense<1.000000e+00> : tensor<?x?x20xf32>} : () -> tensor<?x?x20xf32>\r\n```\r\n</details>"
+        },
+        {
+            "Timestamp": "2022-11-22T13:43:52Z",
+            "EntityIds": [
+                1710528,
+                31752514,
+                68572250,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "J1A0EQ0WCNOQ"
+            ],
+            "Context": "/cc @ukoxyz\r\n"
         }
     ]
 }
