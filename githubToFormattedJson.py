@@ -7,7 +7,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token=""
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[0:2]:
+    for attribute in issues[0:50]:
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
@@ -144,15 +144,15 @@ if __name__ == "__main__":
             sameIssueId = issueId # when we need id to be the same for multiple events
             relationalalIds.append(issueId)
 
-            symbols = [] #symbols list
+            issueSymbols = [] #symbols list
             symIssue = {"Contribution Type": contributeType, "Valid From": issueCreatedAt, "Valid To": issueClosedAt}
-            symbols.append(symIssue)
+            issueSymbols.append(symIssue)
 
             properties = [] # properties list
             propDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
             properties.append(propDict)
 
-            entDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+            entDict = {"Id": entityId, "Symbols":issueSymbols, "Properties":properties}
             dataEntities.append(entDict)
 
             issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
@@ -162,14 +162,11 @@ if __name__ == "__main__":
             # Issue Comments ___________________________________________________________________________
             
             gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
-            print(issueCommentsUrl)
             response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
             issueComment = response.json()
-            print(issueComment)
             if issueComment is not None:
                 for attribute in issueComment:
                     issueCommenterId = attribute["user"]["id"]
-                    print(issueCommenterId)
                     issueCommenterLogin = attribute["user"]["login"]
                     commentCreatedAt = attribute["created_at"]
                     commentUpdatedAt = attribute["updated_at"]
@@ -210,12 +207,12 @@ if __name__ == "__main__":
                         data.append(issueCommentData)
                     else: 
                         symIssueComment = {"Contribution Type": contributeType, "Valid From": commentCreatedAt, "Valid To": commentUpdatedAt}
-                        symbols.append(symIssueComment)
+                        issueSymbols.append(symIssueComment)
                         issueCommentData = {"Timestamp":commentCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commentMessage}
                         data.append(issueCommentData)
 
         # Pulls ___________________________________________________________________________________
-       
+
         with open(argv[2], "rt") as pullsJson: # Pulls
             pulls = json.load(pullsJson)
 
@@ -230,39 +227,52 @@ if __name__ == "__main__":
                 pullClosedAt = attribute["closed_at"] # Timestamp closed at
                 pullMergedAt = attribute["merged_at"] # Merged at
                 pullUserId = attribute["user"]["id"] # Pull Creator Id
+                entityId = pullUserId # for the pr dict
                 pullUserLogin = attribute["user"]["login"]
-                #login = pullUserLogin # Login to follow url
-                committerType = commit_type(pullUserLogin, gh_user, gh_token)
+                pullUserUrl = attribute["user"]["url"]
+                contributeType = "Pull Request"
+                eventName = "Pull Request" # Symbol Name
 
                 # Pull Requestor _____________________________________________________________________
-                
-                contributeType = "Pull Requestor"
-                entityIds = []
-                entityIds.append(pullUserId)
-                pullAssignees = attribute["assignees"]
-                pullReviewers = attribute["requested_reviewers"] 
-                for attribute in pullAssignees:
-                    pullAssigneesId = attribute["id"]
-                    entityIds.append(pullAssigneesId)
-                for attribute in pullReviewers:
-                    pullReviewersId = attribute["id"]
-                    entityIds.append(pullReviewersId)
-                eventName = "Pull Request Creation" # Symbol Name
-                #prId = id_generator() # Pull Request Id
-                #samePrId = prId # when we need id to be the same for multiple events
-                #relationalalIds = [sameIssueId, prId]
+                print(pullUserId, issueUserId)
 
-                symPull = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
-                symbols.append(symPull)
-
-                prData = {"Timestamp":pullCreatedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
-                data.append(prData)
+                if pullUserId != issueUserId: # pretty sure all issue creators are the pull requestors but just in case they are not the same/ edge case
+                    committerType = commit_type(pullUserLogin, gh_user, gh_token)
+                    followingType = follow_type(pullUserLogin, gh_user, gh_token)
+                    # User date range
+                    pullUserUrl = attribute["user"]["url"]
+                    gitHubAPI_URL_getUserDates = f"{pullUserUrl}"
+                    response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+                    dataUser = response.json()
+                    if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                        userCreatedAt = None
+                        userUpdatedAt = None
+                    elif dataUser["created_at"]:
+                        userCreatedAt = dataUser["created_at"] # valid from
+                        userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
+                    #issueUserId = salt_hash_id(issueUserId)
+                    entityIds.append(pullUserId) # adds requestors id to entity list
+                    symbols = [] #symbols list
+                    properties = [] # properties list
+                    propPullReqDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                    properties.append(propPullReqDict)
+                    entPullReqDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                    dataEntities.append(entPullReqDict)
+                    symPullReq = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
+                    symbols.append(symPullReq)
+                    pullReqData = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":prContext}
+                    data.append(pullReqData)
+                else:
+                    symPullReq = {"Contribution Type": contributeType, "Valid From": pullCreatedAt, "Valid To": pullClosedAt}
+                    issueSymbols.append(symPullReq)
+                    pullReqData = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":prContext}
+                    data.append(pullReqData)
 
                 # Pull Merger/Closer  _____________________________________________________________________
 
                 if pullMergedAt is not None:
                     pullMergerId = merger_id(pullNumber, gh_token, gh_user)
-                    print("pull 2 block",pullMergedAt, pullMergerId)
+                    print("pull merged",pullMergedAt, pullMergerId)
                     contributeType = "Pull Merger"
                     entityIds = []
                     entityIds.append(pullMergerId)
