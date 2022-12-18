@@ -7,7 +7,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -270,28 +270,54 @@ if __name__ == "__main__":
 
                 #Pull Commits ____________________________________________________________________________
 
-                pullCommitterUrl = attribute["commits_url"]
+                pullCommitUrl = attribute["commits_url"]
+                print(pullCommitUrl)
                 contributeType = "Pull Commiter"
-                gitHubAPI_URL_getCommits = f"{pullCommitterUrl}"
+                eventName = "Pull Request Commit" # Symbol Name
+                gitHubAPI_URL_getCommits = f"{pullCommitUrl}"
                 response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
                 dataCommit = response.json()
-                print(dataCommit)
-                if "commit" in dataCommit: # this occurs when api returns a message that user isn't found or a bot profile
-                    pullCommitLogin = attribute["committers"]["login"]
-                    pullCommitId = attribute["coommitters"]["id"]
-                allCommitters = [] # list of commiters
-                commitLoginId = [] # list of commiters login and id
                 for attribute in dataCommit:
-                    if attribute["commit"] is not None:
-                        commitDate = attribute["commit"]["author"]["date"]
-                    if attribute["author"] is not None: # if None value, ignore
-                        commitInfo = attribute["author"]
-                        allCommitters.append(commitInfo)
-                        keys = ["login", "id"]            
-                        for attribute in allCommitters:
-                            result = dict((k, attribute[k]) for k in keys if k in attribute)
-                            result["created_at"] = commitDate
-                        commitLoginId.append(result)
+                    if "commit": # if a commit exists
+                        pullCommitLogin = attribute["author"]["login"]
+                        pullCommitId = attribute["author"]["id"]
+                        entityId = pullCommitId # for the pr dict
+                        commitCreatedAt = attribute["commit"]["author"]["date"]
+                        commitClosedAt = None
+                        commitContext = attribute["commit"]["message"]
+                        if pullCommitId != pullUserId:
+                            print(pullCommitId)
+                            committerType = commit_type(pullCommitLogin, gh_user, gh_token)
+                            followingType = follow_type(pullCommitLogin, gh_user, gh_token)
+                            # User date range
+                            pullCommitterUrl = attribute["author"]["url"]
+                            gitHubAPI_URL_getUserDates = f"{pullCommitterUrl}"
+                            response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+                            dataUser = response.json()
+                            if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                                userCreatedAt = None
+                                userUpdatedAt = None
+                            elif dataUser["created_at"]:
+                                userCreatedAt = dataUser["created_at"] # valid from
+                                userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
+                            #issueUserId = salt_hash_id(issueUserId)
+                            entityIds.append(pullCommitId)
+                            symbols = [] #symbols list
+                            properties = [] # properties list
+                            propPullCommitDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                            properties.append(propPullCommitDict)
+                            entPullCommitDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                            dataEntities.append(entPullCommitDict)
+                            symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
+                            symbols.append(symPullCommit)
+                            pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
+                            data.append(pullCommitData)
+                        else:
+                            symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
+                            issueSymbols.append(symPullCommit)
+                            pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
+                            data.append(pullCommitData)
+
 
                 # Pull Merger/Closer  _____________________________________________________________________
 
@@ -331,14 +357,11 @@ if __name__ == "__main__":
                     else: # error handling, not sure edge case
                         userCreatedAt = None
                         userUpdatedAt = None
-
                     properties = [] # properties list
                     propMergeDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
                     properties.append(propMergeDict)
-
                     entMergeDict = {"Id": pullMergerId, "Symbols":symbols, "Properties":properties}
                     dataEntities.append(entMergeDict)
-
                     prMergeData = {"Timestamp":pullMergedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
                     data.append(prMergeData)
 
