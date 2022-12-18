@@ -7,7 +7,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token=""
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[0:10]:
+    for attribute in issues[0:50]:
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
@@ -152,7 +152,7 @@ if __name__ == "__main__":
             propDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
             properties.append(propDict)
 
-            entDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+            entDict = {"Id": entityId, "Symbols":issueSymbols, "Properties":properties}
             dataEntities.append(entDict)
 
             issueData = {"Timestamp":issueCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":issueContext}
@@ -212,7 +212,7 @@ if __name__ == "__main__":
                         data.append(issueCommentData)
 
         # Pulls ___________________________________________________________________________________
-       
+
         with open(argv[2], "rt") as pullsJson: # Pulls
             pulls = json.load(pullsJson)
 
