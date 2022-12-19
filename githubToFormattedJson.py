@@ -7,7 +7,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     # Issues ___________________________________________________________________________________
 
-    for attribute in issues[0:50]:
+    for attribute in issues[0:20]:
         relationalalIds = []
         if attribute["created_at"]:
             issueTitle = attribute["title"] # Issue Title
@@ -234,7 +234,6 @@ if __name__ == "__main__":
                 eventName = "Pull Request" # Symbol Name
 
                 # Pull Requestor _____________________________________________________________________
-                print(pullUserId, issueUserId)
 
                 if pullUserId != issueUserId: # pretty sure all issue creators are the pull requestors but just in case they are not the same/ edge case
                     committerType = commit_type(pullUserLogin, gh_user, gh_token)
@@ -267,8 +266,11 @@ if __name__ == "__main__":
                     issueSymbols.append(symPullReq)
                     pullReqData = {"Timestamp":pullCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":prContext}
                     data.append(pullReqData)
+                
+                # Pull Review Comments  ___________________________________________________________________
+                # this does exists in some use cases
 
-                #Pull Commits ____________________________________________________________________________
+                # Pull Commits ____________________________________________________________________________
 
                 pullCommitUrl = attribute["commits_url"]
                 print(pullCommitUrl)
@@ -278,18 +280,23 @@ if __name__ == "__main__":
                 response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
                 dataCommit = response.json()
                 for attribute in dataCommit:
-                    if "commit": # if a commit exists
-                        pullCommitLogin = attribute["author"]["login"]
+                    if "commit" is not None: # if a commit exists
+                        pullCommitLogin = attribute["commit"]["author"]["name"]
+                    if attribute["author"] is not None:
                         pullCommitId = attribute["author"]["id"]
-                        entityId = pullCommitId # for the pr dict
-                        commitCreatedAt = attribute["commit"]["author"]["date"]
-                        commitClosedAt = None
-                        commitContext = attribute["commit"]["message"]
-                        if pullCommitId != pullUserId:
-                            print(pullCommitId)
-                            committerType = commit_type(pullCommitLogin, gh_user, gh_token)
-                            followingType = follow_type(pullCommitLogin, gh_user, gh_token)
-                            # User date range
+                        pullCommitLogin = attribute["author"]["login"]
+                    else:
+                        pullCommitId = None # to do: follow url to get id instead of None
+                    entityId = pullCommitId # for the pr dict
+                    commitCreatedAt = attribute["commit"]["author"]["date"]
+                    commitClosedAt = None
+                    commitContext = attribute["commit"]["message"]
+                    if pullCommitId != pullUserId:
+                        print(pullCommitId)
+                        committerType = commit_type(pullCommitLogin, gh_user, gh_token)
+                        followingType = follow_type(pullCommitLogin, gh_user, gh_token)
+                        # User date range
+                        if attribute["author"] is not None:
                             pullCommitterUrl = attribute["author"]["url"]
                             gitHubAPI_URL_getUserDates = f"{pullCommitterUrl}"
                             response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
@@ -300,24 +307,23 @@ if __name__ == "__main__":
                             elif dataUser["created_at"]:
                                 userCreatedAt = dataUser["created_at"] # valid from
                                 userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
-                            #issueUserId = salt_hash_id(issueUserId)
-                            entityIds.append(pullCommitId)
-                            symbols = [] #symbols list
-                            properties = [] # properties list
-                            propPullCommitDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
-                            properties.append(propPullCommitDict)
-                            entPullCommitDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
-                            dataEntities.append(entPullCommitDict)
-                            symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
-                            symbols.append(symPullCommit)
-                            pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
-                            data.append(pullCommitData)
-                        else:
-                            symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
-                            issueSymbols.append(symPullCommit)
-                            pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
-                            data.append(pullCommitData)
-
+                        #issueUserId = salt_hash_id(issueUserId)
+                        entityIds.append(pullCommitId)
+                        symbols = [] #symbols list
+                        properties = [] # properties list
+                        propPullCommitDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                        properties.append(propPullCommitDict)
+                        entPullCommitDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                        dataEntities.append(entPullCommitDict)
+                        symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
+                        symbols.append(symPullCommit)
+                        pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
+                        data.append(pullCommitData)
+                    else:
+                        symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
+                        issueSymbols.append(symPullCommit)
+                        pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
+                        data.append(pullCommitData)
 
                 # Pull Merger/Closer  _____________________________________________________________________
 
@@ -363,9 +369,7 @@ if __name__ == "__main__":
                     entMergeDict = {"Id": pullMergerId, "Symbols":symbols, "Properties":properties}
                     dataEntities.append(entMergeDict)
                     prMergeData = {"Timestamp":pullMergedAt, "Entity Ids":entityIds, "Symbol":eventName, "Relational IDs":relationalalIds, "Context":prContext}
-                    data.append(prMergeData)
-
-                    
+                    data.append(prMergeData)                    
                 
     # Header info ___________________________________________________________________________________
 
