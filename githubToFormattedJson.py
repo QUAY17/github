@@ -111,7 +111,9 @@ if __name__ == "__main__":
             issueUserLogin = attribute["user"]["login"] 
             issueUserId = attribute["user"]["id"] # Entity Ids []
             issueCommentsUrl = attribute["comments_url"]
+
             # Issue Creation ___________________________________________________________________________
+            
             entityId = issueUserId
             contributeType = "Issue Creator"
             if attribute["body"]: # Issue Body
@@ -162,10 +164,8 @@ if __name__ == "__main__":
             # Issue Comments ___________________________________________________________________________
             
             gitHubAPI_URL_getIssueComments = f"{issueCommentsUrl}"
-            print(issueCommentsUrl)
             response = requests.get(gitHubAPI_URL_getIssueComments, auth=(gh_user, gh_token))
             issueComment = response.json()
-            print(issueComment)
             if issueComment != None:
                 for attribute in issueComment:
                     issueCommenterId = attribute["user"]["id"]
@@ -235,6 +235,7 @@ if __name__ == "__main__":
                 pullCommitUrl = attribute["commits_url"]
 
                 # Pull Requestor _____________________________________________________________________
+
                 contributeType = "Pull Request"
                 eventName = "Pull Request" # Symbol Name
                 if pullUserId != issueUserId: # pretty sure all issue creators are the pull requestors but just in case they are not the same/ edge case
@@ -270,6 +271,7 @@ if __name__ == "__main__":
                     data.append(pullReqData)
                 
                 # Pull Review Comments  ___________________________________________________________________
+
                 pullCommentUrl = attribute["review_comments_url"]
                 contributeType = "Pull Commenter"
                 eventName = "Pull Request Comment"
@@ -285,7 +287,6 @@ if __name__ == "__main__":
                         commentUpdatedAt = attribute["updated_at"]
                         commentContext = attribute["body"]
                         if pullCommentId != pullUserId:
-                            print(pullCommentId)
                             committerType = commit_type(pullCommentLogin, gh_user, gh_token)
                             followingType = follow_type(pullCommentLogin, gh_user, gh_token)
                             # User date range
@@ -320,9 +321,7 @@ if __name__ == "__main__":
 
                 # Pull Commits ____________________________________________________________________________
 
-                print(pullCommitUrl)
                 if pullCommitUrl != None:
-                    print(pullCommitUrl)
                     contributeType = "Pull Commiter"
                     eventName = "Pull Request Commit" # Symbol Name
                     gitHubAPI_URL_getCommits = f"{pullCommitUrl}"
@@ -335,13 +334,20 @@ if __name__ == "__main__":
                             pullCommitId = attribute["author"]["id"]
                             pullCommitLogin = attribute["author"]["login"]
                         else:
-                            pullCommitId = None # to do: follow url to get id instead of None
+                            userEmail = attribute["commit"]["author"]["email"]
+                            userUrlEmail = f"https://api.github.com/search/users?q={userEmail}"
+                            gitHubAPI_URL_getUser = f"{userUrlEmail}"
+                            response = requests.get(gitHubAPI_URL_getUser, auth=(gh_user, gh_token))
+                            dataUser = response.json()
+                            if dataUser["items"] != []: # api does not return user, thus returns an empty list 
+                                pullCommitId = dataUser["items"]["id"]
+                            else:
+                                pullCommitId = None
                         entityId = pullCommitId # for the pr dict
                         commitCreatedAt = attribute["commit"]["author"]["date"]
                         commitClosedAt = None
                         commitContext = attribute["commit"]["message"]
                         if pullCommitId != pullUserId:
-                            print(pullCommitId)
                             committerType = commit_type(pullCommitLogin, gh_user, gh_token)
                             followingType = follow_type(pullCommitLogin, gh_user, gh_token)
                             # User date range
@@ -378,7 +384,6 @@ if __name__ == "__main__":
 
                 if pullMergedAt != None:
                     pullMergerId = merger_id(pullNumber, gh_token, gh_user)
-                    print("pull merged",pullMergedAt, pullMergerId)
                     contributeType = "Pull Merger"
                     entityIds = []
                     entityIds.append(pullMergerId)
