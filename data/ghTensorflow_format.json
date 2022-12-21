@@ -23,8 +23,8 @@
                 {
                     "Follower type": "Less Followers",
                     "Committer Type": null,
-                    "Valid From": "2022-12-12T17:38:57Z",
-                    "Valid To": "2022-12-19T18:23:13Z"
+                    "Valid From": null,
+                    "Valid To": null
                 }
             ]
         },
@@ -35,6 +35,16 @@
                     "Contribution Type": "Issue Creator",
                     "Valid From": "2022-12-19T15:17:25Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T10:22:42Z",
+                    "Valid To": "2022-12-20T10:24:22Z"
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T11:00:09Z",
+                    "Valid To": "2022-12-20T11:01:53Z"
                 }
             ],
             "Properties": [
@@ -43,6 +53,24 @@
                     "Committer Type": null,
                     "Valid From": "2022-07-04T07:50:56Z",
                     "Valid To": "2022-12-01T12:56:33Z"
+                }
+            ]
+        },
+        {
+            "Id": 81610181,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T06:43:03Z",
+                    "Valid To": "2022-12-20T06:43:03Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-03-30T06:09:15Z",
+                    "Valid To": "2022-11-05T23:12:28Z"
                 }
             ]
         },
@@ -61,6 +89,24 @@
                     "Committer Type": "Light Committer",
                     "Valid From": "2017-01-21T05:16:57Z",
                     "Valid To": "2022-11-28T21:20:43Z"
+                }
+            ]
+        },
+        {
+            "Id": 86464649,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T07:08:48Z",
+                    "Valid To": "2022-12-21T07:08:48Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-06-25T07:31:47Z",
+                    "Valid To": "2022-12-12T15:38:58Z"
                 }
             ]
         },
@@ -94,6 +140,16 @@
                     "Contribution Type": "Pull Request",
                     "Valid From": "2022-12-19T13:03:27Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Pull Commenter",
+                    "Valid From": "2022-12-21T03:57:35Z",
+                    "Valid To": "2022-12-21T03:57:35Z"
+                },
+                {
+                    "Contribution Type": "Pull Commenter",
+                    "Valid From": "2022-12-21T14:01:06Z",
+                    "Valid To": "2022-12-21T14:01:06Z"
                 }
             ],
             "Properties": [
@@ -124,6 +180,42 @@
             ]
         },
         {
+            "Id": 38085909,
+            "Symbols": [
+                {
+                    "Contribution Type": "Pull Commenter",
+                    "Valid From": "2022-12-20T09:48:03Z",
+                    "Valid To": "2022-12-20T09:49:04Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2018-04-04T20:43:41Z",
+                    "Valid To": "2022-01-10T07:34:30Z"
+                }
+            ]
+        },
+        {
+            "Id": 38085909,
+            "Symbols": [
+                {
+                    "Contribution Type": "Pull Commenter",
+                    "Valid From": "2022-12-21T12:13:11Z",
+                    "Valid To": "2022-12-21T12:13:15Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "More Followers",
+                    "Committer Type": "Heavy Committer",
+                    "Valid From": "2018-04-04T20:43:41Z",
+                    "Valid To": "2022-01-10T07:34:30Z"
+                }
+            ]
+        },
+        {
             "Id": null,
             "Symbols": [
                 {
@@ -136,8 +228,26 @@
                 {
                     "Follower type": "Less Followers",
                     "Committer Type": null,
-                    "Valid From": "2021-04-16T10:37:28Z",
-                    "Valid To": "2022-06-28T09:34:04Z"
+                    "Valid From": "2018-04-04T20:43:41Z",
+                    "Valid To": "2022-01-10T07:34:30Z"
+                }
+            ]
+        },
+        {
+            "Id": null,
+            "Symbols": [
+                {
+                    "Contribution Type": "Pull Commiter",
+                    "Valid From": "2022-12-21T13:50:14Z",
+                    "Valid To": null
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": null,
+                    "Valid From": "2018-04-04T20:43:41Z",
+                    "Valid To": "2022-01-10T07:34:30Z"
                 }
             ]
         },
@@ -148,6 +258,11 @@
                     "Contribution Type": "Issue Creator",
                     "Valid From": "2022-12-19T10:35:13Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T11:08:05Z",
+                    "Valid To": "2022-12-20T11:08:05Z"
                 }
             ],
             "Properties": [
@@ -160,12 +275,53 @@
             ]
         },
         {
+            "Id": 81610181,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T06:01:31Z",
+                    "Valid To": "2022-12-20T06:01:31Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-03-30T06:09:15Z",
+                    "Valid To": "2022-11-05T23:12:28Z"
+                }
+            ]
+        },
+        {
+            "Id": 81610181,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T06:04:21Z",
+                    "Valid To": "2022-12-20T06:04:21Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-03-30T06:09:15Z",
+                    "Valid To": "2022-11-05T23:12:28Z"
+                }
+            ]
+        },
+        {
             "Id": 11645696,
             "Symbols": [
                 {
                     "Contribution Type": "Issue Creator",
                     "Valid From": "2022-12-19T10:26:27Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-19T21:33:39Z",
+                    "Valid To": "2022-12-19T21:33:51Z"
                 }
             ],
             "Properties": [
@@ -196,6 +352,42 @@
             ]
         },
         {
+            "Id": 86464649,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T03:16:21Z",
+                    "Valid To": "2022-12-20T03:16:21Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2021-06-25T07:31:47Z",
+                    "Valid To": "2022-12-12T15:38:58Z"
+                }
+            ]
+        },
+        {
+            "Id": 56610014,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T03:16:27Z",
+                    "Valid To": "2022-12-20T03:16:27Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": null,
+                    "Valid From": "2019-10-15T20:29:19Z",
+                    "Valid To": "2022-04-26T20:13:31Z"
+                }
+            ]
+        },
+        {
             "Id": 98973349,
             "Symbols": [
                 {
@@ -214,12 +406,35 @@
             ]
         },
         {
+            "Id": 111861663,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T06:36:31Z",
+                    "Valid To": "2022-12-21T13:05:59Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2022-08-23T09:11:26Z",
+                    "Valid To": "2022-10-21T09:42:57Z"
+                }
+            ]
+        },
+        {
             "Id": 38205634,
             "Symbols": [
                 {
                     "Contribution Type": "Issue Creator",
                     "Valid From": "2022-12-19T08:46:14Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-19T23:13:01Z",
+                    "Valid To": "2022-12-19T23:13:01Z"
                 }
             ],
             "Properties": [
@@ -256,6 +471,11 @@
                     "Contribution Type": "Issue Creator",
                     "Valid From": "2022-12-19T06:35:15Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T03:23:14Z",
+                    "Valid To": "2022-12-21T03:23:14Z"
                 }
             ],
             "Properties": [
@@ -292,6 +512,24 @@
                     "Contribution Type": "Issue Commenter",
                     "Valid From": "2022-12-19T16:49:59Z",
                     "Valid To": "2022-12-19T16:49:59Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": null,
+                    "Valid From": "2022-10-18T07:24:20Z",
+                    "Valid To": "2022-12-18T11:19:39Z"
+                }
+            ]
+        },
+        {
+            "Id": 116063290,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T06:04:41Z",
+                    "Valid To": "2022-12-21T06:04:41Z"
                 }
             ],
             "Properties": [
@@ -348,6 +586,16 @@
                     "Contribution Type": "Issue Commenter",
                     "Valid From": "2022-12-18T23:47:13Z",
                     "Valid To": "2022-12-18T23:47:13Z"
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T04:00:27Z",
+                    "Valid To": "2022-12-20T04:05:19Z"
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T04:01:52Z",
+                    "Valid To": "2022-12-20T04:01:52Z"
                 }
             ],
             "Properties": [
@@ -356,6 +604,42 @@
                     "Committer Type": "Light Committer",
                     "Valid From": "2021-11-16T05:36:33Z",
                     "Valid To": "2022-06-24T07:08:03Z"
+                }
+            ]
+        },
+        {
+            "Id": 111861663,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-20T02:36:38Z",
+                    "Valid To": "2022-12-20T02:36:38Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2022-08-23T09:11:26Z",
+                    "Valid To": "2022-10-21T09:42:57Z"
+                }
+            ]
+        },
+        {
+            "Id": 111861663,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T10:24:23Z",
+                    "Valid To": "2022-12-21T10:24:23Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2022-08-23T09:11:26Z",
+                    "Valid To": "2022-10-21T09:42:57Z"
                 }
             ]
         },
@@ -402,6 +686,11 @@
                     "Contribution Type": "Issue Creator",
                     "Valid From": "2022-12-18T04:14:37Z",
                     "Valid To": null
+                },
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T02:18:16Z",
+                    "Valid To": "2022-12-21T02:18:16Z"
                 }
             ],
             "Properties": [
@@ -450,6 +739,24 @@
             ]
         },
         {
+            "Id": 596150,
+            "Symbols": [
+                {
+                    "Contribution Type": "Issue Commenter",
+                    "Valid From": "2022-12-21T18:15:51Z",
+                    "Valid To": "2022-12-21T18:15:51Z"
+                }
+            ],
+            "Properties": [
+                {
+                    "Follower type": "Less Followers",
+                    "Committer Type": "Light Committer",
+                    "Valid From": "2011-02-02T04:14:16Z",
+                    "Valid To": "2022-08-03T21:03:32Z"
+                }
+            ]
+        },
+        {
             "Id": 120409314,
             "Symbols": [
                 {
@@ -462,8 +769,8 @@
                 {
                     "Follower type": "Less Followers",
                     "Committer Type": null,
-                    "Valid From": "2022-12-12T17:38:57Z",
-                    "Valid To": "2022-12-19T18:23:13Z"
+                    "Valid From": null,
+                    "Valid To": null
                 }
             ]
         },
@@ -498,8 +805,8 @@
                 {
                     "Follower type": "Less Followers",
                     "Committer Type": null,
-                    "Valid From": "2022-12-12T17:38:57Z",
-                    "Valid To": "2022-12-19T18:23:13Z"
+                    "Valid From": null,
+                    "Valid To": null
                 }
             ]
         },
@@ -702,7 +1009,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "92HYDJBL7HQB"
+                "9V03KIPFAE2A"
             ],
             "Context": "QR-code. /vendor/etc/selinux/vendor_mac_permissions.xml\n/vendor/etc/selinux/vendor_property_contexts\n/vendor/etc/selinux/vendor_seapp_contexts\n/vendor/etc/selinux/vendor_sepolicy.cil\n/vendor/etc/selinux/vendor_sepolicy_debug.cil\n/vendor/etc/selinux/vndservice_contexts\nThis configuration (sepolicy) is public domain, i.e. not copyrighted.\n\nWarranty Exclusion\n------------------\nYou agree that this software is a\nnon-commercially developed program that may contain \"bugs\" (as that\nterm is used in the industry) and that it may not function as intended.\nThe software is licensed \"as is\". NSA makes no, and hereby expressly\ndisclaims all, warranties, express, implied, statutory, or otherwise\nwith respect to the software, including noninfringement and the implied\nwarranties of merchantability and fitness for a particular purpose.\n\nLimitation of Liability\n-----------------------\nIn no event will NSA be liable for any damages, including loss of data,\nlost profits, cost of cover, or other special, incidental,\nconsequential, direct or indirect damages arising from the software or\nthe use thereof, however caused and on any theory of liability. This\nlimitation will apply even if NSA has been advised of the possibility\nof such damage. You acknowledge that this is a reasonable allocation of\nrisk.\n\nNotices for file(s):\n/kernel\n![code_202212191723006.png](https://user-images.githubusercontent.com/120409314/208472237-15dc6f27-4799-49ff-bf0c-c8bc98727aa9.png)\n"
         },
@@ -710,25 +1017,79 @@
             "Timestamp": "2022-12-19T15:17:25Z",
             "EntityIds": [
                 108657436,
+                81610181,
                 81610181
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "ZQOLGW3VXQY8"
+                "91I9Z55H84ZO"
             ],
             "Context": "unable to save function, WeightNormalization with Conv1DTranspose error. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.11.0\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nUbuntu 20.04\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.9.12\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\nnvidia-cudnn-cu11==8.6.0.163\n\n### GPU model and memory\n\nRTX 3080TI \n\n### Current Behaviour?\n\n```shell\nFrom the official tutorial on melGAN here: https://keras.io/examples/audio/melgan_spectrogram_inversion/\r\nThe problem occurs with addon_layers.WeightNormalization wrapped around Conv1DTranspose layer. The normalization works on other layers such as Conv1D but not the Conv1DTranspose layer. The model trains fine but error arises when saving the model with error message:\r\nValueError: Unable to save function b'__inference_conv1d_transpose_3_layer_call_and_return_conditional_losses_101006' because it captures graph tensor Tensor(\"weight_normalization_21/compute_weights/mul:0\", shape=(16, 32, 64), dtype=float32) from a parent function which cannot be converted to a constant with `tf.get_static_value`\r\n\r\n\r\nclass ConvBlock(layers.Layer):\r\n    def __init__(self, conv_dim, upsampling_factor):\r\n        super().__init__()\r\n        self.conv_t = addon_layers.WeightNormalization(Conv1DTranspose(conv_dim, 16, upsampling_factor, padding=\"same\"), data_init=False)\r\n        #self.conv_t = Conv1DTranspose(conv_dim, 16, upsampling_factor, padding=\"same\")\r\n        self.res_block = ResidualBlock(conv_dim)\r\n\r\n    def call(self, X, training=False):\r\n        t1 = self.conv_t(X, training=training)\r\n        c1 = tf.nn.leaky_relu(t1, 0.3)\r\n        out = self.res_block(c1, training=training) #I've put the leakly_relu activation into res_block\r\n        return out\r\n```\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nhttps://keras.io/examples/audio/melgan_spectrogram_inversion/\n```\n\n\n### Relevant log output\n\n```shell\nValueError: Unable to save function b'__inference_conv1d_transpose_3_layer_call_and_return_conditional_losses_101006' because it captures graph tensor Tensor(\"weight_normalization_21/compute_weights/mul:0\", shape=(16, 32, 64), dtype=float32) from a parent function which cannot be converted to a constant with `tf.get_static_value`\n```\n</details>"
+        },
+        {
+            "Timestamp": "2022-12-20T06:43:03Z",
+            "EntityIds": [
+                108657436,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "91I9Z55H84ZO"
+            ],
+            "Context": "@binbinxue,\r\n1. The error might be raised because you have declared python lists inside the layers, and those python lists are inaccessible to the **tf computation graph**\r\n\r\n2. Is it because you want to export the model for inference?\r\n\r\nAs a workaround you may want to try to use `tf.saved_model.save(model, name`) and see if that works. Also please try to use **enable_eager_execution()** before executing the code. Thank you!\r\n\r\n"
+        },
+        {
+            "Timestamp": "2022-12-20T10:22:42Z",
+            "EntityIds": [
+                108657436,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "91I9Z55H84ZO"
+            ],
+            "Context": "> \r\n\r\n@tilakrayal thanks for the quick reply, i have tried using tf.saved_model.save or saving in h5 format, none worked, in response to the two points\r\n1. i have tried using the functional model (official demo code) and the subclassed model. Both give the same error with the conv1dTranspose. If i remove the weightNormalization wrapper around it then it saves fine. I did not put any layer objects in a python list, all layers are class attributes and called directly without list comprehension or for loop. \r\n2. yes, that was the intend, the model trains fine but gives the value error when saving. \r\nAny more suggestions please? I tried enable_eager_execution() and nothing changed. "
+        },
+        {
+            "Timestamp": "2022-12-20T11:00:09Z",
+            "EntityIds": [
+                108657436,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "91I9Z55H84ZO"
+            ],
+            "Context": "see the minimum code with WeightNormalization wrapper below:\r\n\r\n\r\n```\r\nfrom tensorflow import keras\r\nfrom tensorflow_addons import layers as addon_layers\r\n\r\nmodel = keras.Sequential([\r\n    addon_layers.WeightNormalization(Conv1DTranspose(32, 16, 2, padding='same'))\r\n])\r\nmodel.build(input_shape=(None, None, 32))\r\ntf.saved_model.save(model,'./2/')\r\n```\r\n\r\nThe error message below:\r\n\r\n**ValueError: Unable to save function b'__inference_conv1d_transpose_layer_call_and_return_conditional_losses_1421' because it captures graph tensor Tensor(\"compute_weights/mul:0\", shape=(16, 32, 32), dtype=float32) from a parent function which cannot be converted to a constant with `tf.get_static_value`.**"
         },
         {
             "Timestamp": "2022-12-19T15:09:10Z",
             "EntityIds": [
                 25260617,
+                86464649,
                 86464649
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "WJFWJHVBUUQ0"
+                "LKW2E9YHTBOB"
             ],
             "Context": "Suggested Build Params For Older Gen Intel CPU. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nSupport\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.12\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nLinux Ubuntu 20.04\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.9\n\n### Bazel version\n\n5.3\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\nn/a\n\n### GPU model and memory\n\nn/a\n\n### Current Behaviour?\n\n```shell\nJust wondering what the suggested build parameters would be for an Intel Xeon E5-4650V2 with no GPU? Here are the specs when running lscpu:\r\n\r\n\r\nCPU op-mode(s):                  32-bit, 64-bit\r\nByte Order:                      Little Endian\r\nAddress sizes:                   40 bits physical, 48 bits virtual\r\nCPU(s):                          16\r\nOn-line CPU(s) list:             0-15\r\nThread(s) per core:              1\r\nCore(s) per socket:              8\r\nSocket(s):                       2\r\nNUMA node(s):                    1\r\nVendor ID:                       GenuineIntel\r\nCPU family:                      15\r\nModel:                           6\r\nModel name:                      Common KVM processor\r\nStepping:                        1\r\nCPU MHz:                         2493.988\r\nBogoMIPS:                        4987.97\r\nHypervisor vendor:               KVM\r\nVirtualization type:             full\r\nL1d cache:                       512 KiB\r\nL1i cache:                       512 KiB\r\nL2 cache:                        64 MiB\r\nL3 cache:                        32 MiB\r\nNUMA node0 CPU(s):               0-15\r\nVulnerability Itlb multihit:     KVM: Vulnerable\r\nVulnerability L1tf:              Mitigation; PTE Inversion\r\nVulnerability Mds:               Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown\r\nVulnerability Meltdown:          Mitigation; PTI\r\nVulnerability Mmio stale data:   Unknown: No mitigations\r\nVulnerability Retbleed:          Not affected\r\nVulnerability Spec store bypass: Vulnerable\r\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\r\nVulnerability Spectre v2:        Mitigation; Retpolines, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected\r\nVulnerability Srbds:             Not affected\r\nVulnerability Tsx async abort:   Not affected\r\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc nopl xtopology cpuid tsc_known_freq pni cx16 x2apic hypervisor lahf_lm cpuid_fault\r\n                                  pti\r\n```\r\n\r\nI would use the default `pip install tensorflow`, but I get the error that our CPU doesn't support sse4.1 and a bunch of other errors that are cause our scripts to fail.\r\n\r\nRight now I've successfully built the `whl` file once, but I'm not sure if I used the right flags.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\n`pip install tensorflow` results in errors stating that our CPU doesn't support sse4.2, sse4.1, etc.\n```\n\n\n### Relevant log output\n\n_No response_</details>"
+        },
+        {
+            "Timestamp": "2022-12-21T07:08:48Z",
+            "EntityIds": [
+                25260617,
+                86464649,
+                86464649
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "LKW2E9YHTBOB"
+            ],
+            "Context": "Hi @mexicantexan !\r\nYou can use [build from source ](https://www.tensorflow.org/install/source)document to make a custom build according to your hardware architecture.\r\n\r\nYou need to link the cuda and other required tool chains(android/ios) in configure.py  process if you are trying to configure for GPU support.\r\n\r\nAttached relevant [thread](https://github.com/tensorflow/tensorflow/issues/8037#issuecomment-323582471)  for reference.\r\n\r\n`\"-mavx -msse4.1 -msse4.2\"`\r\n\r\nThank you!"
         },
         {
             "Timestamp": "2022-12-19T13:55:26Z",
@@ -738,7 +1099,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "AL5IKDAPL3X5"
+                "UCW9BYONPU1E"
             ],
             "Context": "Clog Copy-Paste Error. <details><summary>Click to expand!</summary> \r\n \r\n ### Issue Type\r\n\r\nBug\r\n\r\n### Source\r\n\r\nsource\r\n\r\n### Tensorflow Version\r\n\r\nmaster\r\n\r\n### Custom Code\r\n\r\nNo\r\n\r\n### OS Platform and Distribution\r\n\r\nAny\r\n\r\n### Mobile device\r\n\r\n_No response_\r\n\r\n### Python version\r\n\r\n_No response_\r\n\r\n### Bazel version\r\n\r\n_No response_\r\n\r\n### GCC/Compiler version\r\n\r\n_No response_\r\n\r\n### CUDA/cuDNN version\r\n\r\n_No response_\r\n\r\n### GPU model and memory\r\n\r\n_No response_\r\n\r\n### Current Behaviour?\r\n\r\nIn [workspace2.bzl](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/workspace2.bzl#L162) on line 162 clog was copy and pasted from cpu-info (below it) so both import the same archive and clog is not included.\r\n\r\n```bash\r\n    tf_http_archive(\r\n        name = \"clog\",\r\n        strip_prefix = \"cpuinfo-5e63739504f0f8e18e941bd63b2d6d42536c7d90\",\r\n        sha256 = \"18eca9bc8d9c4ce5496d0d2be9f456d55cbbb5f0639a551ce9c8bac2e84d85fe\",\r\n        urls = tf_mirror_urls(\"https://github.com/pytorch/cpuinfo/archive/5e63739504f0f8e18e941bd63b2d6d42536c7d90.tar.gz\"),\r\n    )\r\n\r\n    tf_http_archive(\r\n        name = \"cpuinfo\",\r\n        strip_prefix = \"cpuinfo-5e63739504f0f8e18e941bd63b2d6d42536c7d90\",\r\n        sha256 = \"18eca9bc8d9c4ce5496d0d2be9f456d55cbbb5f0639a551ce9c8bac2e84d85fe\",\r\n        urls = tf_mirror_urls(\"https://github.com/pytorch/cpuinfo/archive/5e63739504f0f8e18e941bd63b2d6d42536c7d90.tar.gz\"),\r\n    )\r\n```\r\n\r\n\r\n### Standalone code to reproduce the issue\r\n\r\n```shell\r\nView master branch\r\n```\r\n\r\n\r\n### Relevant log output\r\n\r\n_No response_</details>"
         },
@@ -748,11 +1109,14 @@
                 82587125,
                 48215717,
                 82651473,
+                38085909,
+                38085909,
+                null,
                 null
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "UFOSRAK66WEP"
+                "DYXZ64JDW11V"
             ],
             "Context": "[AMD-ZENDNN] Environment variable to enable AMD-ZENDNN plugin. This pull request introduces the environment variable to enable AMD-ZENDNN Plugin\r\nAll code changes are under AMD_ZENDNN flag which is enabled for linux builds only.\r\n\r\nAuthors:\r\n    Aakar Dwivedi ( aakar.dwivedi@amd.com )\r\n    Chandra Kumar Ramasamy ( chandrakumar.ramasamy@amd.com )\r\n    Savan Anadani ( savan.anadani@amd.com )\r\n\r\nSigned-off-by: Aakar Dwivedi <Aakar.Dwivedi@amd.com>"
         },
@@ -762,11 +1126,14 @@
                 82587125,
                 48215717,
                 82651473,
+                38085909,
+                38085909,
+                null,
                 null
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "UFOSRAK66WEP"
+                "DYXZ64JDW11V"
             ],
             "Context": "/cc @penpornk"
         },
@@ -776,13 +1143,84 @@
                 82587125,
                 48215717,
                 82651473,
+                38085909,
+                38085909,
+                null,
                 null
             ],
             "Symbol": "Pull Request",
             "Relational ID": [
-                "UFOSRAK66WEP"
+                "DYXZ64JDW11V"
             ],
             "Context": "[AMD-ZENDNN] Environment variable to enable AMD-ZENDNN plugin. This pull request introduces the environment variable to enable AMD-ZENDNN Plugin\r\nAll code changes are under AMD_ZENDNN flag which is enabled for linux builds only.\r\n\r\nAuthors:\r\n    Aakar Dwivedi ( aakar.dwivedi@amd.com )\r\n    Chandra Kumar Ramasamy ( chandrakumar.ramasamy@amd.com )\r\n    Savan Anadani ( savan.anadani@amd.com )\r\n\r\nSigned-off-by: Aakar Dwivedi <Aakar.Dwivedi@amd.com>"
+        },
+        {
+            "Timestamp": "2022-12-20T09:48:03Z",
+            "EntityIds": [
+                82587125,
+                48215717,
+                82651473,
+                38085909,
+                38085909,
+                null,
+                null
+            ],
+            "Symbol": "Pull Request Comment",
+            "Relational ID": [
+                "DYXZ64JDW11V"
+            ],
+            "Context": "Once we get all the integration PRs in and things work fine, we may consider setting the default value to `true` if the plug-in is present. As of now I think it's good to start with false. :)"
+        },
+        {
+            "Timestamp": "2022-12-21T03:57:35Z",
+            "EntityIds": [
+                82587125,
+                48215717,
+                82651473,
+                38085909,
+                38085909,
+                null,
+                null
+            ],
+            "Symbol": "Pull Request Comment",
+            "Relational ID": [
+                "DYXZ64JDW11V"
+            ],
+            "Context": "Yes, that is a good idea. Thank you for the quick approval."
+        },
+        {
+            "Timestamp": "2022-12-21T12:13:11Z",
+            "EntityIds": [
+                82587125,
+                48215717,
+                82651473,
+                38085909,
+                38085909,
+                null,
+                null
+            ],
+            "Symbol": "Pull Request Comment",
+            "Relational ID": [
+                "DYXZ64JDW11V"
+            ],
+            "Context": "Could you please move this declaration to inside `#else` (after line 124)? Otherwise we'll get an unused variable error when `AMD_ZENDNN` is not defined."
+        },
+        {
+            "Timestamp": "2022-12-21T14:01:06Z",
+            "EntityIds": [
+                82587125,
+                48215717,
+                82651473,
+                38085909,
+                38085909,
+                null,
+                null
+            ],
+            "Symbol": "Pull Request Comment",
+            "Relational ID": [
+                "DYXZ64JDW11V"
+            ],
+            "Context": "Resolved. Thank you for the suggestion."
         },
         {
             "Timestamp": "2022-12-19T10:44:31Z",
@@ -790,36 +1228,102 @@
                 82587125,
                 48215717,
                 82651473,
+                38085909,
+                38085909,
+                null,
                 null
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "UFOSRAK66WEP"
+                "DYXZ64JDW11V"
             ],
             "Context": "[AMD-ZENDNN] Environment variable to enable AMD-ZENDNN plugin\n\nThis pull request introduces the environment variable to enable AMD-ZENDNN Plugin\nAll code changes are under AMD_ZENDNN flag which is enabled for linux builds only.\n\nAuthors:\n    Aakar Dwivedi ( aakar.dwivedi@amd.com )\n    Chandra Kumar Ramasamy ( chandrakumar.ramasamy@amd.com )\n    Savan Anadani ( savan.anadani@amd.com )\n\nSigned-off-by: Aakar Dwivedi <Aakar.Dwivedi@amd.com>"
+        },
+        {
+            "Timestamp": "2022-12-21T13:50:14Z",
+            "EntityIds": [
+                82587125,
+                48215717,
+                82651473,
+                38085909,
+                38085909,
+                null,
+                null
+            ],
+            "Symbol": "Pull Request Commit",
+            "Relational ID": [
+                "DYXZ64JDW11V"
+            ],
+            "Context": "[AMD-ZENDNN] Move declaration inside #else condition\n\n- Move absl::once_flag declaration inside #else condition to avoid unused variable issue.\n\nSigned-off-by: Aakar Dwivedi <Aakar.Dwivedi@amd.com>"
         },
         {
             "Timestamp": "2022-12-19T10:35:13Z",
             "EntityIds": [
                 98037785,
+                81610181,
+                81610181,
                 81610181
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "IQTIMUUQNT1L"
+                "6L1BLPPSSH87"
             ],
             "Context": "tf.custom_gradient with multiple input and output. ### System information\r\n\r\n-   **Have I written custom code (as opposed to using a stock example script\r\n    provided in TensorFlow)**:\r\n-   **OS Platform and Distribution (e.g., Linux Ubuntu 16.04)**: ubuntu 20.04\r\n-   **Mobile device (e.g. iPhone 8, Pixel 2, Samsung Galaxy) if the issue\r\n    happens on a mobile device**:\r\n-   **TensorFlow installed from (source or binary)**:\r\n-   **TensorFlow version (use command below)**: 2.9.2\r\n-   **Python version**: 3.9\r\n-   **Bazel version (if compiling from source)**:\r\n-   **GCC/Compiler version (if compiling from source)**:\r\n-   **CUDA/cuDNN version**:\r\n-   **GPU model and memory**:\r\n-   **Exact command to reproduce**:\r\n\r\n### Describe the problem\r\nI have a function with 4 inputs and 2 outputs using Tensorflow. I would like to specify the gradients, since I perform some non-autodiff operations inside the function.\r\n\r\nI need to specify the derivatives of the outputs with respect to the inputs. We can see these derivatives as a Jacobian of size (2,4). Regarding this, I have 8 derivatives: out1/in1, out1/in2, out1/in3, out1/in4, out2/in1, out2/in2, out2/in3 and out2/in4.\r\n\r\nHowever, the grad function used in this tf.custom.gradient needs to have the same length as the inputs, this is 4. So, I do not know how Tensorflow handles with the introduction of the 8 derivatives using just 4 elements. I hope you could help me, thanks in advance:\r\n\r\n```\r\nimport tensorflow as tf\r\n\r\n@tf.custom_gradient\r\ndef custom_layer(in1, in2, in3, in4):\r\n  # Define the forward pass\r\n  def forward_pass(in1, in2, in3, in4):\r\n    # Perform some computation on the inputs\r\n    out1, out2 = compute_output(in1, in2, in3, in4)\r\n    return out1, out2\r\n\r\n  # Define the gradient function\r\n  def backward_pass(dy1, dy2):\r\n    # Compute the gradients with respect to the inputs\r\n    grad1 = ...\r\n    grad2 = ...\r\n    grad3 = ...\r\n    grad4 = ...\r\n    return grad1, grad2, grad3, grad4\r\n  \r\n  # Return the forward pass and the gradient function\r\n  return forward_pass(in1, in2, in3, in4), `backward_pass\r\n```\r\n\r\nI tried to insert the 8 derivatives in the return of the backward_pass, but it gives me an error that the number of elements should be 4 (same as inputs).\r\n\r\nI expect someway to specify the correspondent 8 derivatives.\r\n\r\n"
+        },
+        {
+            "Timestamp": "2022-12-20T06:01:31Z",
+            "EntityIds": [
+                98037785,
+                81610181,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "6L1BLPPSSH87"
+            ],
+            "Context": "@jesgosi,\r\nI was facing a different issue while executing the mentioned code. Kindly find the gist of it [here](https://colab.research.google.com/gist/tilakrayal/f25494a2af1183a890df75148a7b1553/untitled807.ipynb) and provide the dependencies to debug the issue."
+        },
+        {
+            "Timestamp": "2022-12-20T06:04:21Z",
+            "EntityIds": [
+                98037785,
+                81610181,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "6L1BLPPSSH87"
+            ],
+            "Context": "Also When we are using the function that takes multiple variables as input, the grad function must also return the same number of variables. Please take a look at this official doc link of **tf.custom_gradient** for the [reference](https://www.tensorflow.org/api_docs/python/tf/custom_gradient). Thank you!"
+        },
+        {
+            "Timestamp": "2022-12-20T11:08:05Z",
+            "EntityIds": [
+                98037785,
+                81610181,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "6L1BLPPSSH87"
+            ],
+            "Context": "> Also When we are using the function that takes multiple variables as input, the grad function must also return the same number of variables. Please take a look at this official doc link of **tf.custom_gradient** for the [reference](https://www.tensorflow.org/api_docs/python/tf/custom_gradient). Thank you!\r\n\r\n\r\nThan you for your response. I updated my question and the [gist](https://colab.research.google.com/gist/jesgosi/fb28cb5a016ef2cff6748f5e16a1c3dd/untitled807.ipynb) in order to better reproduce the error. I have already read the reference and I know I must return the same number of variables, but mathematically, I should return 8 gradients instead of 4, so I do not know how tensorflow makes it possible.\r\n"
         },
         {
             "Timestamp": "2022-12-19T10:26:27Z",
             "EntityIds": [
                 11645696,
                 86464649,
-                86464649
+                86464649,
+                86464649,
+                56610014
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "0U6P0EN080FG"
+                "VBE4FG6JJ4LG"
             ],
             "Context": "autocast=False not respected when saving/loading Keras model. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.9.3\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nWindows 10\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n_No response_\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nIn the below code, the intention is to create a model that takes an input of type `float32` when saved, even if it is trained with `mixed_precision`. In this example, training code is omitted, and `call()` is just a placeholder for conciseness, but it still shows the issue.\r\n\r\nThe problem comes when loading the model. Because it has `autocast=False` I would expect that the model is saved with an input type of `tf.float32`. But it seems that the model is saved in an invalid state, because it loads with an error.\r\n\r\nThe error is the same even if you call `tf.keras.mixed_precision.set_global_policy(\"float32\")` before loading the model.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nimport keras\r\nimport tensorflow as tf\r\n\r\nclass MyModel(keras.Model):\r\n    def __init__(self):\r\n        super().__init__(autocast=False)\r\n\r\n    def call(self, inputs):\r\n        return 0\r\n\r\ndef main():\r\n    tf.keras.mixed_precision.set_global_policy(\"mixed_float16\")\r\n\r\n    model = MyModel()\r\n\r\n    inputs = tf.zeros(shape=(1, 1), dtype=tf.float32)\r\n\r\n    prediction_0 = model(inputs)\r\n\r\n    model_path = \"test_model\"\r\n\r\n    model.save(model_path)\r\n\r\n    loaded_model = keras.models.load_model(model_path)\r\n\r\n    prediction_1 = loaded_model(inputs)\r\n\r\nif __name__ == \"__main__\":\r\n    main()\n```\n\n\n### Relevant log output\n\n```shell\nValueError: Exception encountered when calling layer \"my_model\" (type MyModel).\r\n\r\nCould not find matching concrete function to call loaded from the SavedModel. Got:\r\n  Positional arguments (1 total):\r\n    * <tf.Tensor 'inputs:0' shape=(1, 1) dtype=float16>\r\n  Keyword arguments: {}\r\n\r\n Expected these arguments to match one of the following 2 option(s):\r\n\r\nOption 1:\r\n  Positional arguments (1 total):\r\n    * TensorSpec(shape=(None, 1), dtype=tf.float32, name='inputs')\r\n  Keyword arguments: {}\r\n\r\nOption 2:\r\n  Positional arguments (1 total):\r\n    * TensorSpec(shape=(None, 1), dtype=tf.float32, name='input_1')\r\n  Keyword arguments: {}\r\n\r\nCall arguments received by layer \"my_model\" (type MyModel):\r\n  \u2022 args=('tf.Tensor(shape=(1, 1), dtype=float16)',)\r\n  \u2022 kwargs=<class 'inspect._empty'>\r\n\r\nProcess finished with exit code 1\n```\n</details>"
         },
@@ -828,25 +1332,86 @@
             "EntityIds": [
                 11645696,
                 86464649,
-                86464649
+                86464649,
+                86464649,
+                56610014
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "0U6P0EN080FG"
+                "VBE4FG6JJ4LG"
             ],
             "Context": "Hi @JustASquid !\r\nThanks for sharing your observation on autocast=False in Keras model. Attached gist in [2.9](https://colab.sandbox.google.com/gist/mohantym/7109c0389a437357f1342e4e7b64d60a/git_58940.ipynb#scrollTo=4xaUV75KXQn9), [2.10 ](https://colab.sandbox.google.com/gist/mohantym/9080f3bde6221b7f4cab7189559369c9/git_58940.ipynb#scrollTo=FYf1PMKGXMJi)and [2.11](https://colab.sandbox.google.com/gist/mohantym/61527025358585c874aabf880a065ca6/git_58940.ipynb#scrollTo=FYf1PMKGXMJi) for reference.\r\n\r\nCould you report this issue on [keras-team/keras repo](https://github.com/keras-team/keras/issues)\r\nTo know more see;\r\n[https://discuss.tensorflow.org/t/keras-project-moved-to-new-repository-in-https-github-com-keras-team-keras/1999](https://discuss.tensorflow.org/t/keras-project-moved-to-new-repository-in-https-github-com-keras-team-keras/1999) . \r\n\r\nThank you!"
+        },
+        {
+            "Timestamp": "2022-12-19T21:33:39Z",
+            "EntityIds": [
+                11645696,
+                86464649,
+                86464649,
+                86464649,
+                56610014
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "VBE4FG6JJ4LG"
+            ],
+            "Context": "Thanks @mohantym, see https://github.com/keras-team/keras/issues/17362"
+        },
+        {
+            "Timestamp": "2022-12-20T03:16:21Z",
+            "EntityIds": [
+                11645696,
+                86464649,
+                86464649,
+                86464649,
+                56610014
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "VBE4FG6JJ4LG"
+            ],
+            "Context": "Ok @JustASquid !\r\nMoving this issue to closed status, as it will be tracked in [Keras#17362](https://github.com/keras-team/keras/issues/17362).\r\nThank you!"
+        },
+        {
+            "Timestamp": "2022-12-20T03:16:27Z",
+            "EntityIds": [
+                11645696,
+                86464649,
+                86464649,
+                86464649,
+                56610014
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "VBE4FG6JJ4LG"
+            ],
+            "Context": "Are you satisfied with the resolution of your issue?\n<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfaP12TRhd9xSxjXZjcZFNXPGk4kc1-qMdv3gc6bEP90vY1ew/viewform?entry.85265664=Yes&entry.2137816233=https://github.com/tensorflow/tensorflow/issues/58940\">Yes</a>\n<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfaP12TRhd9xSxjXZjcZFNXPGk4kc1-qMdv3gc6bEP90vY1ew/viewform?entry.85265664=No&entry.2137816233=https://github.com/tensorflow/tensorflow/issues/58940\">No</a>\n"
         },
         {
             "Timestamp": "2022-12-19T10:00:51Z",
             "EntityIds": [
                 98973349,
+                111861663,
                 111861663
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "ZD3W2DPHTD6K"
+                "6RECJMVYC0PR"
             ],
             "Context": "Dependencies installation failure in rasa due to Tensor flow. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBuild/Install\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.3.4\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nUbuntu 18.04.6 LTS Kernel: Linux 5.4.0-1090\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.7.5\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nDuring a fresh install of Tensor flow :\r\n\r\nERROR: Could not find a version that satisfies the requirement tensor flow-text<2.4,>=2.3; sys_platform != \"win32\" (from rasa) (from versions: none) ERROR: No matching distribution found for tensorflow-text<2.4,>=2.3; sys_platform != \"win32\"\r\n\r\nIt does not work even after upgrading the tensor flow to 2.9.0\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nERROR: Could not find a version that satisfies the requirement tensor flow-text<2.4,>=2.3; sys_platform != \"win32\" (from rasa) (from versions: none) ERROR: No matching distribution found for tensorflow-text<2.4,>=2.3; sys_platform != \"win32\"\n```\n\n\n### Relevant log output\n\n_No response_</details>"
+        },
+        {
+            "Timestamp": "2022-12-21T06:36:31Z",
+            "EntityIds": [
+                98973349,
+                111861663,
+                111861663
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "6RECJMVYC0PR"
+            ],
+            "Context": "@Harthikahari \r\nCould you please try with the latest version which is TF v2.11 and refer to [Install TensorFlow with pip](https://www.tensorflow.org/install/pip#linux) and [Install TensorFlow Text](https://www.tensorflow.org/text/guide/tf_text_intro#install_tensorflow_text) and let us know if it helps.\r\n\r\nThank you !\r\n\r\n"
         },
         {
             "Timestamp": "2022-12-19T08:46:14Z",
@@ -857,7 +1422,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "PGNGY8DDQ8VG"
+                "74P0XNSDYXXA"
             ],
             "Context": "tf.distribute.MultiWorkerMirroredStrategy with custom model.train_step. ### System information\r\n\r\n-   **Have I written custom code (as opposed to using a stock example script\r\n    provided in TensorFlow)**: yes\r\n-   **OS Platform and Distribution (e.g., Linux Ubuntu 16.04)**: Linux Ubuntu 20.04\r\n-   **TensorFlow version (use command below)**: 2.6\r\n-   **Python version**: 3.8\r\n\r\n### Describe the problem\r\n\r\nI'd like to use tf.distribute.MultiWorkerMirroredStrategy with a custom model.train_step. How should the loss be calculated if using a custom loss? As an example, let's say my custom loss is tf.keras.losses.SparseCategoricalCrossentropy. Should the `reduction` be set to tf.keras.losses.Reduction.NONE (like below)? Or do I need to set the reduction to tf.keras.losses.Reduction.SUM and divide by the global batch size?\r\n\r\nThis problem is kind of in between keras.fit and writing custom distributed training loop. So not really sure how tensorflow will aggregate the gradients when calling model.fit. Just asking here because there doesn't seem to be documentation on this\r\n\r\n### Source code / logs\r\n```\r\nclass CustomModel(tf.keras.Model):\r\n    def __init__(self, model):\r\n        super(CustomModel, self).__init__()\r\n        self.model = model\r\n        self.loss_tracker= tf.keras.metrics.Mean(name='loss')\r\n        \r\n    def train_step(self, data):\r\n        x, y = data\r\n        with tf.GradientTape() as tape:\r\n            # Forward pass\r\n            y_pred = self.model(x, training=True)\r\n            # Compute our own loss. Shape (batch_size,)\r\n            loss = tf.keras.losses.SparseCategoricalCrossentropy(\r\n                from_logits = True, reduction=tf.keras.losses.Reduction.NONE)(y, y_pred)\r\n           \r\n        # Compute gradients\r\n        trainable_vars = self.model.trainable_variables\r\n        gradients = tape.gradient(loss, trainable_vars)\r\n        # Update weights\r\n        self.optimizer.apply_gradients(zip(gradients, trainable_vars))\r\n        # Update metrics\r\n        self.loss_tracker.update_state(loss)\r\n        self.compiled_metrics.update_state(y, y_pred)\r\n        metrics = {m.name: m.result() for m in self.metrics}\r\n        return metrics\r\n```\r\n"
         },
@@ -870,9 +1435,22 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "PGNGY8DDQ8VG"
+                "74P0XNSDYXXA"
             ],
             "Context": "@TZeng20,\r\nIn order to reproduce the issue reported here, could you please provide the complete code and the dataset you are using. Thank you!"
+        },
+        {
+            "Timestamp": "2022-12-19T23:13:01Z",
+            "EntityIds": [
+                38205634,
+                81610181,
+                81610181
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "74P0XNSDYXXA"
+            ],
+            "Context": "Sure. Updated with a short reproducible example"
         },
         {
             "Timestamp": "2022-12-19T06:35:15Z",
@@ -880,11 +1458,12 @@
                 11645696,
                 116063290,
                 86464649,
+                116063290,
                 116063290
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "50M63I7UXBD9"
+                "E5MJT5FHUXND"
             ],
             "Context": "AutoCast variable inside tf.function does not cast correctly when saving a model. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.9.3\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nWindows 10\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.9\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nError when calling model.save()\r\n\r\nYou can work around the error by commenting out `tf.function` over `call()`.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nimport tensorflow as tf\r\nimport keras\r\nimport keras.layers\r\n\r\nclass CosineSimilarityLayer(keras.layers.Layer):\r\n    def __init__(\r\n        self, num_classes: int, name: str = None\r\n    ):\r\n        super().__init__(name=name)\r\n        self.num_classes = num_classes\r\n        self._weights = None\r\n\r\n    def build(self, input_shape):\r\n        self._weights = self.add_weight(\r\n            name=\"W\",\r\n            shape=(\r\n                input_shape[-1],\r\n                self.num_classes,\r\n            ),\r\n            initializer=\"glorot_normal\",\r\n            trainable=True,\r\n            dtype=self.dtype\r\n        )\r\n        super().build(input_shape)\r\n\r\n    def compute_output_shape(self):\r\n        return None, self.num_classes\r\n\r\n    # If you comment out tf.function here, it works.\r\n    @tf.function\r\n    def call(self, inputs: tf.Tensor):\r\n        embedding = inputs\r\n        # normalize feature\r\n        embedding_normalized = tf.nn.l2_normalize(embedding, axis=1)\r\n        # get centroids\r\n        weights_normalized = tf.nn.l2_normalize(self._weights, axis=1, )\r\n\r\n        logits = embedding_normalized @ weights_normalized\r\n\r\n        return logits\r\n\r\n    def get_config(self):\r\n        config = super().get_config().copy()\r\n        config.update(\r\n            {\r\n                \"num_classes\": self.num_classes,\r\n            }\r\n        )\r\n        return config\r\n\r\ndef main():\r\n    tf.keras.mixed_precision.set_global_policy(\"mixed_float16\")\r\n\r\n    layer = CosineSimilarityLayer(num_classes=100)\r\n\r\n    input = tf.zeros(shape=(10, 100), dtype=tf.float16)\r\n\r\n    model = keras.models.Sequential([\r\n        layer\r\n    ])\r\n\r\n    model(input)\r\n\r\n    model.save(\"autocast_issue\")\r\n\r\nif __name__ == \"__main__\":\r\n    main()\n```\n\n\n### Relevant log output\n\n```shell\nFile \"*\\autocast_issue.py\", line 37, in call  *\r\n        logits = embedding_normalized @ weights_normalized\r\n\r\n    TypeError: Input 'b' of 'MatMul' Op has type float32 that does not match type float16 of argument 'a'.\n```\n</details>"
         },
@@ -894,11 +1473,12 @@
                 11645696,
                 116063290,
                 86464649,
+                116063290,
                 116063290
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "50M63I7UXBD9"
+                "E5MJT5FHUXND"
             ],
             "Context": "Hi @JustASquid !\r\nI could replicate this issue in 2.9, 2.10 and  2.11. \r\n\r\n@SuryanarayanaY !\r\nAttached gist in [2.9](https://colab.sandbox.google.com/gist/mohantym/65e06da996e56e8e0a8e4f7780b36a7c/git_58937.ipynb#scrollTo=4EooDPFRb2qV), [2.10](https://colab.sandbox.google.com/gist/mohantym/c249816b76524de4872223130930e353/git_58937.ipynb#scrollTo=4EooDPFRb2qV) and [2.11](https://colab.sandbox.google.com/gist/mohantym/5b5c2291df32fa8e96cdc78502be35f5/git_58937.ipynb#scrollTo=zz978UmCj-p_) for reference.\r\n\r\nThank you! "
         },
@@ -908,13 +1488,44 @@
                 11645696,
                 116063290,
                 86464649,
+                116063290,
                 116063290
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "50M63I7UXBD9"
+                "E5MJT5FHUXND"
             ],
             "Context": "Hi @JustASquid ,\r\n\r\nThere is a limitation for this Policy as below as per [documentation](https://www.tensorflow.org/api_docs/python/tf/keras/mixed_precision/Policy#how_a_layer_uses_its_policys_compute_dtype).\r\n\r\n> Currently, only tensors in the first argument to the layer's call method are casted (although this will likely be changed in a future minor release)\r\n\r\nSince you passed first argument `input` as `float16` and second argument `weights_normalized` as `float32` the policy converted only first argument and second argument remains as it is and hence causing the Type Error. Hence I changed the second argument also suitable to argument mentioned in Policy `(float16)` and there is no Error. I even tried changing first argument from `float16` to `float32` and the Policy is able to convert it into `float16` and code executed without any error.Please refer to attached [gist-nightly-2.12V](https://colab.sandbox.google.com/gist/SuryanarayanaY/09963dbbb563c3089e3ac617336d73de/58937_r1-nightly.ipynb).\r\n\r\nI hope this clarifies your query.Thank you!"
+        },
+        {
+            "Timestamp": "2022-12-21T03:23:14Z",
+            "EntityIds": [
+                11645696,
+                116063290,
+                86464649,
+                116063290,
+                116063290
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "E5MJT5FHUXND"
+            ],
+            "Context": "@SuryanarayanaY I don't quite understand. The layer call function only has one argument. So the limitation specified in the documentation should not apply here."
+        },
+        {
+            "Timestamp": "2022-12-21T06:04:41Z",
+            "EntityIds": [
+                11645696,
+                116063290,
+                86464649,
+                116063290,
+                116063290
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "E5MJT5FHUXND"
+            ],
+            "Context": "@JustASquid ,\r\nYes the Policy applies to only First Argument to the layer call which converts first argument to `float16` but the the variable `weights_normalized` is of `float32` which is default dtype of TF and hence raising the `TypeError: Input 'b' of 'MatMul' Op has type float32 that does not match type float16 of argument 'a'`  in the operation `embedding_normalized @ weights_normalized`.\r\nThe error is not raised by the Policy.The Policy converted first argument dtype as intended.But the operation `embedding_normalized @ weights_normalized` not supports different dtypes for multiplication.Both the arguments should be of same type. Please also refer the [tensordot](embedding_normalized @ weights_normalized) API of Tensorflow regarding the same.\r\n\r\nHence you need to keep same dtypes for dot product which is the reason for the error but not Policy `tf.keras.mixed_precision.set_global_policy`.\r\n\r\nThankyou!\r\n"
         },
         {
             "Timestamp": "2022-12-19T04:01:20Z",
@@ -924,7 +1535,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "P0T4JJ2S0BSS"
+                "9FGGDKJS7WYY"
             ],
             "Context": "AutoCast variable inside tf.function does not cast correctly when saving a model. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\n2.9.3\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\nWindows 10\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n3.9\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nError when calling model.save()\r\n\r\nYou can work around the error by commenting out `tf.function` over `call()`.\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nimport tensorflow as tf\r\nimport keras\r\nimport keras.layers\r\n\r\nclass CosineSimilarityLayer(keras.layers.Layer):\r\n    def __init__(\r\n        self, num_classes: int, name: str = None\r\n    ):\r\n        super().__init__(name=name)\r\n        self.num_classes = num_classes\r\n        self._weights = None\r\n\r\n    def build(self, input_shape):\r\n        self._weights = self.add_weight(\r\n            name=\"W\",\r\n            shape=(\r\n                input_shape[-1],\r\n                self.num_classes,\r\n            ),\r\n            initializer=\"glorot_normal\",\r\n            trainable=True,\r\n            dtype=self.dtype\r\n        )\r\n        super().build(input_shape)\r\n\r\n    def compute_output_shape(self):\r\n        return None, self.num_classes\r\n\r\n    # If you comment out tf.function here, it works.\r\n    @tf.function\r\n    def call(self, inputs: tf.Tensor):\r\n        embedding = inputs\r\n        # normalize feature\r\n        embedding_normalized = tf.nn.l2_normalize(embedding, axis=1)\r\n        # get centroids\r\n        weights_normalized = tf.nn.l2_normalize(self._weights, axis=1, )\r\n\r\n        logits = embedding_normalized @ weights_normalized\r\n\r\n        return logits\r\n\r\n    def get_config(self):\r\n        config = super().get_config().copy()\r\n        config.update(\r\n            {\r\n                \"num_classes\": self.num_classes,\r\n            }\r\n        )\r\n        return config\r\n\r\ndef main():\r\n    tf.keras.mixed_precision.set_global_policy(\"mixed_float16\")\r\n\r\n    layer = CosineSimilarityLayer(num_classes=100)\r\n\r\n    input = tf.zeros(shape=(10, 100), dtype=tf.float16)\r\n\r\n    model = keras.models.Sequential([\r\n        layer\r\n    ])\r\n\r\n    model(input)\r\n\r\n    model.save(\"autocast_issue\")\r\n\r\nif __name__ == \"__main__\":\r\n    main()\n```\n\n\n### Relevant log output\n\n```shell\nFile \"*\\autocast_issue.py\", line 37, in call  *\r\n        logits = embedding_normalized @ weights_normalized\r\n\r\n    TypeError: Input 'b' of 'MatMul' Op has type float32 that does not match type float16 of argument 'a'.\n```\n</details>"
         },
@@ -936,7 +1547,7 @@
             ],
             "Symbol": "Pull Request",
             "Relational ID": [
-                "P0T4JJ2S0BSS"
+                "9FGGDKJS7WYY"
             ],
             "Context": "[AMD-ZENDNN] Environment variable to enable AMD-ZENDNN plugin. This pull request introduces the environment variable to enable AMD-ZENDNN Plugin\r\nAll code changes are under AMD_ZENDNN flag which is enabled for linux builds only.\r\n\r\nAuthors:\r\n    Aakar Dwivedi ( aakar.dwivedi@amd.com )\r\n    Chandra Kumar Ramasamy ( chandrakumar.ramasamy@amd.com )\r\n    Savan Anadani ( savan.anadani@amd.com )\r\n\r\nSigned-off-by: Aakar Dwivedi <Aakar.Dwivedi@amd.com>"
         },
@@ -948,7 +1559,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "P0T4JJ2S0BSS"
+                "9FGGDKJS7WYY"
             ],
             "Context": "EvalTools CMake build & minor update of kernel tests CMake build"
         },
@@ -960,7 +1571,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "P0T4JJ2S0BSS"
+                "9FGGDKJS7WYY"
             ],
             "Context": "Evaluation Tools as a separate CMake build target"
         },
@@ -968,11 +1579,13 @@
             "Timestamp": "2022-12-18T23:42:32Z",
             "EntityIds": [
                 94430032,
+                111861663,
+                111861663,
                 111861663
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "GK8EUPSHZY8Z"
+                "4U5XFDISOJ8V"
             ],
             "Context": "Tensroflow recognizes only one GPU. <details><summary>Click to expand!</summary> \r\n \r\n ### Issue Type\r\n\r\nBug\r\n\r\n### Source\r\n\r\nsource\r\n\r\n### Tensorflow Version\r\n\r\ntf.2.5.0\r\n\r\n### Custom Code\r\n\r\nYes\r\n\r\n### OS Platform and Distribution\r\n\r\n9.4.0\r\n\r\n### Mobile device\r\n\r\n9.4.0\r\n\r\n### Python version\r\n\r\n3.6.13\r\n\r\n### Bazel version\r\n\r\n_No response_\r\n\r\n### GCC/Compiler version\r\n\r\n9.4.0\r\n\r\n### CUDA/cuDNN version\r\n\r\nCUDA 11.2 / cuDNN 8.1\r\n\r\n### GPU model and memory\r\n\r\nNVIDIA RTX A5000\r\n\r\n### Current Behaviour?\r\n\r\n```shell\r\nI am using No.0~ No.9 GPU NVIDIA RTX A5000.\r\n\r\nBut process recognizes only No.1 GPU.\r\n\r\ncuda and cuDNN versions correct.\r\n\r\nError message not occur.\r\n\r\nThis is all the code related to gpu.\r\n\r\nlen(tf.config.list_physical_devices) is print out.\r\nNum GPUs Available : 1\r\n```\r\n\r\n\r\n### Standalone code to reproduce the issue\r\n\r\n```shell\r\nos.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'\r\nos.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'\r\n# os.environ[\"CUDA_VISIBLE_DEVICES\"] = \"1\"\r\n\r\n\r\nos.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true' \r\n\r\nfrom tensorflow.python.client import device_lib\r\n#from tensorflow.contrib import rnn\r\nimport tensorflow_addons as tfa\r\n\r\n\r\nimport tensorflow_addons.rnn as rnn\r\nlogger.debug(\"Num GPUs Available: \" + str(len(tf.config.list_physical_devices('GPU'))))\r\n\r\n#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'\r\n#os.environ['CUDA_VISIBLE_DEVICES']='1'\r\n# os.environ[\"TF_CUDA_HOST_MEM_LIMIT_IN_MB\"]=\"10000\"\r\n\r\nlogger.debug(device_lib.list_local_devices()) \r\nlogger.debug(\"##################################################################\\n\\n\")\r\n```\r\n\r\n\r\n### Relevant log output\r\n\r\n```shell\r\n#ifndef CUDNN_VERSION_H_\r\n#define CUDNN_VERSION_H_\r\n\r\n#define CUDNN_MAJOR 8\r\n#define CUDNN_MINOR 1\r\n#define CUDNN_PATCHLEVEL 0\r\n\r\n#define CUDNN_VERSION (CUDNN_MAJOR * 1000 + CUDNN_MINOR * 100 + CUDNN_PATCHLEVEL)\r\n\r\n#endif /* CUDNN_VERSION_H */\r\n\r\n\r\nnvcc: NVIDIA (R) Cuda compiler driver\r\nCopyright (c) 2005-2020 NVIDIA Corporation\r\nBuilt on Mon_Nov_30_19:08:53_PST_2020\r\nCuda compilation tools, release 11.2, V11.2.67\r\nBuild cuda_11.2.r11.2/compiler.29373293_0\r\n```\r\n</details>"
         },
@@ -980,13 +1593,71 @@
             "Timestamp": "2022-12-18T23:47:13Z",
             "EntityIds": [
                 94430032,
+                111861663,
+                111861663,
                 111861663
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "GK8EUPSHZY8Z"
+                "4U5XFDISOJ8V"
             ],
             "Context": "2022-12-19 08:45:16.640967: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0\r\n2022-12-19 08:45:18.260499: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1\r\n2022-12-19 08:45:18.396744: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: \r\npciBusID: 0000:3e:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-19 08:45:18.396805: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0\r\n2022-12-19 08:45:18.403894: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11\r\n2022-12-19 08:45:18.404132: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11\r\n2022-12-19 08:45:18.406577: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10\r\n2022-12-19 08:45:18.407224: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10\r\n2022-12-19 08:45:18.414096: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11\r\n2022-12-19 08:45:18.415313: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11\r\n2022-12-19 08:45:18.415576: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8\r\n2022-12-19 08:45:18.418045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0\r\n2022-12-19 08:45:18.473850: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA\r\nTo enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.\r\n2022-12-19 08:45:18.478149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: \r\npciBusID: 0000:3e:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-19 08:45:18.480000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0\r\n2022-12-19 08:45:18.480065: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0\r\n2022-12-19 08:45:19.086498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:\r\n2022-12-19 08:45:19.086548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 \r\n2022-12-19 08:45:19.086562: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N \r\n2022-12-19 08:45:19.089539: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.\r\n2022-12-19 08:45:19.089580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 22352 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:3e:00.0, compute capability: 8.6)\r\n2022-12-19 08:45:19.100652: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: \r\npciBusID: 0000:3e:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-19 08:45:19.102433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0\r\n2022-12-19 08:45:19.102461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:\r\n2022-12-19 08:45:19.102468: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 \r\n2022-12-19 08:45:19.102490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N \r\n2022-12-19 08:45:19.104319: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 22352 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:3e:00.0, compute capability: 8.6)\r\n2022-12-19 08:45:19.108742: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: \r\npciBusID: 0000:3e:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-19 08:45:19.110541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0\r\n2022-12-19 08:45:19.110563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:\r\n2022-12-19 08:45:19.110570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 \r\n2022-12-19 08:45:19.110574: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N \r\n2022-12-19 08:45:19.112368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 22352 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:3e:00.0, compute capability: 8.6)\r\n2022-12-19 08:45:19.116692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: \r\npciBusID: 0000:3e:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-19 08:45:19.118441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0\r\n2022-12-19 08:45:19.118463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:\r\n2022-12-19 08:45:19.118469: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 \r\n2022-12-19 08:45:19.118474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N \r\n2022-12-19 08:45:19.120230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 22352 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:3e:00.0, compute capability: 8.6)\r\n\r\n\r\nthis is start log message"
+        },
+        {
+            "Timestamp": "2022-12-20T02:36:38Z",
+            "EntityIds": [
+                94430032,
+                111861663,
+                111861663,
+                111861663
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "4U5XFDISOJ8V"
+            ],
+            "Context": "@jrstd \r\nI tried to reproduce the issue but faced a different error.  Could you please provide complete code to reproduce. \r\nPlease find the below screenshot for reference:\r\n![Screenshot 2022-12-20 7 59 59 AM](https://user-images.githubusercontent.com/111861663/208568626-0814165e-e2ff-4786-b4b8-39d3727ec069.png)\r\n\r\n\r\nThank you!\r\n\r\n"
+        },
+        {
+            "Timestamp": "2022-12-20T04:00:27Z",
+            "EntityIds": [
+                94430032,
+                111861663,
+                111861663,
+                111861663
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "4U5XFDISOJ8V"
+            ],
+            "Context": "Oh.. I use log. Replace 'logger.debug' with 'print' please."
+        },
+        {
+            "Timestamp": "2022-12-20T04:01:52Z",
+            "EntityIds": [
+                94430032,
+                111861663,
+                111861663,
+                111861663
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "4U5XFDISOJ8V"
+            ],
+            "Context": "Python 3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59) \r\n[GCC 7.5.0] on linux\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> from tensorflow.python.client import device_lib\r\n2022-12-20 10:48:12.332276: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0\r\n>>> device_lib.list_local_devices()\r\n2022-12-20 10:48:39.803760: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA\r\nTo enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.\r\n2022-12-20 10:48:39.811186: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1\r\n2022-12-20 10:48:41.759404: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 0 and 9, status: Internal: failed to enable peer access from 0x563425ab7f10 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.764495: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 1 and 9, status: Internal: failed to enable peer access from 0x56342615d440 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.768745: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 2 and 9, status: Internal: failed to enable peer access from 0x5634267434d0 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.772315: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 3 and 9, status: Internal: failed to enable peer access from 0x563426d2d910 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.775159: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 4 and 9, status: Internal: failed to enable peer access from 0x56342733cf70 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.777232: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 5 and 9, status: Internal: failed to enable peer access from 0x563427939740 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.778723: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 6 and 9, status: Internal: failed to enable peer access from 0x563427f49160 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.779552: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 7 and 9, status: Internal: failed to enable peer access from 0x563428557840 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.779691: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 8 and 9, status: Internal: failed to enable peer access from 0x563428b70b10 to 0x563429191b60: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.779817: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 0, status: Internal: failed to enable peer access from 0x563429191b60 to 0x563425ab7f10: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.779941: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 1, status: Internal: failed to enable peer access from 0x563429191b60 to 0x56342615d440: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780062: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 2, status: Internal: failed to enable peer access from 0x563429191b60 to 0x5634267434d0: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780181: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 3, status: Internal: failed to enable peer access from 0x563429191b60 to 0x563426d2d910: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780308: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 4, status: Internal: failed to enable peer access from 0x563429191b60 to 0x56342733cf70: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780432: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 5, status: Internal: failed to enable peer access from 0x563429191b60 to 0x563427939740: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780558: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 6, status: Internal: failed to enable peer access from 0x563429191b60 to 0x563427f49160: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780682: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 7, status: Internal: failed to enable peer access from 0x563429191b60 to 0x563428557840: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.780804: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1690] Unable to enable peer access between device ordinals 9 and 8, status: Internal: failed to enable peer access from 0x563429191b60 to 0x563428b70b10: CUDA_ERROR_TOO_MANY_PEERS: peer mapping resources exhausted\r\n2022-12-20 10:48:41.781852: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: \r\npciBusID: 0000:3d:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.782709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: \r\npciBusID: 0000:3e:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.783514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 2 with properties: \r\npciBusID: 0000:3f:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.784338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 3 with properties: \r\npciBusID: 0000:40:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.785184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 4 with properties: \r\npciBusID: 0000:41:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.786002: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 5 with properties: \r\npciBusID: 0000:60:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.786799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 6 with properties: \r\npciBusID: 0000:61:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.787602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 7 with properties: \r\npciBusID: 0000:62:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.788398: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 8 with properties: \r\npciBusID: 0000:63:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.789196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 9 with properties: \r\npciBusID: 0000:64:00.0 name: NVIDIA RTX A5000 computeCapability: 8.6\r\ncoreClock: 1.695GHz coreCount: 64 deviceMemorySize: 23.69GiB deviceMemoryBandwidth: 715.34GiB/s\r\n2022-12-20 10:48:41.789235: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0\r\n2022-12-20 10:48:41.792605: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11\r\n2022-12-20 10:48:41.792692: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11\r\n2022-12-20 10:48:41.793788: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10\r\n2022-12-20 10:48:41.794064: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10\r\n2022-12-20 10:48:41.797168: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11\r\n2022-12-20 10:48:41.797911: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11\r\n2022-12-20 10:48:41.798070: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8\r\n2022-12-20 10:48:41.813923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9\r\n2022-12-20 10:48:41.813972: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0\r\n2022-12-20 10:48:46.260209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:\r\n2022-12-20 10:48:46.260262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 2 3 4 5 6 7 8 9 \r\n2022-12-20 10:48:46.260276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y Y Y Y Y Y Y Y Y \r\n2022-12-20 10:48:46.260285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N Y Y Y Y Y Y Y Y \r\n2022-12-20 10:48:46.260292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 2:   Y Y N Y Y Y Y Y Y Y \r\n2022-12-20 10:48:46.260300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 3:   Y Y Y N Y Y Y Y Y Y \r\n2022-12-20 10:48:46.260307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 4:   Y Y Y Y N Y Y Y Y Y \r\n2022-12-20 10:48:46.260315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 5:   Y Y Y Y Y N Y Y Y Y \r\n2022-12-20 10:48:46.260323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 6:   Y Y Y Y Y Y N Y Y Y \r\n2022-12-20 10:48:46.260333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 7:   Y Y Y Y Y Y Y N Y Y \r\n2022-12-20 10:48:46.260340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 8:   Y Y Y Y Y Y Y Y N Y \r\n2022-12-20 10:48:46.260349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 9:   Y Y Y Y Y Y Y Y Y N \r\n2022-12-20 10:48:46.277191: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:0 with 22352 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:3d:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.278851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:1 with 21245 MB memory) -> physical GPU (device: 1, name: NVIDIA RTX A5000, pci bus id: 0000:3e:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.280300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:2 with 22352 MB memory) -> physical GPU (device: 2, name: NVIDIA RTX A5000, pci bus id: 0000:3f:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.281761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:3 with 22352 MB memory) -> physical GPU (device: 3, name: NVIDIA RTX A5000, pci bus id: 0000:40:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.283201: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:4 with 22352 MB memory) -> physical GPU (device: 4, name: NVIDIA RTX A5000, pci bus id: 0000:41:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.284731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:5 with 22352 MB memory) -> physical GPU (device: 5, name: NVIDIA RTX A5000, pci bus id: 0000:60:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.286222: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:6 with 22352 MB memory) -> physical GPU (device: 6, name: NVIDIA RTX A5000, pci bus id: 0000:61:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.287608: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:7 with 22352 MB memory) -> physical GPU (device: 7, name: NVIDIA RTX A5000, pci bus id: 0000:62:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.289058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:8 with 22352 MB memory) -> physical GPU (device: 8, name: NVIDIA RTX A5000, pci bus id: 0000:63:00.0, compute capability: 8.6)\r\n2022-12-20 10:48:46.290525: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/device:GPU:9 with 22352 MB memory) -> physical GPU (device: 9, name: NVIDIA RTX A5000, pci bus id: 0000:64:00.0, compute capability: 8.6)\r\n[name: \"/device:CPU:0\"\r\ndevice_type: \"CPU\"\r\nmemory_limit: 268435456\r\nlocality {\r\n}\r\nincarnation: 18013241447675411421\r\n, name: \"/device:GPU:0\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 4999206545337463836\r\nphysical_device_desc: \"device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:3d:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:1\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 22277914624\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 5426967292628159816\r\nphysical_device_desc: \"device: 1, name: NVIDIA RTX A5000, pci bus id: 0000:3e:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:2\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 3104994750831215783\r\nphysical_device_desc: \"device: 2, name: NVIDIA RTX A5000, pci bus id: 0000:3f:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:3\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 14175974160922571756\r\nphysical_device_desc: \"device: 3, name: NVIDIA RTX A5000, pci bus id: 0000:40:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:4\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 17888261416412142435\r\nphysical_device_desc: \"device: 4, name: NVIDIA RTX A5000, pci bus id: 0000:41:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:5\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 16596062142311775136\r\nphysical_device_desc: \"device: 5, name: NVIDIA RTX A5000, pci bus id: 0000:60:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:6\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 1597885570592683115\r\nphysical_device_desc: \"device: 6, name: NVIDIA RTX A5000, pci bus id: 0000:61:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:7\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 3391246708896791881\r\nphysical_device_desc: \"device: 7, name: NVIDIA RTX A5000, pci bus id: 0000:62:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:8\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 9\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 18050846488731650593\r\nphysical_device_desc: \"device: 8, name: NVIDIA RTX A5000, pci bus id: 0000:63:00.0, compute capability: 8.6\"\r\n, name: \"/device:GPU:9\"\r\ndevice_type: \"GPU\"\r\nmemory_limit: 23438688256\r\nlocality {\r\n  bus_id: 1\r\n  links {\r\n    link {\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 1\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 2\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 3\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 4\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 5\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 6\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 7\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n    link {\r\n      device_id: 8\r\n      type: \"StreamExecutor\"\r\n      strength: 1\r\n    }\r\n  }\r\n}\r\nincarnation: 1009118939769110196\r\nphysical_device_desc: \"device: 9, name: NVIDIA RTX A5000, pci bus id: 0000:64:00.0, compute capability: 8.6\"\r\n]\r\n\r\nI tried running Python as a terminal.\r\nThese logs popped up."
+        },
+        {
+            "Timestamp": "2022-12-21T10:24:23Z",
+            "EntityIds": [
+                94430032,
+                111861663,
+                111861663,
+                111861663
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "4U5XFDISOJ8V"
+            ],
+            "Context": "@jrstd \r\nI was able to execute the given code and recognize multiple gpu without a problem using TF v2.11. Please find the below screenshot of the output:\r\n![Screenshot 2022-12-21 3 32 59 PM](https://user-images.githubusercontent.com/111861663/208881934-efc00cdc-dd09-4f6f-8ede-303678b0b986.png)\r\n\r\nCould you please try with the latest version which is TF v2.11 and let us know if it helps.\r\nThank you!"
         },
         {
             "Timestamp": "2022-12-18T19:50:30Z",
@@ -997,7 +1668,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "DS8UY4E2H7YK"
+                "HWS9RZRZUK7C"
             ],
             "Context": "Unable to jit_compile and run function on CPU on tpu-vm. <details><summary>Click to expand!</summary> \r\n \r\n ### Issue Type\r\n\r\nBug\r\n\r\n### Source\r\n\r\nbinary\r\n\r\n### Tensorflow Version\r\n\r\nv2.11.0-0-gd5b57ca9 2.11.0\r\n\r\n### Custom Code\r\n\r\nNo\r\n\r\n### OS Platform and Distribution\r\n\r\nLinux t1v-n-92ea8b2a-w-0 5.15.0-1022-gcp #29~20.04.1-Ubuntu SMP Sat Oct 29 18:17:56 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux\r\n\r\n### Mobile device\r\n\r\n_No response_\r\n\r\n### Python version\r\n\r\n3.8\r\n\r\n### Bazel version\r\n\r\n_No response_\r\n\r\n### GCC/Compiler version\r\n\r\n_No response_\r\n\r\n### CUDA/cuDNN version\r\n\r\n_No response_\r\n\r\n### GPU model and memory\r\n\r\n_No response_\r\n\r\n### Current Behaviour?\r\n\r\nOn a `v3-8` TPU-VM running tensorflow version: `tpu-vm-tf-2.11.0` I am unable to `jit_compile` a basic function and run it on CPU. Can you please guide me how to run jit_compiled functions on TPU VM's CPU.\r\n\r\n\r\n### Standalone code to reproduce the issue\r\n\r\n```shell\r\nimport os\r\n\r\nos.environ[\"TPU_NAME\"] = \"local\"\r\nos.environ[\"TPU_LOAD_LIBRARY\"] = \"1\"\r\n\r\nimport tensorflow as tf\r\n\r\ntf.debugging.set_log_device_placement(True)\r\n\r\nprint(\"All devices: \", tf.config.list_logical_devices())\r\n\r\na = tf.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]])\r\nb = tf.constant([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]])\r\n\r\n\r\n@tf.function(jit_compile=True)\r\ndef jit_test(a, b):\r\n    c = tf.matmul(a, b)\r\n    return a + b + c\r\n\r\n\r\nwith tf.device(\":/TPU:0\"):\r\n    print(jit_test(a, b))\r\n    print(\"Success!\")\r\n\r\n\r\nwith tf.device(\":/CPU:0\"):\r\n    print(jit_test(a, b))  # This will fail\r\n    print(\"Will crash prior to getting here\")\r\n```\r\n\r\n\r\n### Relevant log output\r\n\r\n```shell\r\n2022-12-19 10:13:18.533185: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA\r\nTo enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.\r\n2022-12-19 10:13:18.717772: I tensorflow/core/tpu/tpu_initializer_helper.cc:275] Libtpu path is: libtpu.so\r\nD1219 10:13:18.874059745   34863 config.cc:113]              gRPC EXPERIMENT tcp_frame_size_tuning               OFF (default:OFF)\r\nD1219 10:13:18.874080489   34863 config.cc:113]              gRPC EXPERIMENT tcp_read_chunks                     OFF (default:OFF)\r\nD1219 10:13:18.874093652   34863 config.cc:113]              gRPC EXPERIMENT tcp_rcv_lowat                       OFF (default:OFF)\r\nD1219 10:13:18.874100741   34863 config.cc:113]              gRPC EXPERIMENT peer_state_based_framing            OFF (default:OFF)\r\nD1219 10:13:18.874107419   34863 config.cc:113]              gRPC EXPERIMENT flow_control_fixes                  OFF (default:OFF)\r\nD1219 10:13:18.874114099   34863 config.cc:113]              gRPC EXPERIMENT memory_pressure_controller          OFF (default:OFF)\r\nD1219 10:13:18.874121059   34863 config.cc:113]              gRPC EXPERIMENT periodic_resource_quota_reclamation ON  (default:ON)\r\nD1219 10:13:18.874127645   34863 config.cc:113]              gRPC EXPERIMENT unconstrained_max_quota_buffer_size OFF (default:OFF)\r\nD1219 10:13:18.874134219   34863 config.cc:113]              gRPC EXPERIMENT new_hpack_huffman_decoder           OFF (default:OFF)\r\nD1219 10:13:18.874140862   34863 config.cc:113]              gRPC EXPERIMENT event_engine_client                 OFF (default:OFF)\r\nD1219 10:13:18.874147728   34863 config.cc:113]              gRPC EXPERIMENT monitoring_experiment               ON  (default:ON)\r\nD1219 10:13:18.874154168   34863 config.cc:113]              gRPC EXPERIMENT promise_based_client_call           OFF (default:OFF)\r\nI1219 10:13:18.874398506   34863 ev_epoll1_linux.cc:121]     grpc epoll fd: 6\r\nD1219 10:13:18.874414089   34863 ev_posix.cc:141]            Using polling engine: epoll1\r\nD1219 10:13:18.874434253   34863 dns_resolver_ares.cc:824]   Using ares dns resolver\r\nD1219 10:13:18.874733217   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"priority_experimental\"\r\nD1219 10:13:18.874748219   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"outlier_detection_experimental\"\r\nD1219 10:13:18.874756312   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"weighted_target_experimental\"\r\nD1219 10:13:18.874763493   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"pick_first\"\r\nD1219 10:13:18.874770671   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"round_robin\"\r\nD1219 10:13:18.874783165   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"ring_hash_experimental\"\r\nD1219 10:13:18.874810477   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"grpclb\"\r\nD1219 10:13:18.874843143   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"rls_experimental\"\r\nD1219 10:13:18.874864810   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"xds_cluster_manager_experimental\"\r\nD1219 10:13:18.874872835   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"xds_cluster_impl_experimental\"\r\nD1219 10:13:18.874880753   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"cds_experimental\"\r\nD1219 10:13:18.874888414   34863 lb_policy_registry.cc:45]   registering LB policy factory for \"xds_cluster_resolver_experimental\"\r\nD1219 10:13:18.874895665   34863 certificate_provider_registry.cc:35] registering certificate provider factory for \"file_watcher\"\r\nI1219 10:13:18.895383666   34863 socket_utils_common_posix.cc:336] TCP_USER_TIMEOUT is available. TCP_USER_TIMEOUT will be used thereafter\r\n2022-12-19 10:13:18.913051: I tensorflow/core/tpu/tpu_initializer_helper.cc:225] GetTpuPjrtApi not found\r\n2022-12-19 10:13:21.766915: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA\r\nTo enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.\r\n2022-12-19 10:13:26.260445: I tensorflow/compiler/xla/service/service.cc:173] XLA service 0x63c6900 initialized for platform TPU (this does not guarantee that XLA will be used). Devices:\r\n2022-12-19 10:13:26.260485: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (0): TPU, 2a886c8\r\n2022-12-19 10:13:26.260499: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (1): TPU, 2a886c8\r\n2022-12-19 10:13:26.260511: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (2): TPU, 2a886c8\r\n2022-12-19 10:13:26.260524: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (3): TPU, 2a886c8\r\n2022-12-19 10:13:26.260536: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (4): TPU, 2a886c8\r\n2022-12-19 10:13:26.260549: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (5): TPU, 2a886c8\r\n2022-12-19 10:13:26.260561: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (6): TPU, 2a886c8\r\n2022-12-19 10:13:26.260573: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (7): TPU, 2a886c8\r\nAll devices:  [LogicalDevice(name='/device:CPU:0', device_type='CPU'), LogicalDevice(name='/device:TPU_SYSTEM:0', device_type='TPU_SYSTEM'), LogicalDevice(name='/device:TPU:0', device_type='TPU'), LogicalDevice(name='/device:TPU:1', device_type='TPU'), LogicalDevice(name='/device:TPU:2', device_type='TPU'), LogicalDevice(name='/device:TPU:3', device_type='TPU'), LogicalDevice(name='/device:TPU:4', device_type='TPU'), LogicalDevice(name='/device:TPU:5', device_type='TPU'), LogicalDevice(name='/device:TPU:6', device_type='TPU'), LogicalDevice(name='/device:TPU:7', device_type='TPU')]\r\ninput: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.286675: I tensorflow/core/common_runtime/placer.cc:114] input: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0\r\n_EagerConst: (_EagerConst): /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.286733: I tensorflow/core/common_runtime/placer.cc:114] _EagerConst: (_EagerConst): /job:localhost/replica:0/task:0/device:CPU:0\r\noutput_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.286753: I tensorflow/core/common_runtime/placer.cc:114] output_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.287893: I tensorflow/core/common_runtime/eager/execute.cc:1445] Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.288240: I tensorflow/core/common_runtime/eager/execute.cc:1445] Executing op _EagerConst in device /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.361102: I tensorflow/core/common_runtime/eager/execute.cc:1445] Executing op __inference_jit_test_11 in device /job:localhost/replica:0/task:0/device:TPU:0\r\n2022-12-19 10:13:26.473898: I tensorflow/compiler/jit/xla_compilation_cache.cc:477] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.\r\ntf.Tensor(\r\n[[ 32.  40.  48.]\r\n [ 74.  91. 108.]\r\n [116. 142. 168.]], shape=(3, 3), dtype=float32)\r\nSuccess!\r\n2022-12-19 10:13:26.477187: I tensorflow/core/common_runtime/eager/execute.cc:1445] Executing op __inference_jit_test_11 in device /job:localhost/replica:0/task:0/device:CPU:0\r\n2022-12-19 10:13:26.478142: W tensorflow/core/framework/op_kernel.cc:1830] OP_REQUIRES failed at xla_ops.cc:417 : NOT_FOUND: could not find registered transfer manager for platform Host -- check target linkage\r\nTraceback (most recent call last):\r\n  File \"notebooks/tpu_vm_test.py\", line 28, in <module>\r\n    print(jit_test(a, b))  # This will fail\r\n  File \"/usr/local/lib/python3.8/dist-packages/tensorflow/python/util/traceback_utils.py\", line 153, in error_handler\r\n    raise e.with_traceback(filtered_tb) from None\r\n  File \"/usr/local/lib/python3.8/dist-packages/tensorflow/python/eager/execute.py\", line 52, in quick_execute\r\n    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,\r\ntensorflow.python.framework.errors_impl.NotFoundError: could not find registered transfer manager for platform Host -- check target linkage [Op:__inference_jit_test_11]\r\nD1219 10:13:26.848936447   34863 init.cc:190]                grpc_shutdown starts clean-up now\r\n```\r\n</details>"
         },
@@ -1010,7 +1681,7 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "DS8UY4E2H7YK"
+                "HWS9RZRZUK7C"
             ],
             "Context": "@sushreebarsa,\r\nI was able to reproduce the issue on tensorflow v2.9, v2.11and nightly. Kindly find the gist of it [here](https://colab.research.google.com/gist/tilakrayal/293a6d7574be8e6b7dfff34f3cd6228c/untitled805.ipynb)."
         },
@@ -1020,11 +1691,12 @@
                 91227222,
                 116063290,
                 86464649,
-                116063290
+                116063290,
+                596150
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "PYPGXDF71H66"
+                "ENKFBSKZTOCF"
             ],
             "Context": "Bad download link for Windows GPU only binaries zip file. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBuild/Install\n\n### Source\n\nsource\n\n### Tensorflow Version\n\nx86_64-2.11.0\n\n### Custom Code\n\nNo\n\n### OS Platform and Distribution\n\nWindows x86 GPU only\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n_No response_\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nstorage.googleapis.com/tensorflow/libtensorflow/libtensorflow-gpu-windows-x86_64-2.11.0.zip\r\n\r\nThe zip file does not exist.  \"No such object\"\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\n\"No such object\"  when clicking on the download link\n```\n\n\n### Relevant log output\n\n_No response_</details>"
         },
@@ -1034,11 +1706,12 @@
                 91227222,
                 116063290,
                 86464649,
-                116063290
+                116063290,
+                596150
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "PYPGXDF71H66"
+                "ENKFBSKZTOCF"
             ],
             "Context": "Hi @krsummersBA !\r\nI can confirm your observations on GPU wheels from pip installation document . ( Can downloads CPU wheels as expected and seeing  404 error on GPU wheels)\r\n\r\nCould you point the location of this \"storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-gpu-windows-x86_64-2.11.0.zip \" file too. \r\n\r\n\r\n@SuryanarayanaY !\r\nCould you look at this issue. Attached [gist](https://colab.sandbox.google.com/gist/mohantym/8976ab15e663d5e5e9e16838861874fa/git_58933.ipynb#scrollTo=dQ6xAn6nAQc9) for reference.\r\n\r\nThank you!"
         },
@@ -1048,13 +1721,44 @@
                 91227222,
                 116063290,
                 86464649,
-                116063290
+                116063290,
+                596150
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "PYPGXDF71H66"
+                "ENKFBSKZTOCF"
             ],
             "Context": "All the Windows GPU links mentioned in [Documentation](https://www.tensorflow.org/install/pip#package_location) are empty.This might be due to recent development with Windows or due to some broken links during recent updation in Documentation. \r\n\r\n@krsummersBA , Thanks for reporting this and we will have a look into it and Meanwhile if you want you can refer [here](https://www.tensorflow.org/install/pip#step-by-step_instructions) for instructions on how to install Tensorflow with GPU support for Windows.\r\n\r\nThankyou!"
+        },
+        {
+            "Timestamp": "2022-12-21T02:18:16Z",
+            "EntityIds": [
+                91227222,
+                116063290,
+                86464649,
+                116063290,
+                596150
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "ENKFBSKZTOCF"
+            ],
+            "Context": "Can you provide an alternate / temporary link for the  GPU .zip file?   I don't want to build/install this from scratch, but just need the valid zip file so I can reference some of the included DLL files."
+        },
+        {
+            "Timestamp": "2022-12-21T18:15:51Z",
+            "EntityIds": [
+                91227222,
+                116063290,
+                86464649,
+                116063290,
+                596150
+            ],
+            "Symbol": "Issue Comment",
+            "Relational ID": [
+                "ENKFBSKZTOCF"
+            ],
+            "Context": "> Can you provide an alternate / temporary link for the GPU .zip file? I don't want to build/install this from scratch, but just need the valid zip file so I can reference some of the included DLL files.\r\n\r\nNote sure about how to get the latest version, but the previous can be downloaded by changing the url: https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-gpu-windows-x86_64-2.10.0.zip"
         },
         {
             "Timestamp": "2022-12-17T14:09:44Z",
@@ -1065,7 +1769,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "SVLEAW6Q86VQ"
+                "B4PW9B97JXHC"
             ],
             "Context": "optOut.trustModal.title\n. https://optout.aboutads.info/app/components/optOut/firstPartyLanding.html?c=2&lang=EN"
         },
@@ -1078,7 +1782,7 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "SVLEAW6Q86VQ"
+                "B4PW9B97JXHC"
             ],
             "Context": "@Frama00 \r\nCould you please fill the issue [template]( https://github.com/tensorflow/tensorflow/issues/new/choose) and elaborate your issue reported here.\r\n\r\nThank you!"
         },
@@ -1091,7 +1795,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "P2G6ZLOG12NQ"
+                "XE4G9TC7M2B5"
             ],
             "Context": "936154. ### 1. System information\n\n- OS Platform and Distribution (e.g., Linux Ubuntu 16.04):\n- TensorFlow installation (pip package or built from source):\n- TensorFlow library (version, if pip package or github SHA, if built from source):\n\n### 2. Code\n\nProvide code to help us reproduce your issues using one of the following options:\n\n#### Option A: Reference colab notebooks\n\n1)  Reference [TensorFlow Model Colab](https://colab.research.google.com/gist/ymodak/e96a4270b953201d5362c61c1e8b78aa/tensorflow-datasets.ipynb?authuser=1): Demonstrate how to build your TF model.\n2)  Reference [TensorFlow Lite Model Colab](https://colab.research.google.com/gist/ymodak/0dfeb28255e189c5c48d9093f296e9a8/tensorflow-lite-debugger-colab.ipynb): Demonstrate how to convert your TF model to a TF Lite model (with quantization, if used) and run TFLite Inference (if possible).\n\n```\n(You can paste links or attach files by dragging & dropping them below)\n- Provide links to your updated versions of the above two colab notebooks.\n- Provide links to your TensorFlow model and (optionally) TensorFlow Lite Model.\n```\n\n#### Option B: Paste your code here or provide a link to a custom end-to-end colab\n\n```\n(You can paste links or attach files by dragging & dropping them below)\n- Include code to invoke the TFLite Converter Python API and the errors.\n- Provide links to your TensorFlow model and (optionally) TensorFlow Lite Model.\n```\n\n### 3. Failure after conversion\nIf the conversion is successful, but the generated model is wrong, then state what is wrong:\n\n- Model produces wrong results and/or has lesser accuracy.\n- Model produces correct results, but it is slower than expected.\n\n### 4. (optional) RNN conversion support\nIf converting TF RNN to TFLite fused RNN ops, please prefix [RNN] in the title.\n\n### 5. (optional) Any other info / logs\nInclude any logs or source code that would be helpful to diagnose the problem. If including tracebacks, please include the full traceback. Large logs and files should be attached.\n"
         },
@@ -1104,7 +1808,7 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "P2G6ZLOG12NQ"
+                "XE4G9TC7M2B5"
             ],
             "Context": "Closing as spam"
         },
@@ -1118,7 +1822,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "O634501C64S3"
+                "0Z1QF81I4INP"
             ],
             "Context": "Added rConcatenate method. The rConcatenate is the other way round for Concatenate that merges but other before self.\r\n+ \r\nWas planning on adding \r\n`\r\n    self.batch_spec_data = input_dataset.element_spec[0].shape.rConcatenate(batch_size)\r\n`\r\nto  \"\\tensorflow\\python\\data\\ops\\dataset_ops.py\"\r\nbefore someone remove the BatchDataset Class :P"
         },
@@ -1132,7 +1836,7 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "O634501C64S3"
+                "0Z1QF81I4INP"
             ],
             "Context": "Thanks for your pull request! It looks like this may be your first contribution to a Google open source project. Before we can look at your pull request, you'll need to sign a Contributor License Agreement (CLA).\n\nView this [failed invocation](https://github.com/tensorflow/tensorflow/pull/58930/checks?check_run_id=10154263001) of the CLA check for more information.\n\nFor the most up to date status, view the checks section at the bottom of the pull request."
         },
@@ -1146,7 +1850,7 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "O634501C64S3"
+                "0Z1QF81I4INP"
             ],
             "Context": "Hi @HushmKun!\r\n\r\nWhat is the use case for this method? We usually only add more methods to the public API if there is a necessary user need for it."
         },
@@ -1160,7 +1864,7 @@
             ],
             "Symbol": "Pull Request",
             "Relational ID": [
-                "O634501C64S3"
+                "0Z1QF81I4INP"
             ],
             "Context": "Added rConcatenate method. The rConcatenate is the other way round for Concatenate that merges but other before self.\r\n+ \r\nWas planning on adding \r\n`\r\n    self.batch_spec_data = input_dataset.element_spec[0].shape.rConcatenate(batch_size)\r\n`\r\nto  \"\\tensorflow\\python\\data\\ops\\dataset_ops.py\"\r\nbefore someone remove the BatchDataset Class :P"
         },
@@ -1174,7 +1878,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "O634501C64S3"
+                "0Z1QF81I4INP"
             ],
             "Context": "Added rConcatenate method\n\nThe rConcatenate is the other way round for Concatenate that merges but other before self."
         },
@@ -1186,7 +1890,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "5Y06GP1TB7AA"
+                "FDZKYUZF9UHJ"
             ],
             "Context": "Update BUILD. Test change"
         },
@@ -1198,7 +1902,7 @@
             ],
             "Symbol": "Pull Request",
             "Relational ID": [
-                "5Y06GP1TB7AA"
+                "FDZKYUZF9UHJ"
             ],
             "Context": "Update BUILD. Test change"
         },
@@ -1210,7 +1914,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "5Y06GP1TB7AA"
+                "FDZKYUZF9UHJ"
             ],
             "Context": "Update BUILD\n\nTest change"
         },
@@ -1222,7 +1926,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "5Y06GP1TB7AA"
+                "FDZKYUZF9UHJ"
             ],
             "Context": "Update BUILD"
         },
@@ -1234,7 +1938,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "5Y06GP1TB7AA"
+                "FDZKYUZF9UHJ"
             ],
             "Context": "Update BUILD"
         },
@@ -1246,7 +1950,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "3HTFZKQHB9VM"
+                "FF8RGA4MGE0Z"
             ],
             "Context": "Update BUILD. Test tensorflow_federated visibility"
         },
@@ -1258,7 +1962,7 @@
             ],
             "Symbol": "Pull Request",
             "Relational ID": [
-                "3HTFZKQHB9VM"
+                "FF8RGA4MGE0Z"
             ],
             "Context": "Update BUILD. Test tensorflow_federated visibility"
         },
@@ -1270,7 +1974,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "3HTFZKQHB9VM"
+                "FF8RGA4MGE0Z"
             ],
             "Context": "Update BUILD\n\nTest tensorflow_federated visibility"
         },
@@ -1282,7 +1986,7 @@
             ],
             "Symbol": "Pull Request Commit",
             "Relational ID": [
-                "3HTFZKQHB9VM"
+                "FF8RGA4MGE0Z"
             ],
             "Context": "Update BUILD"
         },
@@ -1295,7 +1999,7 @@
             ],
             "Symbol": "Issue Creation",
             "Relational ID": [
-                "FI1NI0C53AXO"
+                "9BAKZI52Y0SB"
             ],
             "Context": "tensorflow not found. <details><summary>Click to expand!</summary> \n \n ### Issue Type\n\nBug\n\n### Source\n\nsource\n\n### Tensorflow Version\n\newfewfew\n\n### Custom Code\n\nYes\n\n### OS Platform and Distribution\n\n_No response_\n\n### Mobile device\n\n_No response_\n\n### Python version\n\n_No response_\n\n### Bazel version\n\n_No response_\n\n### GCC/Compiler version\n\n_No response_\n\n### CUDA/cuDNN version\n\n_No response_\n\n### GPU model and memory\n\n_No response_\n\n### Current Behaviour?\n\n```shell\nA bug happened!dsfdsf\n```\n\n\n### Standalone code to reproduce the issue\n\n```shell\nsdferfgerg\n```\n\n\n### Relevant log output\n\n_No response_</details>"
         },
@@ -1308,7 +2012,7 @@
             ],
             "Symbol": "Issue Comment",
             "Relational ID": [
-                "FI1NI0C53AXO"
+                "9BAKZI52Y0SB"
             ],
             "Context": "Are you satisfied with the resolution of your issue?\n<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfaP12TRhd9xSxjXZjcZFNXPGk4kc1-qMdv3gc6bEP90vY1ew/viewform?entry.85265664=Yes&entry.2137816233=https://github.com/tensorflow/tensorflow/issues/58927\">Yes</a>\n<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfaP12TRhd9xSxjXZjcZFNXPGk4kc1-qMdv3gc6bEP90vY1ew/viewform?entry.85265664=No&entry.2137816233=https://github.com/tensorflow/tensorflow/issues/58927\">No</a>\n"
         }

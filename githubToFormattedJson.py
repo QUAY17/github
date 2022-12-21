@@ -7,7 +7,7 @@ import string
 import bcrypt
 
 gh_user="QUAY17"
-gh_token="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"
+gh_token="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"
 gh_repo="tensorflow/tensorflow"
 
 def usage():
@@ -161,10 +161,12 @@ if __name__ == "__main__":
 
             # Issue Comments ___________________________________________________________________________
             
-            gitHubAPI_URL_getComments = f"{issueCommentsUrl}"
-            response = requests.get(gitHubAPI_URL_getComments, auth=(gh_user, gh_token))
+            gitHubAPI_URL_getIssueComments = f"{issueCommentsUrl}"
+            print(issueCommentsUrl)
+            response = requests.get(gitHubAPI_URL_getIssueComments, auth=(gh_user, gh_token))
             issueComment = response.json()
-            if issueComment is not None:
+            print(issueComment)
+            if issueComment != None:
                 for attribute in issueComment:
                     issueCommenterId = attribute["user"]["id"]
                     issueCommenterLogin = attribute["user"]["login"]
@@ -230,11 +232,11 @@ if __name__ == "__main__":
                 entityId = pullUserId # for the pr dict
                 pullUserLogin = attribute["user"]["login"]
                 pullUserUrl = attribute["user"]["url"]
-                contributeType = "Pull Request"
-                eventName = "Pull Request" # Symbol Name
+                pullCommitUrl = attribute["commits_url"]
 
                 # Pull Requestor _____________________________________________________________________
-
+                contributeType = "Pull Request"
+                eventName = "Pull Request" # Symbol Name
                 if pullUserId != issueUserId: # pretty sure all issue creators are the pull requestors but just in case they are not the same/ edge case
                     committerType = commit_type(pullUserLogin, gh_user, gh_token)
                     followingType = follow_type(pullUserLogin, gh_user, gh_token)
@@ -268,66 +270,113 @@ if __name__ == "__main__":
                     data.append(pullReqData)
                 
                 # Pull Review Comments  ___________________________________________________________________
-                # this does exists in some use cases
+                pullCommentUrl = attribute["review_comments_url"]
+                contributeType = "Pull Commenter"
+                eventName = "Pull Request Comment"
+                gitHubAPI_URL_getPRComments = f"{pullCommentUrl}"
+                response = requests.get(gitHubAPI_URL_getPRComments, auth=(gh_user, gh_token))
+                dataPRComment = response.json()
+                for attribute in dataPRComment:
+                    if "user" != None:
+                        pullCommentLogin = attribute["user"]["login"]
+                        pullCommentId = attribute["user"]["id"]
+                        entityId = pullCommentId
+                        commentCreatedAt = attribute["created_at"]
+                        commentUpdatedAt = attribute["updated_at"]
+                        commentContext = attribute["body"]
+                        if pullCommentId != pullUserId:
+                            print(pullCommentId)
+                            committerType = commit_type(pullCommentLogin, gh_user, gh_token)
+                            followingType = follow_type(pullCommentLogin, gh_user, gh_token)
+                            # User date range
+                            if attribute["user"] is not None:
+                                pullCommitterUrl = attribute["user"]["url"]
+                                gitHubAPI_URL_getUserDates = f"{pullCommitterUrl}"
+                                response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+                                dataUser = response.json()
+                                if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                                    userCreatedAt = None
+                                    userUpdatedAt = None
+                                elif dataUser["created_at"]:
+                                    userCreatedAt = dataUser["created_at"] # valid from
+                                    userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
+                            #issueUserId = salt_hash_id(issueUserId)
+                            entityIds.append(pullCommentId)
+                            symbols = [] #symbols list
+                            properties = [] # properties list
+                            propPullCommentDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                            properties.append(propPullCommentDict)
+                            entPullCommentDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                            dataEntities.append(entPullCommentDict)
+                            symPullComment = {"Contribution Type": contributeType, "Valid From": commentCreatedAt, "Valid To": commentUpdatedAt}
+                            symbols.append(symPullComment)
+                            pullCommentData = {"Timestamp":commentCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commentContext}
+                            data.append(pullCommentData)
+                        else:
+                            symPullComment = {"Contribution Type": contributeType, "Valid From": commentCreatedAt, "Valid To": commentUpdatedAt}
+                            issueSymbols.append(symPullComment)
+                            pullCommentData = {"Timestamp":commentCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commentContext}
+                            data.append(pullCommentData)
 
                 # Pull Commits ____________________________________________________________________________
 
-                pullCommitUrl = attribute["commits_url"]
                 print(pullCommitUrl)
-                contributeType = "Pull Commiter"
-                eventName = "Pull Request Commit" # Symbol Name
-                gitHubAPI_URL_getCommits = f"{pullCommitUrl}"
-                response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
-                dataCommit = response.json()
-                for attribute in dataCommit:
-                    if "commit" is not None: # if a commit exists
-                        pullCommitLogin = attribute["commit"]["author"]["name"]
-                    if attribute["author"] is not None:
-                        pullCommitId = attribute["author"]["id"]
-                        pullCommitLogin = attribute["author"]["login"]
-                    else:
-                        pullCommitId = None # to do: follow url to get id instead of None
-                    entityId = pullCommitId # for the pr dict
-                    commitCreatedAt = attribute["commit"]["author"]["date"]
-                    commitClosedAt = None
-                    commitContext = attribute["commit"]["message"]
-                    if pullCommitId != pullUserId:
-                        print(pullCommitId)
-                        committerType = commit_type(pullCommitLogin, gh_user, gh_token)
-                        followingType = follow_type(pullCommitLogin, gh_user, gh_token)
-                        # User date range
+                if pullCommitUrl != None:
+                    print(pullCommitUrl)
+                    contributeType = "Pull Commiter"
+                    eventName = "Pull Request Commit" # Symbol Name
+                    gitHubAPI_URL_getCommits = f"{pullCommitUrl}"
+                    response = requests.get(gitHubAPI_URL_getCommits, auth=(gh_user, gh_token))
+                    dataCommit = response.json()
+                    for attribute in dataCommit:
+                        if "commit" != None: # if a commit exists
+                            pullCommitLogin = attribute["commit"]["author"]["name"]
                         if attribute["author"] is not None:
-                            pullCommitterUrl = attribute["author"]["url"]
-                            gitHubAPI_URL_getUserDates = f"{pullCommitterUrl}"
-                            response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
-                            dataUser = response.json()
-                            if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
-                                userCreatedAt = None
-                                userUpdatedAt = None
-                            elif dataUser["created_at"]:
-                                userCreatedAt = dataUser["created_at"] # valid from
-                                userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
-                        #issueUserId = salt_hash_id(issueUserId)
-                        entityIds.append(pullCommitId)
-                        symbols = [] #symbols list
-                        properties = [] # properties list
-                        propPullCommitDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
-                        properties.append(propPullCommitDict)
-                        entPullCommitDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
-                        dataEntities.append(entPullCommitDict)
-                        symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
-                        symbols.append(symPullCommit)
-                        pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
-                        data.append(pullCommitData)
-                    else:
-                        symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
-                        issueSymbols.append(symPullCommit)
-                        pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
-                        data.append(pullCommitData)
+                            pullCommitId = attribute["author"]["id"]
+                            pullCommitLogin = attribute["author"]["login"]
+                        else:
+                            pullCommitId = None # to do: follow url to get id instead of None
+                        entityId = pullCommitId # for the pr dict
+                        commitCreatedAt = attribute["commit"]["author"]["date"]
+                        commitClosedAt = None
+                        commitContext = attribute["commit"]["message"]
+                        if pullCommitId != pullUserId:
+                            print(pullCommitId)
+                            committerType = commit_type(pullCommitLogin, gh_user, gh_token)
+                            followingType = follow_type(pullCommitLogin, gh_user, gh_token)
+                            # User date range
+                            if attribute["author"] is not None:
+                                pullCommitterUrl = attribute["author"]["url"]
+                                gitHubAPI_URL_getUserDates = f"{pullCommitterUrl}"
+                                response = requests.get(gitHubAPI_URL_getUserDates, auth=(gh_user, gh_token))
+                                dataUser = response.json()
+                                if "created_at" not in dataUser: # this occurs when api returns a message that user isn't found
+                                    userCreatedAt = None
+                                    userUpdatedAt = None
+                                elif dataUser["created_at"]:
+                                    userCreatedAt = dataUser["created_at"] # valid from
+                                    userUpdatedAt = dataUser["updated_at"] # "updated" is the timestamp of the last activity
+                            #issueUserId = salt_hash_id(issueUserId)
+                            entityIds.append(pullCommitId)
+                            symbols = [] #symbols list
+                            properties = [] # properties list
+                            propPullCommitDict = {"Follower type": followingType, "Committer Type": committerType, "Valid From": userCreatedAt, "Valid To": userUpdatedAt}
+                            properties.append(propPullCommitDict)
+                            entPullCommitDict = {"Id": entityId, "Symbols":symbols, "Properties":properties}
+                            dataEntities.append(entPullCommitDict)
+                            symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
+                            symbols.append(symPullCommit)
+                            pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
+                            data.append(pullCommitData)
+                        else:
+                            symPullCommit = {"Contribution Type": contributeType, "Valid From": commitCreatedAt, "Valid To": commitClosedAt}
+                            issueSymbols.append(symPullCommit)
+                            pullCommitData = {"Timestamp":commitCreatedAt, "EntityIds":entityIds, "Symbol":eventName, "Relational ID":relationalalIds, "Context":commitContext}
+                            data.append(pullCommitData)
 
                 # Pull Merger/Closer  _____________________________________________________________________
 
-                if pullMergedAt is not None:
+                if pullMergedAt != None:
                     pullMergerId = merger_id(pullNumber, gh_token, gh_user)
                     print("pull merged",pullMergedAt, pullMergerId)
                     contributeType = "Pull Merger"
@@ -343,7 +392,6 @@ if __name__ == "__main__":
                     symMerge = {"Contribution Type": contributeType, "Valid From": pullMergedAt, "Valid To": pullClosedAt}
                     symbols.append(symMerge)
 
-                    # Properties this should be a function ?
                     mergerLogin =  merger_login(pullNumber, gh_user, gh_token)
                     #login = mergerLogin # Login to follow url for user stats
                     committerType = commit_type(mergerLogin, gh_user, gh_token)
